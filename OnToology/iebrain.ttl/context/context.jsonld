@@ -1,0 +1,32 @@
+{
+  "@context" : {
+    "isPartOf" : {
+      "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isPartOf",
+      "@type" : "@id"
+    },
+    "MarketMap" : {
+      "@id" : "http://www.moonshot.ceo/ontology/MarketMap"
+    },
+    "Ket" : {
+      "@id" : "http://www.moonshot.ceo/ontology/Ket"
+    },
+    "Entity" : {
+      "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity"
+    },
+    "Node" : {
+      "@id" : "http://www.moonshot.ceo/ontology/Node"
+    },
+    "Area" : {
+      "@id" : "http://www.moonshot.ceo/ontology/Area"
+    },
+    "Industry" : {
+      "@id" : "http://www.moonshot.ceo/ontology/Industry"
+    },
+    "Cell" : {
+      "@id" : "http://www.moonshot.ceo/ontology/Cell"
+    },
+    "IndustrialFunction" : {
+      "@id" : "http://www.moonshot.ceo/ontology/IndustrialFunction"
+    }
+  }
+}
