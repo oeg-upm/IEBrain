@@ -12,6 +12,82 @@
                             owl:imports <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl> .
 
 #################################################################
+#    Data properties
+#################################################################
+
+###  http://www.moonshot.ceo/abstract
+ms:abstract rdf:type owl:DatatypeProperty ;
+            rdfs:subPropertyOf dul:hasDataValue ;
+            rdfs:domain <http://www.moonshot.ceo/ontology/IndustrialFunction> ;
+            rdfs:range rdfs:Literal ;
+            rdfs:label "has Abstract"@en .
+
+
+###  http://www.moonshot.ceo/correlativeName
+ms:correlativeName rdf:type owl:DatatypeProperty ;
+                   rdfs:subPropertyOf dul:hasDataValue ;
+                   rdfs:domain <http://www.moonshot.ceo/ontology/IndustrialFunction> ;
+                   rdfs:range rdfs:Literal ;
+                   rdfs:label "has Correlative Name"@en .
+
+
+###  http://www.moonshot.ceo/creationDate
+ms:creationDate rdf:type owl:DatatypeProperty ;
+                rdfs:subPropertyOf dul:hasDataValue ;
+                rdfs:domain <http://www.moonshot.ceo/ontology/IndustrialFunction> ;
+                rdfs:range xsd:dateTimeStamp ;
+                rdfs:label "is Creator on"@en .
+
+
+###  http://www.moonshot.ceo/creator
+ms:creator rdf:type owl:DatatypeProperty ;
+           rdfs:subPropertyOf dul:hasDataValue ;
+           rdfs:domain <http://www.moonshot.ceo/ontology/IndustrialFunction> ;
+           rdfs:range rdfs:Literal ;
+           rdfs:label "is Created By"@en .
+
+
+###  http://www.moonshot.ceo/definition
+ms:definition rdf:type owl:DatatypeProperty ;
+              rdfs:subPropertyOf dul:hasDataValue ;
+              rdfs:domain <http://www.moonshot.ceo/ontology/IndustrialFunction> ;
+              rdfs:range rdfs:Literal ;
+              rdfs:label "has Definition"@en .
+
+
+###  http://www.moonshot.ceo/docs
+ms:docs rdf:type owl:DatatypeProperty ;
+        rdfs:subPropertyOf dul:hasDataValue ;
+        rdfs:domain <http://www.moonshot.ceo/ontology/IndustrialFunction> ;
+        rdfs:range xsd:anyURI ;
+        rdfs:label "has Docs"@en .
+
+
+###  http://www.moonshot.ceo/keyword
+ms:keyword rdf:type owl:DatatypeProperty ;
+           rdfs:subPropertyOf dul:hasDataValue ;
+           rdfs:domain <http://www.moonshot.ceo/ontology/IndustrialFunction> ;
+           rdfs:range rdfs:Literal ;
+           rdfs:label "has Keyword"@en .
+
+
+###  http://www.moonshot.ceo/title
+ms:title rdf:type owl:DatatypeProperty ;
+         rdfs:subPropertyOf dul:hasDataValue ;
+         rdfs:domain <http://www.moonshot.ceo/ontology/IndustrialFunction> ;
+         rdfs:range rdfs:Literal ;
+         rdfs:label "has Title"@en .
+
+
+###  http://www.moonshot.ceo/url
+ms:url rdf:type owl:DatatypeProperty ;
+       rdfs:subPropertyOf dul:hasDataValue ;
+       rdfs:domain <http://www.moonshot.ceo/ontology/IndustrialFunction> ;
+       rdfs:range xsd:anyURI ;
+       rdfs:label "has URL"@en .
+
+
+#################################################################
 #    Classes
 #################################################################
 
