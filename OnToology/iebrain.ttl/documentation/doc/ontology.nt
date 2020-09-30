@@ -13,6 +13,7 @@
 <http://www.moonshot.ceo/abstract> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://www.moonshot.ceo/abstract> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasDataValue> .
 <http://www.moonshot.ceo/abstract> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.moonshot.ceo/ontology/IndustrialFunction> .
+<http://www.moonshot.ceo/abstract> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.moonshot.ceo/ontology/Node> .
 <http://www.moonshot.ceo/abstract> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
 <http://www.moonshot.ceo/abstract> <http://www.w3.org/2000/01/rdf-schema#label> "has Abstract"@en .
 # 
@@ -20,6 +21,7 @@
 <http://www.moonshot.ceo/correlativeName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://www.moonshot.ceo/correlativeName> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasDataValue> .
 <http://www.moonshot.ceo/correlativeName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.moonshot.ceo/ontology/IndustrialFunction> .
+<http://www.moonshot.ceo/correlativeName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.moonshot.ceo/ontology/Node> .
 <http://www.moonshot.ceo/correlativeName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
 <http://www.moonshot.ceo/correlativeName> <http://www.w3.org/2000/01/rdf-schema#label> "has Correlative Name"@en .
 # 
@@ -27,13 +29,15 @@
 <http://www.moonshot.ceo/creationDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://www.moonshot.ceo/creationDate> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasDataValue> .
 <http://www.moonshot.ceo/creationDate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.moonshot.ceo/ontology/IndustrialFunction> .
+<http://www.moonshot.ceo/creationDate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.moonshot.ceo/ontology/Node> .
 <http://www.moonshot.ceo/creationDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTimeStamp> .
-<http://www.moonshot.ceo/creationDate> <http://www.w3.org/2000/01/rdf-schema#label> "is Creator on"@en .
+<http://www.moonshot.ceo/creationDate> <http://www.w3.org/2000/01/rdf-schema#label> "is Created on Date"@en .
 # 
 # http://www.moonshot.ceo/creator
 <http://www.moonshot.ceo/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://www.moonshot.ceo/creator> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasDataValue> .
 <http://www.moonshot.ceo/creator> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.moonshot.ceo/ontology/IndustrialFunction> .
+<http://www.moonshot.ceo/creator> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.moonshot.ceo/ontology/Node> .
 <http://www.moonshot.ceo/creator> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
 <http://www.moonshot.ceo/creator> <http://www.w3.org/2000/01/rdf-schema#label> "is Created By"@en .
 # 
@@ -41,6 +45,7 @@
 <http://www.moonshot.ceo/definition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://www.moonshot.ceo/definition> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasDataValue> .
 <http://www.moonshot.ceo/definition> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.moonshot.ceo/ontology/IndustrialFunction> .
+<http://www.moonshot.ceo/definition> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.moonshot.ceo/ontology/Node> .
 <http://www.moonshot.ceo/definition> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
 <http://www.moonshot.ceo/definition> <http://www.w3.org/2000/01/rdf-schema#label> "has Definition"@en .
 # 
@@ -48,13 +53,29 @@
 <http://www.moonshot.ceo/docs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://www.moonshot.ceo/docs> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasDataValue> .
 <http://www.moonshot.ceo/docs> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.moonshot.ceo/ontology/IndustrialFunction> .
+<http://www.moonshot.ceo/docs> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.moonshot.ceo/ontology/Node> .
 <http://www.moonshot.ceo/docs> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#anyURI> .
 <http://www.moonshot.ceo/docs> <http://www.w3.org/2000/01/rdf-schema#label> "has Docs"@en .
+# 
+# http://www.moonshot.ceo/icon
+<http://www.moonshot.ceo/icon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.moonshot.ceo/icon> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasDataValue> .
+<http://www.moonshot.ceo/icon> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.moonshot.ceo/ontology/Node> .
+<http://www.moonshot.ceo/icon> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#anyURI> .
+<http://www.moonshot.ceo/icon> <http://www.w3.org/2000/01/rdf-schema#label> "has Icon"@en .
+# 
+# http://www.moonshot.ceo/image
+<http://www.moonshot.ceo/image> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.moonshot.ceo/image> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasDataValue> .
+<http://www.moonshot.ceo/image> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.moonshot.ceo/ontology/Node> .
+<http://www.moonshot.ceo/image> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#anyURI> .
+<http://www.moonshot.ceo/image> <http://www.w3.org/2000/01/rdf-schema#label> "has Image"@en .
 # 
 # http://www.moonshot.ceo/keyword
 <http://www.moonshot.ceo/keyword> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://www.moonshot.ceo/keyword> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasDataValue> .
 <http://www.moonshot.ceo/keyword> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.moonshot.ceo/ontology/IndustrialFunction> .
+<http://www.moonshot.ceo/keyword> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.moonshot.ceo/ontology/Node> .
 <http://www.moonshot.ceo/keyword> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
 <http://www.moonshot.ceo/keyword> <http://www.w3.org/2000/01/rdf-schema#label> "has Keyword"@en .
 # 
@@ -62,6 +83,7 @@
 <http://www.moonshot.ceo/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://www.moonshot.ceo/title> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasDataValue> .
 <http://www.moonshot.ceo/title> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.moonshot.ceo/ontology/IndustrialFunction> .
+<http://www.moonshot.ceo/title> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.moonshot.ceo/ontology/Node> .
 <http://www.moonshot.ceo/title> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
 <http://www.moonshot.ceo/title> <http://www.w3.org/2000/01/rdf-schema#label> "has Title"@en .
 # 
@@ -69,6 +91,7 @@
 <http://www.moonshot.ceo/url> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://www.moonshot.ceo/url> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasDataValue> .
 <http://www.moonshot.ceo/url> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.moonshot.ceo/ontology/IndustrialFunction> .
+<http://www.moonshot.ceo/url> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.moonshot.ceo/ontology/Node> .
 <http://www.moonshot.ceo/url> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#anyURI> .
 <http://www.moonshot.ceo/url> <http://www.w3.org/2000/01/rdf-schema#label> "has URL"@en .
 # 

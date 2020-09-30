@@ -15,6 +15,10 @@
       "@id" : "http://www.moonshot.ceo/url",
       "@type" : "http://www.w3.org/2001/XMLSchema#anyURI"
     },
+    "image" : {
+      "@id" : "http://www.moonshot.ceo/image",
+      "@type" : "http://www.w3.org/2001/XMLSchema#anyURI"
+    },
     "hasDataValue" : {
       "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasDataValue"
     },
@@ -68,6 +72,10 @@
     },
     "docs" : {
       "@id" : "http://www.moonshot.ceo/docs",
+      "@type" : "http://www.w3.org/2001/XMLSchema#anyURI"
+    },
+    "icon" : {
+      "@id" : "http://www.moonshot.ceo/icon",
       "@type" : "http://www.w3.org/2001/XMLSchema#anyURI"
     }
   }
