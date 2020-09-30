@@ -2,10 +2,10 @@ digraph ar2dtool_diagram {
 rankdir=LR;
 size="1501"
 node [shape = rectangle, color="orange"]; "http://www.moonshot.ceo/ontology/Node" "http://www.moonshot.ceo/ontology/MarketMap" "http://www.moonshot.ceo/ontology/Ket" "http://www.moonshot.ceo/ontology/Industry" "http://www.moonshot.ceo/ontology/Cell" "owl:Thing" ; /*classes style*/
-	"NULL" -> "http://www.moonshot.ceo/ontology/Node" [ label = "owl:someValuesFrom" ];
-	"NULL" -> "http://www.moonshot.ceo/ontology/MarketMap" [ label = "owl:someValuesFrom" ];
-	"NULL" -> "http://www.moonshot.ceo/ontology/Cell" [ label = "owl:someValuesFrom" ];
 	"NULL" -> "http://www.moonshot.ceo/ontology/Industry" [ label = "owl:someValuesFrom" ];
+	"NULL" -> "http://www.moonshot.ceo/ontology/Cell" [ label = "owl:someValuesFrom" ];
+	"NULL" -> "http://www.moonshot.ceo/ontology/MarketMap" [ label = "owl:someValuesFrom" ];
+	"NULL" -> "http://www.moonshot.ceo/ontology/Node" [ label = "owl:someValuesFrom" ];
 	"http://www.moonshot.ceo/ontology/Node" -> "owl:Thing" [ label = "ms:icon" ];
 	"http://www.moonshot.ceo/ontology/Node" -> "owl:Thing" [ label = "ms:doc" ];
 	"http://www.moonshot.ceo/ontology/Node" -> "owl:Thing" [ label = "ms:correlativeName" ];
@@ -15,10 +15,12 @@ node [shape = rectangle, color="orange"]; "http://www.moonshot.ceo/ontology/Node
 	"http://www.moonshot.ceo/ontology/Node" -> "owl:Thing" [ label = "ms:url" ];
 	"http://www.moonshot.ceo/ontology/Node" -> "owl:Thing" [ label = "ms:creationDate" ];
 	"http://www.moonshot.ceo/ontology/Node" -> "owl:Thing" [ label = "ms:image" ];
+	"http://www.moonshot.ceo/ontology/Ket" -> "http://www.moonshot.ceo/ontology/Cell" [ label = "ms:isPartOfCell" ];
 	"http://www.moonshot.ceo/ontology/Node" -> "owl:Thing" [ label = "ms:keyword" ];
 	"http://www.moonshot.ceo/ontology/Node" -> "owl:Thing" [ label = "ms:definition" ];
 	"http://www.moonshot.ceo/ontology/Node" -> "owl:Thing" [ label = "ms:title" ];
 	"http://www.moonshot.ceo/ontology/Cell" -> "http://www.moonshot.ceo/ontology/Node" [ label = "ms:isPartOfNode" ];
+	"http://www.moonshot.ceo/ontology/Ket" -> "http://www.moonshot.ceo/ontology/Ket" [ label = "ms:isRelatedToKet" ];
 	"http://www.moonshot.ceo/ontology/Cell" -> "http://www.moonshot.ceo/ontology/Ket" [ label = "ms:hasKet" ];
 
 }
