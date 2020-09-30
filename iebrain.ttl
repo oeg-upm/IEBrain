@@ -26,8 +26,16 @@ ms:hasCell rdf:type owl:ObjectProperty ;
 ###  http://www.moonshot.ceo/hasKet
 ms:hasKet rdf:type owl:ObjectProperty ;
           rdfs:subPropertyOf dul:hasPart ;
+          owl:inverseOf ms:isPartOfCell ;
           rdfs:domain <http://www.moonshot.ceo/ontology/Cell> ;
           rdfs:range <http://www.moonshot.ceo/ontology/Ket> .
+
+
+###  http://www.moonshot.ceo/isPartOfCell
+ms:isPartOfCell rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf dul:isPartOf ;
+                rdfs:domain <http://www.moonshot.ceo/ontology/Ket> ;
+                rdfs:range <http://www.moonshot.ceo/ontology/Cell> .
 
 
 ###  http://www.moonshot.ceo/isPartOfNode
@@ -35,6 +43,13 @@ ms:isPartOfNode rdf:type owl:ObjectProperty ;
                 rdfs:subPropertyOf dul:isPartOf ;
                 rdfs:domain <http://www.moonshot.ceo/ontology/Cell> ;
                 rdfs:range <http://www.moonshot.ceo/ontology/Node> .
+
+
+###  http://www.moonshot.ceo/isRelatedToKet
+ms:isRelatedToKet rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf dul:isRelatedToConcept ;
+                  rdfs:domain <http://www.moonshot.ceo/ontology/Ket> ;
+                  rdfs:range <http://www.moonshot.ceo/ontology/Ket> .
 
 
 #################################################################
@@ -46,6 +61,7 @@ ms:abstract rdf:type owl:DatatypeProperty ;
             rdfs:subPropertyOf dul:hasDataValue ;
             rdfs:domain <http://www.moonshot.ceo/ontology/Cell> ,
                         <http://www.moonshot.ceo/ontology/IndustrialFunction> ,
+                        <http://www.moonshot.ceo/ontology/Ket> ,
                         <http://www.moonshot.ceo/ontology/Node> ;
             rdfs:range rdfs:Literal ;
             rdfs:label "has Abstract"@en .
@@ -56,6 +72,7 @@ ms:correlativeName rdf:type owl:DatatypeProperty ;
                    rdfs:subPropertyOf dul:hasDataValue ;
                    rdfs:domain <http://www.moonshot.ceo/ontology/Cell> ,
                                <http://www.moonshot.ceo/ontology/IndustrialFunction> ,
+                               <http://www.moonshot.ceo/ontology/Ket> ,
                                <http://www.moonshot.ceo/ontology/Node> ;
                    rdfs:range rdfs:Literal ;
                    rdfs:label "has Correlative Name"@en .
@@ -66,6 +83,7 @@ ms:creationDate rdf:type owl:DatatypeProperty ;
                 rdfs:subPropertyOf dul:hasDataValue ;
                 rdfs:domain <http://www.moonshot.ceo/ontology/Cell> ,
                             <http://www.moonshot.ceo/ontology/IndustrialFunction> ,
+                            <http://www.moonshot.ceo/ontology/Ket> ,
                             <http://www.moonshot.ceo/ontology/Node> ;
                 rdfs:range xsd:dateTimeStamp ;
                 rdfs:label "is Created on Date"@en .
@@ -74,7 +92,9 @@ ms:creationDate rdf:type owl:DatatypeProperty ;
 ###  http://www.moonshot.ceo/creator
 ms:creator rdf:type owl:DatatypeProperty ;
            rdfs:subPropertyOf dul:hasDataValue ;
-           rdfs:domain <http://www.moonshot.ceo/ontology/IndustrialFunction> ,
+           rdfs:domain <http://www.moonshot.ceo/ontology/Cell> ,
+                       <http://www.moonshot.ceo/ontology/IndustrialFunction> ,
+                       <http://www.moonshot.ceo/ontology/Ket> ,
                        <http://www.moonshot.ceo/ontology/Node> ;
            rdfs:range rdfs:Literal ;
            rdfs:label "is Created By"@en .
@@ -83,7 +103,9 @@ ms:creator rdf:type owl:DatatypeProperty ;
 ###  http://www.moonshot.ceo/definition
 ms:definition rdf:type owl:DatatypeProperty ;
               rdfs:subPropertyOf dul:hasDataValue ;
-              rdfs:domain <http://www.moonshot.ceo/ontology/IndustrialFunction> ,
+              rdfs:domain <http://www.moonshot.ceo/ontology/Cell> ,
+                          <http://www.moonshot.ceo/ontology/IndustrialFunction> ,
+                          <http://www.moonshot.ceo/ontology/Ket> ,
                           <http://www.moonshot.ceo/ontology/Node> ;
               rdfs:range rdfs:Literal ;
               rdfs:label "has Definition"@en .
@@ -94,6 +116,7 @@ ms:doc rdf:type owl:DatatypeProperty ;
        rdfs:subPropertyOf dul:hasDataValue ;
        rdfs:domain <http://www.moonshot.ceo/ontology/Cell> ,
                    <http://www.moonshot.ceo/ontology/IndustrialFunction> ,
+                   <http://www.moonshot.ceo/ontology/Ket> ,
                    <http://www.moonshot.ceo/ontology/Node> ;
        rdfs:range xsd:anyURI ;
        rdfs:label "has Doc"@en .
@@ -103,6 +126,7 @@ ms:doc rdf:type owl:DatatypeProperty ;
 ms:icon rdf:type owl:DatatypeProperty ;
         rdfs:subPropertyOf dul:hasDataValue ;
         rdfs:domain <http://www.moonshot.ceo/ontology/Cell> ,
+                    <http://www.moonshot.ceo/ontology/Ket> ,
                     <http://www.moonshot.ceo/ontology/Node> ;
         rdfs:range xsd:anyURI ;
         rdfs:label "has Icon"@en .
@@ -112,6 +136,7 @@ ms:icon rdf:type owl:DatatypeProperty ;
 ms:image rdf:type owl:DatatypeProperty ;
          rdfs:subPropertyOf dul:hasDataValue ;
          rdfs:domain <http://www.moonshot.ceo/ontology/Cell> ,
+                     <http://www.moonshot.ceo/ontology/Ket> ,
                      <http://www.moonshot.ceo/ontology/Node> ;
          rdfs:range xsd:anyURI ;
          rdfs:label "has Image"@en .
@@ -122,6 +147,7 @@ ms:keyword rdf:type owl:DatatypeProperty ;
            rdfs:subPropertyOf dul:hasDataValue ;
            rdfs:domain <http://www.moonshot.ceo/ontology/Cell> ,
                        <http://www.moonshot.ceo/ontology/IndustrialFunction> ,
+                       <http://www.moonshot.ceo/ontology/Ket> ,
                        <http://www.moonshot.ceo/ontology/Node> ;
            rdfs:range rdfs:Literal ;
            rdfs:label "has Keyword"@en .
@@ -132,6 +158,7 @@ ms:title rdf:type owl:DatatypeProperty ;
          rdfs:subPropertyOf dul:hasDataValue ;
          rdfs:domain <http://www.moonshot.ceo/ontology/Cell> ,
                      <http://www.moonshot.ceo/ontology/IndustrialFunction> ,
+                     <http://www.moonshot.ceo/ontology/Ket> ,
                      <http://www.moonshot.ceo/ontology/Node> ;
          rdfs:range rdfs:Literal ;
          rdfs:label "has Title"@en .
@@ -142,6 +169,7 @@ ms:url rdf:type owl:DatatypeProperty ;
        rdfs:subPropertyOf dul:hasDataValue ;
        rdfs:domain <http://www.moonshot.ceo/ontology/Cell> ,
                    <http://www.moonshot.ceo/ontology/IndustrialFunction> ,
+                   <http://www.moonshot.ceo/ontology/Ket> ,
                    <http://www.moonshot.ceo/ontology/Node> ;
        rdfs:range xsd:anyURI ;
        rdfs:label "has URL"@en .
