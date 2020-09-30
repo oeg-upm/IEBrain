@@ -10,6 +10,82 @@
                             owl:imports <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl> .
 
 #################################################################
+#    Data properties
+#################################################################
+
+###  http://www.moonshot.ceo/abstract
+:abstract rdf:type owl:DatatypeProperty ;
+          rdfs:subPropertyOf <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasDataValue> ;
+          rdfs:domain <http://www.moonshot.ceo/ontology/IndustrialFunction> ;
+          rdfs:range rdfs:Literal ;
+          rdfs:label "has Abstract"@en .
+
+
+###  http://www.moonshot.ceo/correlativeName
+:correlativeName rdf:type owl:DatatypeProperty ;
+                 rdfs:subPropertyOf <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasDataValue> ;
+                 rdfs:domain <http://www.moonshot.ceo/ontology/IndustrialFunction> ;
+                 rdfs:range rdfs:Literal ;
+                 rdfs:label "has Correlative Name"@en .
+
+
+###  http://www.moonshot.ceo/creationDate
+:creationDate rdf:type owl:DatatypeProperty ;
+              rdfs:subPropertyOf <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasDataValue> ;
+              rdfs:domain <http://www.moonshot.ceo/ontology/IndustrialFunction> ;
+              rdfs:range xsd:dateTimeStamp ;
+              rdfs:label "is Creator on"@en .
+
+
+###  http://www.moonshot.ceo/creator
+:creator rdf:type owl:DatatypeProperty ;
+         rdfs:subPropertyOf <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasDataValue> ;
+         rdfs:domain <http://www.moonshot.ceo/ontology/IndustrialFunction> ;
+         rdfs:range rdfs:Literal ;
+         rdfs:label "is Created By"@en .
+
+
+###  http://www.moonshot.ceo/definition
+:definition rdf:type owl:DatatypeProperty ;
+            rdfs:subPropertyOf <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasDataValue> ;
+            rdfs:domain <http://www.moonshot.ceo/ontology/IndustrialFunction> ;
+            rdfs:range rdfs:Literal ;
+            rdfs:label "has Definition"@en .
+
+
+###  http://www.moonshot.ceo/docs
+:docs rdf:type owl:DatatypeProperty ;
+      rdfs:subPropertyOf <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasDataValue> ;
+      rdfs:domain <http://www.moonshot.ceo/ontology/IndustrialFunction> ;
+      rdfs:range xsd:anyURI ;
+      rdfs:label "has Docs"@en .
+
+
+###  http://www.moonshot.ceo/keyword
+:keyword rdf:type owl:DatatypeProperty ;
+         rdfs:subPropertyOf <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasDataValue> ;
+         rdfs:domain <http://www.moonshot.ceo/ontology/IndustrialFunction> ;
+         rdfs:range rdfs:Literal ;
+         rdfs:label "has Keyword"@en .
+
+
+###  http://www.moonshot.ceo/title
+:title rdf:type owl:DatatypeProperty ;
+       rdfs:subPropertyOf <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasDataValue> ;
+       rdfs:domain <http://www.moonshot.ceo/ontology/IndustrialFunction> ;
+       rdfs:range rdfs:Literal ;
+       rdfs:label "has Title"@en .
+
+
+###  http://www.moonshot.ceo/url
+:url rdf:type owl:DatatypeProperty ;
+     rdfs:subPropertyOf <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasDataValue> ;
+     rdfs:domain <http://www.moonshot.ceo/ontology/IndustrialFunction> ;
+     rdfs:range xsd:anyURI ;
+     rdfs:label "has URL"@en .
+
+
+#################################################################
 #    Classes
 #################################################################
 
@@ -24,7 +100,11 @@
 
 ###  http://www.moonshot.ceo/ontology/Cell
 <http://www.moonshot.ceo/ontology/Cell> rdf:type owl:Class ;
-                                        rdfs:subClassOf <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity> .
+                                        rdfs:subClassOf <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity> ,
+                                                        [ rdf:type owl:Restriction ;
+                                                          owl:onProperty <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isPartOf> ;
+                                                          owl:someValuesFrom <http://www.moonshot.ceo/ontology/Node>
+                                                        ] .
 
 
 ###  http://www.moonshot.ceo/ontology/IndustrialFunction
@@ -39,7 +119,11 @@
 
 ###  http://www.moonshot.ceo/ontology/Ket
 <http://www.moonshot.ceo/ontology/Ket> rdf:type owl:Class ;
-                                       rdfs:subClassOf <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity> .
+                                       rdfs:subClassOf <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity> ,
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isPartOf> ;
+                                                         owl:someValuesFrom <http://www.moonshot.ceo/ontology/Cell>
+                                                       ] .
 
 
 ###  http://www.moonshot.ceo/ontology/MarketMap
