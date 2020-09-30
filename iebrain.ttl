@@ -12,6 +12,25 @@
                             owl:imports <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl> .
 
 #################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.moonshot.ceo/hasPartCell
+ms:hasPartCell rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf dul:hasPart ;
+               owl:inverseOf ms:isPartOfNode ;
+               rdfs:domain <http://www.moonshot.ceo/ontology/Node> ;
+               rdfs:range <http://www.moonshot.ceo/ontology/Cell> .
+
+
+###  http://www.moonshot.ceo/isPartOfNode
+ms:isPartOfNode rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf dul:isPartOf ;
+                rdfs:domain <http://www.moonshot.ceo/ontology/Cell> ;
+                rdfs:range <http://www.moonshot.ceo/ontology/Node> .
+
+
+#################################################################
 #    Data properties
 #################################################################
 
