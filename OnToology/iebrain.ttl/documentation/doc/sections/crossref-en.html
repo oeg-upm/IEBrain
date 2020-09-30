@@ -96,7 +96,7 @@ This section provides details for each class and property defined by [Ontology N
             <sup class="type-dp" title="data property">dp</sup>, <a href="#title" title="http://www.moonshot.ceo/title">has Title</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#url" title="http://www.moonshot.ceo/url">has URL</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#creator" title="http://www.moonshot.ceo/creator">is Created By</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#creationDate" title="http://www.moonshot.ceo/creationDate">is Creator on</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#creationDate" title="http://www.moonshot.ceo/creationDate">is Created on Date</a>
             <sup class="type-dp" title="data property">dp</sup>
          </dd>
       </dl>
@@ -163,6 +163,21 @@ This section provides details for each class and property defined by [Ontology N
                target="_blank"
                title="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity">entity</a>
          </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#abstract" title="http://www.moonshot.ceo/abstract">has Abstract</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#correlativeName" title="http://www.moonshot.ceo/correlativeName">has Correlative Name</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#definition" title="http://www.moonshot.ceo/definition">has Definition</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#docs" title="http://www.moonshot.ceo/docs">has Docs</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#icon" title="http://www.moonshot.ceo/icon">has Icon</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#image" title="http://www.moonshot.ceo/image">has Image</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#keyword" title="http://www.moonshot.ceo/keyword">has Keyword</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#title" title="http://www.moonshot.ceo/title">has Title</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#url" title="http://www.moonshot.ceo/url">has URL</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#creator" title="http://www.moonshot.ceo/creator">is Created By</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#creationDate" title="http://www.moonshot.ceo/creationDate">is Created on Date</a>
+            <sup class="type-dp" title="data property">dp</sup>
+         </dd>
       </dl>
    </div>
 </div><div id="dataproperties">
@@ -181,6 +196,12 @@ This section provides details for each class and property defined by [Ontology N
          <a href="#docs" title="http://www.moonshot.ceo/docs">has Docs</a>
       </li>
       <li>
+         <a href="#icon" title="http://www.moonshot.ceo/icon">has Icon</a>
+      </li>
+      <li>
+         <a href="#image" title="http://www.moonshot.ceo/image">has Image</a>
+      </li>
+      <li>
          <a href="#keyword" title="http://www.moonshot.ceo/keyword">has Keyword</a>
       </li>
       <li>
@@ -193,7 +214,7 @@ This section provides details for each class and property defined by [Ontology N
          <a href="#creator" title="http://www.moonshot.ceo/creator">is Created By</a>
       </li>
       <li>
-         <a href="#creationDate" title="http://www.moonshot.ceo/creationDate">is Creator on</a>
+         <a href="#creationDate" title="http://www.moonshot.ceo/creationDate">is Created on Date</a>
       </li>
    </ul>
    <div class="entity" id="abstract">
@@ -215,6 +236,10 @@ This section provides details for each class and property defined by [Ontology N
             <dd>
                <a href="#ontology/IndustrialFunction"
                   title="http://www.moonshot.ceo/ontology/IndustrialFunction">industrial function</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dd>
+               <a href="#ontology/Node" title="http://www.moonshot.ceo/ontology/Node">node</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -247,6 +272,10 @@ This section provides details for each class and property defined by [Ontology N
                   title="http://www.moonshot.ceo/ontology/IndustrialFunction">industrial function</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
+            <dd>
+               <a href="#ontology/Node" title="http://www.moonshot.ceo/ontology/Node">node</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
             <dt>has range</dt>
             <dd>
                <a href="http://www.w3.org/2000/01/rdf-schema#Literal"
@@ -275,6 +304,10 @@ This section provides details for each class and property defined by [Ontology N
             <dd>
                <a href="#ontology/IndustrialFunction"
                   title="http://www.moonshot.ceo/ontology/IndustrialFunction">industrial function</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dd>
+               <a href="#ontology/Node" title="http://www.moonshot.ceo/ontology/Node">node</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -307,6 +340,68 @@ This section provides details for each class and property defined by [Ontology N
                   title="http://www.moonshot.ceo/ontology/IndustrialFunction">industrial function</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
+            <dd>
+               <a href="#ontology/Node" title="http://www.moonshot.ceo/ontology/Node">node</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#anyURI"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#anyURI">any u r i</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="icon">
+      <h3>has Icon<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.moonshot.ceo/icon</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasDataValue"
+                  target="_blank"
+                  title="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasDataValue">has data value</a>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#ontology/Node" title="http://www.moonshot.ceo/ontology/Node">node</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#anyURI"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#anyURI">any u r i</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="image">
+      <h3>has Image<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.moonshot.ceo/image</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasDataValue"
+                  target="_blank"
+                  title="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasDataValue">has data value</a>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#ontology/Node" title="http://www.moonshot.ceo/ontology/Node">node</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
             <dt>has range</dt>
             <dd>
                <a href="http://www.w3.org/2001/XMLSchema#anyURI"
@@ -335,6 +430,10 @@ This section provides details for each class and property defined by [Ontology N
             <dd>
                <a href="#ontology/IndustrialFunction"
                   title="http://www.moonshot.ceo/ontology/IndustrialFunction">industrial function</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dd>
+               <a href="#ontology/Node" title="http://www.moonshot.ceo/ontology/Node">node</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -367,6 +466,10 @@ This section provides details for each class and property defined by [Ontology N
                   title="http://www.moonshot.ceo/ontology/IndustrialFunction">industrial function</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
+            <dd>
+               <a href="#ontology/Node" title="http://www.moonshot.ceo/ontology/Node">node</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
             <dt>has range</dt>
             <dd>
                <a href="http://www.w3.org/2000/01/rdf-schema#Literal"
@@ -395,6 +498,10 @@ This section provides details for each class and property defined by [Ontology N
             <dd>
                <a href="#ontology/IndustrialFunction"
                   title="http://www.moonshot.ceo/ontology/IndustrialFunction">industrial function</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dd>
+               <a href="#ontology/Node" title="http://www.moonshot.ceo/ontology/Node">node</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -427,6 +534,10 @@ This section provides details for each class and property defined by [Ontology N
                   title="http://www.moonshot.ceo/ontology/IndustrialFunction">industrial function</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
+            <dd>
+               <a href="#ontology/Node" title="http://www.moonshot.ceo/ontology/Node">node</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
             <dt>has range</dt>
             <dd>
                <a href="http://www.w3.org/2000/01/rdf-schema#Literal"
@@ -437,7 +548,7 @@ This section provides details for each class and property defined by [Ontology N
       </div>
    </div>
    <div class="entity" id="creationDate">
-      <h3>is Creator on<sup class="type-dp" title="data property">dp</sup>
+      <h3>is Created on Date<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
          </span>
       </h3>
@@ -455,6 +566,10 @@ This section provides details for each class and property defined by [Ontology N
             <dd>
                <a href="#ontology/IndustrialFunction"
                   title="http://www.moonshot.ceo/ontology/IndustrialFunction">industrial function</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dd>
+               <a href="#ontology/Node" title="http://www.moonshot.ceo/ontology/Node">node</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>

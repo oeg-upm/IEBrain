@@ -30,6 +30,7 @@
     <owl:DatatypeProperty rdf:about="http://www.moonshot.ceo/abstract">
         <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasDataValue"/>
         <rdfs:domain rdf:resource="http://www.moonshot.ceo/ontology/IndustrialFunction"/>
+        <rdfs:domain rdf:resource="http://www.moonshot.ceo/ontology/Node"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
         <rdfs:label xml:lang="en">has Abstract</rdfs:label>
     </owl:DatatypeProperty>
@@ -42,6 +43,7 @@
     <owl:DatatypeProperty rdf:about="http://www.moonshot.ceo/correlativeName">
         <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasDataValue"/>
         <rdfs:domain rdf:resource="http://www.moonshot.ceo/ontology/IndustrialFunction"/>
+        <rdfs:domain rdf:resource="http://www.moonshot.ceo/ontology/Node"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
         <rdfs:label xml:lang="en">has Correlative Name</rdfs:label>
     </owl:DatatypeProperty>
@@ -54,8 +56,9 @@
     <owl:DatatypeProperty rdf:about="http://www.moonshot.ceo/creationDate">
         <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasDataValue"/>
         <rdfs:domain rdf:resource="http://www.moonshot.ceo/ontology/IndustrialFunction"/>
+        <rdfs:domain rdf:resource="http://www.moonshot.ceo/ontology/Node"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
-        <rdfs:label xml:lang="en">is Creator on</rdfs:label>
+        <rdfs:label xml:lang="en">is Created on Date</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -66,6 +69,7 @@
     <owl:DatatypeProperty rdf:about="http://www.moonshot.ceo/creator">
         <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasDataValue"/>
         <rdfs:domain rdf:resource="http://www.moonshot.ceo/ontology/IndustrialFunction"/>
+        <rdfs:domain rdf:resource="http://www.moonshot.ceo/ontology/Node"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
         <rdfs:label xml:lang="en">is Created By</rdfs:label>
     </owl:DatatypeProperty>
@@ -78,6 +82,7 @@
     <owl:DatatypeProperty rdf:about="http://www.moonshot.ceo/definition">
         <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasDataValue"/>
         <rdfs:domain rdf:resource="http://www.moonshot.ceo/ontology/IndustrialFunction"/>
+        <rdfs:domain rdf:resource="http://www.moonshot.ceo/ontology/Node"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
         <rdfs:label xml:lang="en">has Definition</rdfs:label>
     </owl:DatatypeProperty>
@@ -90,8 +95,33 @@
     <owl:DatatypeProperty rdf:about="http://www.moonshot.ceo/docs">
         <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasDataValue"/>
         <rdfs:domain rdf:resource="http://www.moonshot.ceo/ontology/IndustrialFunction"/>
+        <rdfs:domain rdf:resource="http://www.moonshot.ceo/ontology/Node"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
         <rdfs:label xml:lang="en">has Docs</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.moonshot.ceo/icon -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.moonshot.ceo/icon">
+        <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasDataValue"/>
+        <rdfs:domain rdf:resource="http://www.moonshot.ceo/ontology/Node"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+        <rdfs:label xml:lang="en">has Icon</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.moonshot.ceo/image -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.moonshot.ceo/image">
+        <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasDataValue"/>
+        <rdfs:domain rdf:resource="http://www.moonshot.ceo/ontology/Node"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+        <rdfs:label xml:lang="en">has Image</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -102,6 +132,7 @@
     <owl:DatatypeProperty rdf:about="http://www.moonshot.ceo/keyword">
         <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasDataValue"/>
         <rdfs:domain rdf:resource="http://www.moonshot.ceo/ontology/IndustrialFunction"/>
+        <rdfs:domain rdf:resource="http://www.moonshot.ceo/ontology/Node"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
         <rdfs:label xml:lang="en">has Keyword</rdfs:label>
     </owl:DatatypeProperty>
@@ -114,6 +145,7 @@
     <owl:DatatypeProperty rdf:about="http://www.moonshot.ceo/title">
         <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasDataValue"/>
         <rdfs:domain rdf:resource="http://www.moonshot.ceo/ontology/IndustrialFunction"/>
+        <rdfs:domain rdf:resource="http://www.moonshot.ceo/ontology/Node"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
         <rdfs:label xml:lang="en">has Title</rdfs:label>
     </owl:DatatypeProperty>
@@ -126,6 +158,7 @@
     <owl:DatatypeProperty rdf:about="http://www.moonshot.ceo/url">
         <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasDataValue"/>
         <rdfs:domain rdf:resource="http://www.moonshot.ceo/ontology/IndustrialFunction"/>
+        <rdfs:domain rdf:resource="http://www.moonshot.ceo/ontology/Node"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
         <rdfs:label xml:lang="en">has URL</rdfs:label>
     </owl:DatatypeProperty>
