@@ -337,6 +337,31 @@
     
 
 
+    <!-- http://www.moonshot.ceo/Company -->
+
+
+    <owl:Class rdf:about="http://www.moonshot.ceo/Company">
+        <rdfs:subClassOf rdf:resource="http://www.moonshot.ceo/Organisation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.moonshot.ceo/Organisation -->
+
+
+    <owl:Class rdf:about="http://www.moonshot.ceo/Organisation"/>
+    
+
+
+    <!-- http://www.moonshot.ceo/Startup -->
+
+
+    <owl:Class rdf:about="http://www.moonshot.ceo/Startup">
+        <rdfs:subClassOf rdf:resource="http://www.moonshot.ceo/Organisation"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.moonshot.ceo/ontology/Area -->
 
 

@@ -5,7 +5,7 @@
    <key for="edge" id="d2" yfiles.type="edgegraphics" />
    <key attr.name="description" attr.type="string" for="edge" id="d3" />
    <key for="graphml" id="d4" yfiles.type="resources" />
-   <graph edgedefault="directed" id="G" parse.edges="89" parse.nodes="83" parse.order="free">
+   <graph edgedefault="directed" id="G" parse.edges="91" parse.nodes="86" parse.order="free">
       <node id="nid_dul:CollectiveAgent">
          <data key="d0">
             <y:ShapeNode>
@@ -897,19 +897,19 @@
          </data>
          <data key="d1" />
       </node>
-      <node id="nid_-2ff0bc30:174e34f430d:-7fd3">
+      <node id="nid_4b59fb39:174e395a2d7:-7fd3">
          <data key="d0">
             <y:ShapeNode>
-               <y:Geometry height="30.0" width="270.0" x="0.0" y="0.0" />
+               <y:Geometry height="30.0" width="260.0" x="0.0" y="0.0" />
                <y:Fill color="#000000" transparent="false" />
                <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">-2ff0bc30:174e34f430d:-7fd3</y:NodeLabel>
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">4b59fb39:174e395a2d7:-7fd3</y:NodeLabel>
                <y:Shape type="rectangle" />
             </y:ShapeNode>
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf33" source="nid_dul:InformationRealization" target="nid_-2ff0bc30:174e34f430d:-7fd3">
+    <edge id="eid_rdfs:subClassOf33" source="nid_dul:InformationRealization" target="nid_4b59fb39:174e395a2d7:-7fd3">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -921,6 +921,41 @@
          <data key="d3" />
       </edge>
     <edge id="eid_rdfs:subClassOf34" source="nid_dul:InformationRealization" target="nid_dul:InformationEntity">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">rdfs:subClassOf</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
+      <node id="nid_ms:Company">
+         <data key="d0">
+            <y:ShapeNode>
+               <y:Geometry height="30.0" width="100.0" x="0.0" y="0.0" />
+               <y:Fill color="#000000" transparent="false" />
+               <y:BorderStyle color="#000000" type="line" width="1.0" />
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">ms:Company</y:NodeLabel>
+               <y:Shape type="rectangle" />
+            </y:ShapeNode>
+         </data>
+         <data key="d1" />
+      </node>
+      <node id="nid_ms:Organisation">
+         <data key="d0">
+            <y:ShapeNode>
+               <y:Geometry height="30.0" width="150.0" x="0.0" y="0.0" />
+               <y:Fill color="#000000" transparent="false" />
+               <y:BorderStyle color="#000000" type="line" width="1.0" />
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">ms:Organisation</y:NodeLabel>
+               <y:Shape type="rectangle" />
+            </y:ShapeNode>
+         </data>
+         <data key="d1" />
+      </node>
+    <edge id="eid_rdfs:subClassOf35" source="nid_ms:Company" target="nid_ms:Organisation">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -943,7 +978,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf35" source="nid_dul:Substance" target="nid_dul:PhysicalBody">
+    <edge id="eid_rdfs:subClassOf36" source="nid_dul:Substance" target="nid_dul:PhysicalBody">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -966,7 +1001,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf36" source="nid_dul:Event" target="nid_dul:Entity">
+    <edge id="eid_rdfs:subClassOf37" source="nid_dul:Event" target="nid_dul:Entity">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -977,7 +1012,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf37" source="nid_dul:PhysicalAgent" target="nid_dul:PhysicalObject">
+    <edge id="eid_rdfs:subClassOf38" source="nid_dul:PhysicalAgent" target="nid_dul:PhysicalObject">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1000,7 +1035,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf38" source="nid_dul:PhysicalAgent" target="nid_dul:Agent">
+    <edge id="eid_rdfs:subClassOf39" source="nid_dul:PhysicalAgent" target="nid_dul:Agent">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1023,7 +1058,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf39" source="nid_http://www.moonshot.ceo/ontology/Area" target="nid_dul:Entity">
+    <edge id="eid_rdfs:subClassOf40" source="nid_http://www.moonshot.ceo/ontology/Area" target="nid_dul:Entity">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1058,7 +1093,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf40" source="nid_dul:Project" target="nid_dul:Plan">
+    <edge id="eid_rdfs:subClassOf41" source="nid_dul:Project" target="nid_dul:Plan">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1069,7 +1104,18 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf41" source="nid_dul:PhysicalObject" target="nid_dul:Object">
+    <edge id="eid_rdfs:subClassOf42" source="nid_dul:PhysicalObject" target="nid_dul:Object">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">rdfs:subClassOf</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
+    <edge id="eid_rdfs:subClassOf43" source="nid_dul:Situation" target="nid_dul:SocialObject">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1092,18 +1138,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf42" source="nid_dul:Action" target="nid_dul:Event">
-         <data key="d2">
-            <y:PolyLineEdge>
-               <y:LineStyle color="black" type="line" width="1.0" />
-               <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">rdfs:subClassOf</y:EdgeLabel>
-               <y:BendStyle smoothed="false" />
-            </y:PolyLineEdge>
-         </data>
-         <data key="d3" />
-      </edge>
-    <edge id="eid_rdfs:subClassOf43" source="nid_dul:Situation" target="nid_dul:SocialObject">
+    <edge id="eid_rdfs:subClassOf44" source="nid_dul:Action" target="nid_dul:Event">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1126,7 +1161,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf44" source="nid_dul:Design" target="nid_dul:Description">
+    <edge id="eid_rdfs:subClassOf45" source="nid_dul:Design" target="nid_dul:Description">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1137,7 +1172,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf45" source="nid_dul:EventType" target="nid_dul:Concept">
+    <edge id="eid_rdfs:subClassOf46" source="nid_dul:EventType" target="nid_dul:Concept">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1160,7 +1195,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf46" source="nid_dul:Classification" target="nid_dul:Situation">
+    <edge id="eid_rdfs:subClassOf47" source="nid_dul:Classification" target="nid_dul:Situation">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1183,7 +1218,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf47" source="nid_http://www.moonshot.ceo/ontology/IndustrialFunction" target="nid_dul:Entity">
+    <edge id="eid_rdfs:subClassOf48" source="nid_http://www.moonshot.ceo/ontology/IndustrialFunction" target="nid_dul:Entity">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1206,7 +1241,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf48" source="nid_dul:Workflow" target="nid_dul:Plan">
+    <edge id="eid_rdfs:subClassOf49" source="nid_dul:Workflow" target="nid_dul:Plan">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1241,7 +1276,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf49" source="nid_dul:Pattern" target="nid_dul:Relation">
+    <edge id="eid_rdfs:subClassOf50" source="nid_dul:Pattern" target="nid_dul:Relation">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1264,7 +1299,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf50" source="nid_dul:Transition" target="nid_dul:Situation">
+    <edge id="eid_rdfs:subClassOf51" source="nid_dul:Transition" target="nid_dul:Situation">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1287,7 +1322,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf51" source="nid_dul:Norm" target="nid_dul:Description">
+    <edge id="eid_rdfs:subClassOf52" source="nid_dul:Norm" target="nid_dul:Description">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1310,7 +1345,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf52" source="nid_dul:Person" target="nid_dul:Agent">
+    <edge id="eid_rdfs:subClassOf53" source="nid_dul:Person" target="nid_dul:Agent">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1333,7 +1368,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf53" source="nid_http://www.moonshot.ceo/ontology/Ket" target="nid_dul:Entity">
+    <edge id="eid_rdfs:subClassOf54" source="nid_http://www.moonshot.ceo/ontology/Ket" target="nid_dul:Entity">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1356,7 +1391,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf54" source="nid_http://www.moonshot.ceo/ontology/Cell" target="nid_dul:Entity">
+    <edge id="eid_rdfs:subClassOf55" source="nid_http://www.moonshot.ceo/ontology/Cell" target="nid_dul:Entity">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1379,7 +1414,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf55" source="nid_dul:Contract" target="nid_dul:Description">
+    <edge id="eid_rdfs:subClassOf56" source="nid_dul:Contract" target="nid_dul:Description">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1402,7 +1437,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf56" source="nid_dul:PhysicalPlace" target="nid_dul:PhysicalObject">
+    <edge id="eid_rdfs:subClassOf57" source="nid_dul:PhysicalPlace" target="nid_dul:PhysicalObject">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1413,7 +1448,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf57" source="nid_dul:Relation" target="nid_dul:Description">
+    <edge id="eid_rdfs:subClassOf58" source="nid_dul:Relation" target="nid_dul:Description">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1436,7 +1471,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf58" source="nid_dul:SocialRelation" target="nid_dul:Relation">
+    <edge id="eid_rdfs:subClassOf59" source="nid_dul:SocialRelation" target="nid_dul:Relation">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1459,7 +1494,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf59" source="nid_dul:PlanExecution" target="nid_dul:Situation">
+    <edge id="eid_rdfs:subClassOf60" source="nid_dul:PlanExecution" target="nid_dul:Situation">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1482,7 +1517,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf60" source="nid_http://www.moonshot.ceo/ontology/MarketMap" target="nid_dul:Entity">
+    <edge id="eid_rdfs:subClassOf61" source="nid_http://www.moonshot.ceo/ontology/MarketMap" target="nid_dul:Entity">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1505,7 +1540,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf61" source="nid_dul:LocalConcept" target="nid_dul:Concept">
+    <edge id="eid_rdfs:subClassOf62" source="nid_dul:LocalConcept" target="nid_dul:Concept">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1516,7 +1551,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf62" source="nid_dul:FormalEntity" target="nid_dul:Abstract">
+    <edge id="eid_rdfs:subClassOf63" source="nid_dul:FormalEntity" target="nid_dul:Abstract">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1527,7 +1562,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf63" source="nid_dul:PhysicalBody" target="nid_dul:PhysicalObject">
+    <edge id="eid_rdfs:subClassOf64" source="nid_dul:PhysicalBody" target="nid_dul:PhysicalObject">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1550,7 +1585,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf64" source="nid_http://www.moonshot.ceo/ontology/Industry" target="nid_dul:Entity">
+    <edge id="eid_rdfs:subClassOf65" source="nid_http://www.moonshot.ceo/ontology/Industry" target="nid_dul:Entity">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1561,7 +1596,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf65" source="nid_dul:BiologicalObject" target="nid_dul:PhysicalBody">
+    <edge id="eid_rdfs:subClassOf66" source="nid_dul:BiologicalObject" target="nid_dul:PhysicalBody">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1584,7 +1619,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf66" source="nid_dul:SocialPerson" target="nid_dul:SocialAgent">
+    <edge id="eid_rdfs:subClassOf67" source="nid_dul:SocialPerson" target="nid_dul:SocialAgent">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1595,7 +1630,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf67" source="nid_dul:SocialPerson" target="nid_dul:Person">
+    <edge id="eid_rdfs:subClassOf68" source="nid_dul:SocialPerson" target="nid_dul:Person">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1618,7 +1653,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf68" source="nid_dul:NaturalPerson" target="nid_dul:PhysicalAgent">
+    <edge id="eid_rdfs:subClassOf69" source="nid_dul:NaturalPerson" target="nid_dul:PhysicalAgent">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1629,7 +1664,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf69" source="nid_dul:NaturalPerson" target="nid_dul:Person">
+    <edge id="eid_rdfs:subClassOf70" source="nid_dul:NaturalPerson" target="nid_dul:Person">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1652,7 +1687,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf70" source="nid_dul:TimeInterval" target="nid_dul:Region">
+    <edge id="eid_rdfs:subClassOf71" source="nid_dul:TimeInterval" target="nid_dul:Region">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1663,7 +1698,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf71" source="nid_dul:Collection" target="nid_dul:SocialObject">
+    <edge id="eid_rdfs:subClassOf72" source="nid_dul:Collection" target="nid_dul:SocialObject">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1674,7 +1709,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf72" source="nid_dul:InformationEntity" target="nid_dul:Entity">
+    <edge id="eid_rdfs:subClassOf73" source="nid_dul:InformationEntity" target="nid_dul:Entity">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1697,7 +1732,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf73" source="nid_dul:SpatioTemporalRegion" target="nid_dul:Region">
+    <edge id="eid_rdfs:subClassOf74" source="nid_dul:SpatioTemporalRegion" target="nid_dul:Region">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1720,7 +1755,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf74" source="nid_dul:Personification" target="nid_dul:SocialAgent">
+    <edge id="eid_rdfs:subClassOf75" source="nid_dul:Personification" target="nid_dul:SocialAgent">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1731,7 +1766,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf75" source="nid_dul:DesignedArtifact" target="nid_dul:PhysicalArtifact">
+    <edge id="eid_rdfs:subClassOf76" source="nid_dul:DesignedArtifact" target="nid_dul:PhysicalArtifact">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1754,7 +1789,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf76" source="nid_dul:ChemicalObject" target="nid_dul:PhysicalBody">
+    <edge id="eid_rdfs:subClassOf77" source="nid_dul:ChemicalObject" target="nid_dul:PhysicalBody">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1777,7 +1812,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf77" source="nid_dul:Narrative" target="nid_dul:Description">
+    <edge id="eid_rdfs:subClassOf78" source="nid_dul:Narrative" target="nid_dul:Description">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1800,7 +1835,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf78" source="nid_dul:Process" target="nid_dul:Event">
+    <edge id="eid_rdfs:subClassOf79" source="nid_dul:Process" target="nid_dul:Event">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1823,7 +1858,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf79" source="nid_dul:Theory" target="nid_dul:Description">
+    <edge id="eid_rdfs:subClassOf80" source="nid_dul:Theory" target="nid_dul:Description">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1834,7 +1869,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf80" source="nid_dul:Abstract" target="nid_dul:Entity">
+    <edge id="eid_rdfs:subClassOf81" source="nid_dul:Abstract" target="nid_dul:Entity">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1857,7 +1892,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf81" source="nid_dul:SpaceRegion" target="nid_dul:Region">
+    <edge id="eid_rdfs:subClassOf82" source="nid_dul:SpaceRegion" target="nid_dul:Region">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1868,7 +1903,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf82" source="nid_dul:Plan" target="nid_dul:Description">
+    <edge id="eid_rdfs:subClassOf83" source="nid_dul:Plan" target="nid_dul:Description">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1891,7 +1926,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf83" source="nid_dul:Group" target="nid_dul:CollectiveAgent">
+    <edge id="eid_rdfs:subClassOf84" source="nid_dul:Group" target="nid_dul:CollectiveAgent">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1902,7 +1937,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf84" source="nid_dul:SocialAgent" target="nid_dul:SocialObject">
+    <edge id="eid_rdfs:subClassOf85" source="nid_dul:SocialAgent" target="nid_dul:SocialObject">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1913,7 +1948,30 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf85" source="nid_dul:SocialAgent" target="nid_dul:Agent">
+    <edge id="eid_rdfs:subClassOf86" source="nid_dul:SocialAgent" target="nid_dul:Agent">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">rdfs:subClassOf</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
+      <node id="nid_ms:Startup">
+         <data key="d0">
+            <y:ShapeNode>
+               <y:Geometry height="30.0" width="100.0" x="0.0" y="0.0" />
+               <y:Fill color="#000000" transparent="false" />
+               <y:BorderStyle color="#000000" type="line" width="1.0" />
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">ms:Startup</y:NodeLabel>
+               <y:Shape type="rectangle" />
+            </y:ShapeNode>
+         </data>
+         <data key="d1" />
+      </node>
+    <edge id="eid_rdfs:subClassOf87" source="nid_ms:Startup" target="nid_ms:Organisation">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1936,7 +1994,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf86" source="nid_dul:Diagnosis" target="nid_dul:Description">
+    <edge id="eid_rdfs:subClassOf88" source="nid_dul:Diagnosis" target="nid_dul:Description">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1947,7 +2005,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf87" source="nid_dul:Agent" target="nid_dul:Object">
+    <edge id="eid_rdfs:subClassOf89" source="nid_dul:Agent" target="nid_dul:Object">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1970,7 +2028,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf88" source="nid_dul:Amount" target="nid_dul:Region">
+    <edge id="eid_rdfs:subClassOf90" source="nid_dul:Amount" target="nid_dul:Region">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />

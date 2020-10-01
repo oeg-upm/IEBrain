@@ -41,6 +41,21 @@
     "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl"
   } ]
 }, {
+  "@id" : "http://www.moonshot.ceo/Company",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.moonshot.ceo/Organisation"
+  } ]
+}, {
+  "@id" : "http://www.moonshot.ceo/Organisation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.moonshot.ceo/Startup",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.moonshot.ceo/Organisation"
+  } ]
+}, {
   "@id" : "http://www.moonshot.ceo/abstract",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {

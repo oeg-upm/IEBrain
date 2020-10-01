@@ -226,6 +226,20 @@
 #    Classes
 #################################################################
 
+###  http://www.moonshot.ceo/Company
+:Company rdf:type owl:Class ;
+         rdfs:subClassOf :Organisation .
+
+
+###  http://www.moonshot.ceo/Organisation
+:Organisation rdf:type owl:Class .
+
+
+###  http://www.moonshot.ceo/Startup
+:Startup rdf:type owl:Class ;
+         rdfs:subClassOf :Organisation .
+
+
 ###  http://www.moonshot.ceo/ontology/Area
 <http://www.moonshot.ceo/ontology/Area> rdf:type owl:Class ;
                                         rdfs:subClassOf <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity> ,

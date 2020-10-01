@@ -1,7 +1,7 @@
 digraph ar2dtool_diagram { 
 rankdir=LR;
 size="1000"
-node [shape = rectangle, color="black"]; "http://www.moonshot.ceo/ontology/Node" "http://www.moonshot.ceo/ontology/MarketMap" "http://www.moonshot.ceo/ontology/Ket" "http://www.moonshot.ceo/ontology/Industry" "http://www.moonshot.ceo/ontology/IndustrialFunction" "http://www.moonshot.ceo/ontology/Cell" "http://www.moonshot.ceo/ontology/Area" "dul:Goal" "dul:FormalEntity" "dul:EventType" "dul:PhysicalBody" "dul:Object" "dul:Description" "dul:PhysicalAgent" "dul:Relation" "dul:Role" "dul:Entity" "dul:Organism" "dul:Personification" "dul:Situation" "dul:UnitOfMeasure" "dul:Abstract" "dul:SocialPerson" "dul:Transition" "dul:Collective" "dul:CollectiveAgent" "dul:Amount" "dul:Plan" "dul:Design" "dul:Process" "dul:SocialObjectAttribute" "dul:Right" "dul:Task" "dul:DesignedSubstance" "dul:BiologicalObject" "dul:Place" "dul:Quality" "dul:Action" "dul:SocialAgent" "dul:Project" "dul:PlanExecution" "dul:Configuration" "dul:Pattern" "dul:Diagnosis" "dul:Agent" "-2ff0bc30:174e34f430d:-7fd3" "dul:Classification" "dul:Parameter" "dul:WorkflowExecution" "dul:SocialObject" "dul:Group" "dul:Community" "dul:FunctionalSubstance" "dul:PhysicalPlace" "dul:Method" "dul:Concept" "dul:SocialRelation" "dul:Event" "dul:DesignedArtifact" "dul:TimeInterval" "dul:Person" "dul:TypeCollection" "dul:SpaceRegion" "dul:PhysicalObject" "dul:SpatioTemporalRegion" "dul:Norm" "dul:InformationRealization" "dul:Theory" "dul:PhysicalAttribute" "dul:NaturalPerson" "dul:Workflow" "dul:InformationObject" "dul:ChemicalObject" "dul:Contract" "dul:Narrative" "dul:Collection" "dul:Substance" "dul:Region" "dul:InformationEntity" "dul:PhysicalArtifact" "dul:Organization" "dul:Set" "dul:LocalConcept" ; /*classes style*/
+node [shape = rectangle, color="black"]; "http://www.moonshot.ceo/ontology/MarketMap" "ms:Company" "ms:Startup" "http://www.moonshot.ceo/ontology/Node" "http://www.moonshot.ceo/ontology/Area" "http://www.moonshot.ceo/ontology/Cell" "http://www.moonshot.ceo/ontology/Ket" "http://www.moonshot.ceo/ontology/Industry" "http://www.moonshot.ceo/ontology/IndustrialFunction" "ms:Organisation" "dul:Goal" "dul:FormalEntity" "dul:EventType" "dul:PhysicalBody" "dul:Object" "dul:Description" "dul:PhysicalAgent" "dul:Relation" "dul:Role" "dul:Entity" "dul:Organism" "dul:Situation" "dul:Personification" "dul:UnitOfMeasure" "dul:Abstract" "dul:SocialPerson" "dul:Transition" "dul:Collective" "dul:CollectiveAgent" "dul:Amount" "dul:Plan" "dul:Design" "dul:Process" "dul:SocialObjectAttribute" "dul:Right" "dul:Task" "dul:DesignedSubstance" "dul:BiologicalObject" "dul:Place" "dul:Quality" "dul:Action" "dul:SocialAgent" "dul:Configuration" "dul:Project" "dul:PlanExecution" "dul:Pattern" "dul:Agent" "dul:Classification" "dul:Diagnosis" "dul:Parameter" "dul:WorkflowExecution" "dul:SocialObject" "dul:Group" "dul:Community" "dul:FunctionalSubstance" "dul:PhysicalPlace" "dul:Method" "dul:Concept" "dul:SocialRelation" "dul:Event" "dul:DesignedArtifact" "dul:TimeInterval" "dul:Person" "dul:TypeCollection" "dul:SpaceRegion" "dul:PhysicalObject" "dul:SpatioTemporalRegion" "dul:Norm" "dul:InformationRealization" "dul:Theory" "dul:PhysicalAttribute" "dul:NaturalPerson" "4b59fb39:174e395a2d7:-7fd3" "dul:Workflow" "dul:InformationObject" "dul:ChemicalObject" "dul:Contract" "dul:Narrative" "dul:Collection" "dul:Substance" "dul:Region" "dul:InformationEntity" "dul:PhysicalArtifact" "dul:Organization" "dul:Set" "dul:LocalConcept" ; /*classes style*/
 	"dul:CollectiveAgent" -> "dul:SocialAgent" [ label = "rdfs:subClassOf" ];
 	"dul:Region" -> "dul:Abstract" [ label = "rdfs:subClassOf" ];
 	"dul:TypeCollection" -> "dul:Collection" [ label = "rdfs:subClassOf" ];
@@ -35,8 +35,9 @@ node [shape = rectangle, color="black"]; "http://www.moonshot.ceo/ontology/Node"
 	"dul:DesignedSubstance" -> "dul:DesignedArtifact" [ label = "rdfs:subClassOf" ];
 	"dul:SocialObject" -> "dul:Object" [ label = "rdfs:subClassOf" ];
 	"dul:Parameter" -> "dul:Concept" [ label = "rdfs:subClassOf" ];
-	"dul:InformationRealization" -> "-2ff0bc30:174e34f430d:-7fd3" [ label = "rdfs:subClassOf" ];
+	"dul:InformationRealization" -> "4b59fb39:174e395a2d7:-7fd3" [ label = "rdfs:subClassOf" ];
 	"dul:InformationRealization" -> "dul:InformationEntity" [ label = "rdfs:subClassOf" ];
+	"ms:Company" -> "ms:Organisation" [ label = "rdfs:subClassOf" ];
 	"dul:Substance" -> "dul:PhysicalBody" [ label = "rdfs:subClassOf" ];
 	"dul:Event" -> "dul:Entity" [ label = "rdfs:subClassOf" ];
 	"dul:PhysicalAgent" -> "dul:PhysicalObject" [ label = "rdfs:subClassOf" ];
@@ -44,8 +45,8 @@ node [shape = rectangle, color="black"]; "http://www.moonshot.ceo/ontology/Node"
 	"http://www.moonshot.ceo/ontology/Area" -> "dul:Entity" [ label = "rdfs:subClassOf" ];
 	"dul:Project" -> "dul:Plan" [ label = "rdfs:subClassOf" ];
 	"dul:PhysicalObject" -> "dul:Object" [ label = "rdfs:subClassOf" ];
-	"dul:Action" -> "dul:Event" [ label = "rdfs:subClassOf" ];
 	"dul:Situation" -> "dul:SocialObject" [ label = "rdfs:subClassOf" ];
+	"dul:Action" -> "dul:Event" [ label = "rdfs:subClassOf" ];
 	"dul:Design" -> "dul:Description" [ label = "rdfs:subClassOf" ];
 	"dul:EventType" -> "dul:Concept" [ label = "rdfs:subClassOf" ];
 	"dul:Classification" -> "dul:Situation" [ label = "rdfs:subClassOf" ];
@@ -88,6 +89,7 @@ node [shape = rectangle, color="black"]; "http://www.moonshot.ceo/ontology/Node"
 	"dul:Group" -> "dul:CollectiveAgent" [ label = "rdfs:subClassOf" ];
 	"dul:SocialAgent" -> "dul:SocialObject" [ label = "rdfs:subClassOf" ];
 	"dul:SocialAgent" -> "dul:Agent" [ label = "rdfs:subClassOf" ];
+	"ms:Startup" -> "ms:Organisation" [ label = "rdfs:subClassOf" ];
 	"dul:Diagnosis" -> "dul:Description" [ label = "rdfs:subClassOf" ];
 	"dul:Agent" -> "dul:Object" [ label = "rdfs:subClassOf" ];
 	"dul:Amount" -> "dul:Region" [ label = "rdfs:subClassOf" ];

@@ -211,6 +211,17 @@
 # #################################################################
 # 
 # 
+# http://www.moonshot.ceo/Company
+<http://www.moonshot.ceo/Company> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.moonshot.ceo/Company> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.moonshot.ceo/Organisation> .
+# 
+# http://www.moonshot.ceo/Organisation
+<http://www.moonshot.ceo/Organisation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.moonshot.ceo/Startup
+<http://www.moonshot.ceo/Startup> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.moonshot.ceo/Startup> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.moonshot.ceo/Organisation> .
+# 
 # http://www.moonshot.ceo/ontology/Area
 <http://www.moonshot.ceo/ontology/Area> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.moonshot.ceo/ontology/Area> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity> .

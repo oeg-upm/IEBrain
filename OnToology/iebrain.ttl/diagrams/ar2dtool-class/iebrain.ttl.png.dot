@@ -1,7 +1,7 @@
 digraph ar2dtool_diagram { 
 rankdir=LR;
 size="1501"
-node [shape = rectangle, color="orange"]; "http://www.moonshot.ceo/ontology/Node" "http://www.moonshot.ceo/ontology/MarketMap" "http://www.moonshot.ceo/ontology/Ket" "http://www.moonshot.ceo/ontology/Industry" "http://www.moonshot.ceo/ontology/IndustrialFunction" "http://www.moonshot.ceo/ontology/Cell" "http://www.moonshot.ceo/ontology/Area" "owl:Thing" ; /*classes style*/
+node [shape = rectangle, color="orange"]; "http://www.moonshot.ceo/ontology/MarketMap" "http://www.moonshot.ceo/ontology/Node" "http://www.moonshot.ceo/ontology/Area" "http://www.moonshot.ceo/ontology/Cell" "http://www.moonshot.ceo/ontology/Ket" "http://www.moonshot.ceo/ontology/Industry" "http://www.moonshot.ceo/ontology/IndustrialFunction" "owl:Thing" ; /*classes style*/
 	"http://www.moonshot.ceo/ontology/MarketMap" -> "http://www.moonshot.ceo/ontology/Area" [ label = "ms:hasArea" ];
 	"http://www.moonshot.ceo/ontology/Node" -> "owl:Thing" [ label = "ms:icon" ];
 	"http://www.moonshot.ceo/ontology/Node" -> "owl:Thing" [ label = "ms:doc" ];
