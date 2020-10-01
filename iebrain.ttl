@@ -228,6 +228,15 @@ ms:url rdf:type owl:DatatypeProperty ;
 #    Classes
 #################################################################
 
+###  http://www.moonshot.ceo/Organisation
+ms:Organisation rdf:type owl:Class .
+
+
+###  http://www.moonshot.ceo/Startup
+ms:Startup rdf:type owl:Class ;
+           rdfs:subClassOf ms:Organisation .
+
+
 ###  http://www.moonshot.ceo/ontology/Area
 <http://www.moonshot.ceo/ontology/Area> rdf:type owl:Class ;
                                         rdfs:subClassOf dul:Entity ,
