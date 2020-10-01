@@ -11,9 +11,21 @@
     "Industry" : {
       "@id" : "http://www.moonshot.ceo/ontology/Industry"
     },
+    "isRelatedToConcept" : {
+      "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRelatedToConcept",
+      "@type" : "@id"
+    },
     "url" : {
       "@id" : "http://www.moonshot.ceo/url",
       "@type" : "http://www.w3.org/2001/XMLSchema#anyURI"
+    },
+    "isRelatedToKet" : {
+      "@id" : "http://www.moonshot.ceo/isRelatedToKet",
+      "@type" : "@id"
+    },
+    "isPartOfNode" : {
+      "@id" : "http://www.moonshot.ceo/isPartOfNode",
+      "@type" : "@id"
     },
     "image" : {
       "@id" : "http://www.moonshot.ceo/image",
@@ -29,6 +41,26 @@
       "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isPartOf",
       "@type" : "@id"
     },
+    "hasPart" : {
+      "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasPart",
+      "@type" : "@id"
+    },
+    "providesServiceTo" : {
+      "@id" : "http://www.moonshot.ceo/providesServiceTo",
+      "@type" : "@id"
+    },
+    "hasCell" : {
+      "@id" : "http://www.moonshot.ceo/hasCell",
+      "@type" : "@id"
+    },
+    "isPartOfCell" : {
+      "@id" : "http://www.moonshot.ceo/isPartOfCell",
+      "@type" : "@id"
+    },
+    "hasArea" : {
+      "@id" : "http://www.moonshot.ceo/hasArea",
+      "@type" : "@id"
+    },
     "creator" : {
       "@id" : "http://www.moonshot.ceo/creator",
       "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
@@ -36,6 +68,10 @@
     "correlativeName" : {
       "@id" : "http://www.moonshot.ceo/correlativeName",
       "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "isPartOfMarketMap" : {
+      "@id" : "http://www.moonshot.ceo/isPartOfMarketMap",
+      "@type" : "@id"
     },
     "keyword" : {
       "@id" : "http://www.moonshot.ceo/keyword",
@@ -48,9 +84,21 @@
       "@id" : "http://www.moonshot.ceo/definition",
       "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
     },
+    "hasMarketMap" : {
+      "@id" : "http://www.moonshot.ceo/hasMarketMap",
+      "@type" : "@id"
+    },
+    "hasKet" : {
+      "@id" : "http://www.moonshot.ceo/hasKet",
+      "@type" : "@id"
+    },
     "title" : {
       "@id" : "http://www.moonshot.ceo/title",
       "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "isPartOfIndustry" : {
+      "@id" : "http://www.moonshot.ceo/isPartOfIndustry",
+      "@type" : "@id"
     },
     "Cell" : {
       "@id" : "http://www.moonshot.ceo/ontology/Cell"
@@ -70,8 +118,8 @@
     "Area" : {
       "@id" : "http://www.moonshot.ceo/ontology/Area"
     },
-    "docs" : {
-      "@id" : "http://www.moonshot.ceo/docs",
+    "doc" : {
+      "@id" : "http://www.moonshot.ceo/doc",
       "@type" : "http://www.w3.org/2001/XMLSchema#anyURI"
     },
     "icon" : {
