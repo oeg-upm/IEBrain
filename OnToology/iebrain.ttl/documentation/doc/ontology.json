@@ -44,7 +44,13 @@
   "@id" : "http://www.moonshot.ceo/abstract",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.moonshot.ceo/ontology/Area"
+  }, {
+    "@id" : "http://www.moonshot.ceo/ontology/Cell"
+  }, {
     "@id" : "http://www.moonshot.ceo/ontology/IndustrialFunction"
+  }, {
+    "@id" : "http://www.moonshot.ceo/ontology/Ket"
   }, {
     "@id" : "http://www.moonshot.ceo/ontology/Node"
   } ],
@@ -62,7 +68,13 @@
   "@id" : "http://www.moonshot.ceo/correlativeName",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.moonshot.ceo/ontology/Area"
+  }, {
+    "@id" : "http://www.moonshot.ceo/ontology/Cell"
+  }, {
     "@id" : "http://www.moonshot.ceo/ontology/IndustrialFunction"
+  }, {
+    "@id" : "http://www.moonshot.ceo/ontology/Ket"
   }, {
     "@id" : "http://www.moonshot.ceo/ontology/Node"
   } ],
@@ -80,7 +92,13 @@
   "@id" : "http://www.moonshot.ceo/creationDate",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.moonshot.ceo/ontology/Area"
+  }, {
+    "@id" : "http://www.moonshot.ceo/ontology/Cell"
+  }, {
     "@id" : "http://www.moonshot.ceo/ontology/IndustrialFunction"
+  }, {
+    "@id" : "http://www.moonshot.ceo/ontology/Ket"
   }, {
     "@id" : "http://www.moonshot.ceo/ontology/Node"
   } ],
@@ -98,7 +116,13 @@
   "@id" : "http://www.moonshot.ceo/creator",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.moonshot.ceo/ontology/Area"
+  }, {
+    "@id" : "http://www.moonshot.ceo/ontology/Cell"
+  }, {
     "@id" : "http://www.moonshot.ceo/ontology/IndustrialFunction"
+  }, {
+    "@id" : "http://www.moonshot.ceo/ontology/Ket"
   }, {
     "@id" : "http://www.moonshot.ceo/ontology/Node"
   } ],
@@ -116,7 +140,13 @@
   "@id" : "http://www.moonshot.ceo/definition",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.moonshot.ceo/ontology/Area"
+  }, {
+    "@id" : "http://www.moonshot.ceo/ontology/Cell"
+  }, {
     "@id" : "http://www.moonshot.ceo/ontology/IndustrialFunction"
+  }, {
+    "@id" : "http://www.moonshot.ceo/ontology/Ket"
   }, {
     "@id" : "http://www.moonshot.ceo/ontology/Node"
   } ],
@@ -131,16 +161,22 @@
     "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasDataValue"
   } ]
 }, {
-  "@id" : "http://www.moonshot.ceo/docs",
+  "@id" : "http://www.moonshot.ceo/doc",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.moonshot.ceo/ontology/Area"
+  }, {
+    "@id" : "http://www.moonshot.ceo/ontology/Cell"
+  }, {
     "@id" : "http://www.moonshot.ceo/ontology/IndustrialFunction"
+  }, {
+    "@id" : "http://www.moonshot.ceo/ontology/Ket"
   }, {
     "@id" : "http://www.moonshot.ceo/ontology/Node"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "has Docs"
+    "@value" : "has Doc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#anyURI"
@@ -149,9 +185,79 @@
     "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasDataValue"
   } ]
 }, {
+  "@id" : "http://www.moonshot.ceo/hasArea",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.moonshot.ceo/ontology/MarketMap"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.moonshot.ceo/ontology/Area"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasPart"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.moonshot.ceo/isPartOfMarketMap"
+  } ]
+}, {
+  "@id" : "http://www.moonshot.ceo/hasCell",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.moonshot.ceo/ontology/Area"
+  }, {
+    "@id" : "http://www.moonshot.ceo/ontology/Node"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.moonshot.ceo/ontology/Cell"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasPart"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.moonshot.ceo/isPartOfNode"
+  } ]
+}, {
+  "@id" : "http://www.moonshot.ceo/hasKet",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.moonshot.ceo/ontology/Area"
+  }, {
+    "@id" : "http://www.moonshot.ceo/ontology/Cell"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.moonshot.ceo/ontology/Ket"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasPart"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.moonshot.ceo/isPartOfCell"
+  } ]
+}, {
+  "@id" : "http://www.moonshot.ceo/hasMarketMap",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.moonshot.ceo/ontology/Industry"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.moonshot.ceo/ontology/MarketMap"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasPart"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.moonshot.ceo/isPartOfIndustry"
+  } ]
+}, {
   "@id" : "http://www.moonshot.ceo/icon",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.moonshot.ceo/ontology/Area"
+  }, {
+    "@id" : "http://www.moonshot.ceo/ontology/Cell"
+  }, {
+    "@id" : "http://www.moonshot.ceo/ontology/Ket"
+  }, {
     "@id" : "http://www.moonshot.ceo/ontology/Node"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
@@ -168,6 +274,12 @@
   "@id" : "http://www.moonshot.ceo/image",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.moonshot.ceo/ontology/Area"
+  }, {
+    "@id" : "http://www.moonshot.ceo/ontology/Cell"
+  }, {
+    "@id" : "http://www.moonshot.ceo/ontology/Ket"
+  }, {
     "@id" : "http://www.moonshot.ceo/ontology/Node"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
@@ -181,10 +293,76 @@
     "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasDataValue"
   } ]
 }, {
+  "@id" : "http://www.moonshot.ceo/isPartOfCell",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.moonshot.ceo/ontology/Ket"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.moonshot.ceo/ontology/Cell"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isPartOf"
+  } ]
+}, {
+  "@id" : "http://www.moonshot.ceo/isPartOfIndustry",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.moonshot.ceo/ontology/MarketMap"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.moonshot.ceo/ontology/Industry"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isPartOf"
+  } ]
+}, {
+  "@id" : "http://www.moonshot.ceo/isPartOfMarketMap",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.moonshot.ceo/ontology/Area"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.moonshot.ceo/ontology/MarketMap"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isPartOf"
+  } ]
+}, {
+  "@id" : "http://www.moonshot.ceo/isPartOfNode",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.moonshot.ceo/ontology/Cell"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.moonshot.ceo/ontology/Node"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isPartOf"
+  } ]
+}, {
+  "@id" : "http://www.moonshot.ceo/isRelatedToKet",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.moonshot.ceo/ontology/Ket"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.moonshot.ceo/ontology/Ket"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRelatedToConcept"
+  } ]
+}, {
   "@id" : "http://www.moonshot.ceo/keyword",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.moonshot.ceo/ontology/Area"
+  }, {
+    "@id" : "http://www.moonshot.ceo/ontology/Cell"
+  }, {
     "@id" : "http://www.moonshot.ceo/ontology/IndustrialFunction"
+  }, {
+    "@id" : "http://www.moonshot.ceo/ontology/Ket"
   }, {
     "@id" : "http://www.moonshot.ceo/ontology/Node"
   } ],
@@ -249,10 +427,25 @@
     "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity"
   } ]
 }, {
+  "@id" : "http://www.moonshot.ceo/providesServiceTo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.moonshot.ceo/ontology/IndustrialFunction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.moonshot.ceo/ontology/Industry"
+  } ]
+}, {
   "@id" : "http://www.moonshot.ceo/title",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.moonshot.ceo/ontology/Area"
+  }, {
+    "@id" : "http://www.moonshot.ceo/ontology/Cell"
+  }, {
     "@id" : "http://www.moonshot.ceo/ontology/IndustrialFunction"
+  }, {
+    "@id" : "http://www.moonshot.ceo/ontology/Ket"
   }, {
     "@id" : "http://www.moonshot.ceo/ontology/Node"
   } ],
@@ -270,7 +463,13 @@
   "@id" : "http://www.moonshot.ceo/url",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.moonshot.ceo/ontology/Area"
+  }, {
+    "@id" : "http://www.moonshot.ceo/ontology/Cell"
+  }, {
     "@id" : "http://www.moonshot.ceo/ontology/IndustrialFunction"
+  }, {
+    "@id" : "http://www.moonshot.ceo/ontology/Ket"
   }, {
     "@id" : "http://www.moonshot.ceo/ontology/Node"
   } ],
