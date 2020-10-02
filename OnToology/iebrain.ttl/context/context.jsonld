@@ -19,6 +19,9 @@
       "@id" : "http://www.moonshot.ceo/url",
       "@type" : "http://www.w3.org/2001/XMLSchema#anyURI"
     },
+    "Organisation" : {
+      "@id" : "http://www.moonshot.ceo/Organisation"
+    },
     "isRelatedToKet" : {
       "@id" : "http://www.moonshot.ceo/isRelatedToKet",
       "@type" : "@id"
@@ -69,6 +72,9 @@
       "@id" : "http://www.moonshot.ceo/correlativeName",
       "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
     },
+    "Startup" : {
+      "@id" : "http://www.moonshot.ceo/Startup"
+    },
     "isPartOfMarketMap" : {
       "@id" : "http://www.moonshot.ceo/isPartOfMarketMap",
       "@type" : "@id"
@@ -76,6 +82,9 @@
     "keyword" : {
       "@id" : "http://www.moonshot.ceo/keyword",
       "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "Company" : {
+      "@id" : "http://www.moonshot.ceo/Company"
     },
     "Ket" : {
       "@id" : "http://www.moonshot.ceo/ontology/Ket"
