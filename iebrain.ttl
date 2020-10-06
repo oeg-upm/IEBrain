@@ -9,7 +9,8 @@
 @base <http://www.moonshot.ceo/> .
 
 <http://www.moonshot.ceo/> rdf:type owl:Ontology ;
-                            owl:imports <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl> .
+                            owl:imports <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl> ;
+                            rdfs:label "IEBrain"^^rdfs:Literal .
 
 #################################################################
 #    Object Properties
