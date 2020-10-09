@@ -8,6 +8,7 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @base <http://www.moonshot.ceo/ontology/core> .
 
+
 <http://www.moonshot.ceo/ontology/core> rdf:type owl:Ontology ;
                                          owl:imports <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl> ;
                                          rdfs:label "IEBrain"^^rdfs:Literal .
