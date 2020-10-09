@@ -35,7 +35,7 @@
     "@id" : "http://www.moonshot.ceo/ontology/coreontology/Industry"
   } ]
 }, {
-  "@id" : "http://www.moonshot.ceo/ontology/core",
+  "@id" : "http://www.moonshot.ceo/ontology/core/",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
