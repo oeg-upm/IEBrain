@@ -10,9 +10,11 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
     <owl:Ontology rdf:about="http://www.moonshot.ceo/">
         <owl:imports rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl"/>
+        <rdfs:comment xml:lang="en">This ontology is designed to represent the different industries, their market maps, areas and link them to business models, technological innovations and other industries.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">IEBrain</rdfs:label>
     </owl:Ontology>
     
+
 
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
