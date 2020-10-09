@@ -1,6 +1,6 @@
-<http://www.moonshot.ceo/ontology/core> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
-<http://www.moonshot.ceo/ontology/core> <http://www.w3.org/2002/07/owl#imports> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl> .
-<http://www.moonshot.ceo/ontology/core> <http://www.w3.org/2000/01/rdf-schema#label> "IEBrain"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://www.moonshot.ceo/ontology/core/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://www.moonshot.ceo/ontology/core/> <http://www.w3.org/2002/07/owl#imports> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl> .
+<http://www.moonshot.ceo/ontology/core/> <http://www.w3.org/2000/01/rdf-schema#label> "IEBrain"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
 # 
 # 
 # #################################################################
