@@ -1,7 +1,6 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://www.moonshot.ceo/"
      xml:base="http://www.moonshot.ceo/"
-     xmlns:ms="http://www.moonshot.ceo/"
      xmlns:dul="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -32,8 +31,8 @@
     <owl:ObjectProperty rdf:about="http://www.moonshot.ceo/ontology/hasArea">
         <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasPart"/>
         <owl:inverseOf rdf:resource="http://www.moonshot.ceo/ontology/isPartOfMarketMap"/>
-        <rdfs:domain rdf:resource="http://www.moonshot.ceo/ontology/ontology/MarketMap"/>
-        <rdfs:range rdf:resource="http://www.moonshot.ceo/ontology/ontology/Area"/>
+        <rdfs:domain rdf:resource="http://www.moonshot.ceo/ontology/MarketMap"/>
+        <rdfs:range rdf:resource="http://www.moonshot.ceo/ontology/Area"/>
     </owl:ObjectProperty>
     
 
@@ -43,9 +42,9 @@
     <owl:ObjectProperty rdf:about="http://www.moonshot.ceo/ontology/hasCell">
         <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasPart"/>
         <owl:inverseOf rdf:resource="http://www.moonshot.ceo/ontology/isPartOfNode"/>
-        <rdfs:domain rdf:resource="http://www.moonshot.ceo/ontology/ontology/Area"/>
-        <rdfs:domain rdf:resource="http://www.moonshot.ceo/ontology/ontology/Node"/>
-        <rdfs:range rdf:resource="http://www.moonshot.ceo/ontology/ontology/Cell"/>
+        <rdfs:domain rdf:resource="http://www.moonshot.ceo/ontology/Area"/>
+        <rdfs:domain rdf:resource="http://www.moonshot.ceo/ontology/Node"/>
+        <rdfs:range rdf:resource="http://www.moonshot.ceo/ontology/Cell"/>
     </owl:ObjectProperty>
     
 
@@ -55,9 +54,9 @@
     <owl:ObjectProperty rdf:about="http://www.moonshot.ceo/ontology/hasKet">
         <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasPart"/>
         <owl:inverseOf rdf:resource="http://www.moonshot.ceo/ontology/isPartOfCell"/>
-        <rdfs:domain rdf:resource="http://www.moonshot.ceo/ontology/ontology/Area"/>
-        <rdfs:domain rdf:resource="http://www.moonshot.ceo/ontology/ontology/Cell"/>
-        <rdfs:range rdf:resource="http://www.moonshot.ceo/ontology/ontology/Ket"/>
+        <rdfs:domain rdf:resource="http://www.moonshot.ceo/ontology/Area"/>
+        <rdfs:domain rdf:resource="http://www.moonshot.ceo/ontology/Cell"/>
+        <rdfs:range rdf:resource="http://www.moonshot.ceo/ontology/Ket"/>
     </owl:ObjectProperty>
     
 
@@ -67,8 +66,8 @@
     <owl:ObjectProperty rdf:about="http://www.moonshot.ceo/ontology/hasMarketMap">
         <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasPart"/>
         <owl:inverseOf rdf:resource="http://www.moonshot.ceo/ontology/isPartOfIndustry"/>
-        <rdfs:domain rdf:resource="http://www.moonshot.ceo/ontology/ontology/Industry"/>
-        <rdfs:range rdf:resource="http://www.moonshot.ceo/ontology/ontology/MarketMap"/>
+        <rdfs:domain rdf:resource="http://www.moonshot.ceo/ontology/Industry"/>
+        <rdfs:range rdf:resource="http://www.moonshot.ceo/ontology/MarketMap"/>
     </owl:ObjectProperty>
     
 
@@ -77,8 +76,8 @@
 
     <owl:ObjectProperty rdf:about="http://www.moonshot.ceo/ontology/isPartOfCell">
         <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isPartOf"/>
-        <rdfs:domain rdf:resource="http://www.moonshot.ceo/ontology/ontology/Ket"/>
-        <rdfs:range rdf:resource="http://www.moonshot.ceo/ontology/ontology/Cell"/>
+        <rdfs:domain rdf:resource="http://www.moonshot.ceo/ontology/Ket"/>
+        <rdfs:range rdf:resource="http://www.moonshot.ceo/ontology/Cell"/>
     </owl:ObjectProperty>
     
 
@@ -87,8 +86,8 @@
 
     <owl:ObjectProperty rdf:about="http://www.moonshot.ceo/ontology/isPartOfIndustry">
         <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isPartOf"/>
-        <rdfs:domain rdf:resource="http://www.moonshot.ceo/ontology/ontology/MarketMap"/>
-        <rdfs:range rdf:resource="http://www.moonshot.ceo/ontology/ontology/Industry"/>
+        <rdfs:domain rdf:resource="http://www.moonshot.ceo/ontology/MarketMap"/>
+        <rdfs:range rdf:resource="http://www.moonshot.ceo/ontology/Industry"/>
     </owl:ObjectProperty>
     
 
@@ -97,8 +96,8 @@
 
     <owl:ObjectProperty rdf:about="http://www.moonshot.ceo/ontology/isPartOfMarketMap">
         <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isPartOf"/>
-        <rdfs:domain rdf:resource="http://www.moonshot.ceo/ontology/ontology/Area"/>
-        <rdfs:range rdf:resource="http://www.moonshot.ceo/ontology/ontology/MarketMap"/>
+        <rdfs:domain rdf:resource="http://www.moonshot.ceo/ontology/Area"/>
+        <rdfs:range rdf:resource="http://www.moonshot.ceo/ontology/MarketMap"/>
     </owl:ObjectProperty>
     
 
@@ -107,8 +106,8 @@
 
     <owl:ObjectProperty rdf:about="http://www.moonshot.ceo/ontology/isPartOfNode">
         <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isPartOf"/>
-        <rdfs:domain rdf:resource="http://www.moonshot.ceo/ontology/ontology/Cell"/>
-        <rdfs:range rdf:resource="http://www.moonshot.ceo/ontology/ontology/Node"/>
+        <rdfs:domain rdf:resource="http://www.moonshot.ceo/ontology/Cell"/>
+        <rdfs:range rdf:resource="http://www.moonshot.ceo/ontology/Node"/>
     </owl:ObjectProperty>
     
 
@@ -117,8 +116,8 @@
 
     <owl:ObjectProperty rdf:about="http://www.moonshot.ceo/ontology/isRelatedToKet">
         <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRelatedToConcept"/>
-        <rdfs:domain rdf:resource="http://www.moonshot.ceo/ontology/ontology/Ket"/>
-        <rdfs:range rdf:resource="http://www.moonshot.ceo/ontology/ontology/Ket"/>
+        <rdfs:domain rdf:resource="http://www.moonshot.ceo/ontology/Ket"/>
+        <rdfs:range rdf:resource="http://www.moonshot.ceo/ontology/Ket"/>
     </owl:ObjectProperty>
     
 
@@ -126,8 +125,8 @@
     <!-- http://www.moonshot.ceo/ontology/providesServiceTo -->
 
     <owl:ObjectProperty rdf:about="http://www.moonshot.ceo/ontology/providesServiceTo">
-        <rdfs:domain rdf:resource="http://www.moonshot.ceo/ontology/ontology/IndustrialFunction"/>
-        <rdfs:range rdf:resource="http://www.moonshot.ceo/ontology/ontology/Industry"/>
+        <rdfs:domain rdf:resource="http://www.moonshot.ceo/ontology/IndustrialFunction"/>
+        <rdfs:range rdf:resource="http://www.moonshot.ceo/ontology/Industry"/>
     </owl:ObjectProperty>
     
 
@@ -147,11 +146,11 @@
 
     <owl:DatatypeProperty rdf:about="http://www.moonshot.ceo/ontology/abstract">
         <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasDataValue"/>
-        <rdfs:domain rdf:resource="http://www.moonshot.ceo/ontology/ontology/Area"/>
-        <rdfs:domain rdf:resource="http://www.moonshot.ceo/ontology/ontology/Cell"/>
-        <rdfs:domain rdf:resource="http://www.moonshot.ceo/ontology/ontology/IndustrialFunction"/>
-        <rdfs:domain rdf:resource="http://www.moonshot.ceo/ontology/ontology/Ket"/>
-        <rdfs:domain rdf:resource="http://www.moonshot.ceo/ontology/ontology/Node"/>
+        <rdfs:domain rdf:resource="http://www.moonshot.ceo/ontology/Area"/>
+        <rdfs:domain rdf:resource="http://www.moonshot.ceo/ontology/Cell"/>
+        <rdfs:domain rdf:resource="http://www.moonshot.ceo/ontology/IndustrialFunction"/>
+        <rdfs:domain rdf:resource="http://www.moonshot.ceo/ontology/Ket"/>
+        <rdfs:domain rdf:resource="http://www.moonshot.ceo/ontology/Node"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
         <rdfs:label xml:lang="en">has Abstract</rdfs:label>
     </owl:DatatypeProperty>
@@ -162,11 +161,11 @@
 
     <owl:DatatypeProperty rdf:about="http://www.moonshot.ceo/ontology/correlativeName">
         <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasDataValue"/>
-        <rdfs:domain rdf:resource="http://www.moonshot.ceo/ontology/ontology/Area"/>
-        <rdfs:domain rdf:resource="http://www.moonshot.ceo/ontology/ontology/Cell"/>
-        <rdfs:domain rdf:resource="http://www.moonshot.ceo/ontology/ontology/IndustrialFunction"/>
-        <rdfs:domain rdf:resource="http://www.moonshot.ceo/ontology/ontology/Ket"/>
-        <rdfs:domain rdf:resource="http://www.moonshot.ceo/ontology/ontology/Node"/>
+        <rdfs:domain rdf:resource="http://www.moonshot.ceo/ontology/Area"/>
+        <rdfs:domain rdf:resource="http://www.moonshot.ceo/ontology/Cell"/>
+        <rdfs:domain rdf:resource="http://www.moonshot.ceo/ontology/IndustrialFunction"/>
+        <rdfs:domain rdf:resource="http://www.moonshot.ceo/ontology/Ket"/>
+        <rdfs:domain rdf:resource="http://www.moonshot.ceo/ontology/Node"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
         <rdfs:label xml:lang="en">has Correlative Name</rdfs:label>
     </owl:DatatypeProperty>
@@ -177,11 +176,11 @@
 
     <owl:DatatypeProperty rdf:about="http://www.moonshot.ceo/ontology/creationDate">
         <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasDataValue"/>
-        <rdfs:domain rdf:resource="http://www.moonshot.ceo/ontology/ontology/Area"/>
-        <rdfs:domain rdf:resource="http://www.moonshot.ceo/ontology/ontology/Cell"/>
-        <rdfs:domain rdf:resource="http://www.moonshot.ceo/ontology/ontology/IndustrialFunction"/>
-        <rdfs:domain rdf:resource="http://www.moonshot.ceo/ontology/ontology/Ket"/>
-        <rdfs:domain rdf:resource="http://www.moonshot.ceo/ontology/ontology/Node"/>
+        <rdfs:domain rdf:resource="http://www.moonshot.ceo/ontology/Area"/>
+        <rdfs:domain rdf:resource="http://www.moonshot.ceo/ontology/Cell"/>
+        <rdfs:domain rdf:resource="http://www.moonshot.ceo/ontology/IndustrialFunction"/>
+        <rdfs:domain rdf:resource="http://www.moonshot.ceo/ontology/Ket"/>
+        <rdfs:domain rdf:resource="http://www.moonshot.ceo/ontology/Node"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
         <rdfs:label xml:lang="en">is Created on Date</rdfs:label>
     </owl:DatatypeProperty>
@@ -192,11 +191,11 @@
 
     <owl:DatatypeProperty rdf:about="http://www.moonshot.ceo/ontology/creator">
         <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasDataValue"/>
-        <rdfs:domain rdf:resource="http://www.moonshot.ceo/ontology/ontology/Area"/>
-        <rdfs:domain rdf:resource="http://www.moonshot.ceo/ontology/ontology/Cell"/>
-        <rdfs:domain rdf:resource="http://www.moonshot.ceo/ontology/ontology/IndustrialFunction"/>
-        <rdfs:domain rdf:resource="http://www.moonshot.ceo/ontology/ontology/Ket"/>
-        <rdfs:domain rdf:resource="http://www.moonshot.ceo/ontology/ontology/Node"/>
+        <rdfs:domain rdf:resource="http://www.moonshot.ceo/ontology/Area"/>
+        <rdfs:domain rdf:resource="http://www.moonshot.ceo/ontology/Cell"/>
+        <rdfs:domain rdf:resource="http://www.moonshot.ceo/ontology/IndustrialFunction"/>
+        <rdfs:domain rdf:resource="http://www.moonshot.ceo/ontology/Ket"/>
+        <rdfs:domain rdf:resource="http://www.moonshot.ceo/ontology/Node"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
         <rdfs:label xml:lang="en">is Created By</rdfs:label>
     </owl:DatatypeProperty>
@@ -207,11 +206,11 @@
 
     <owl:DatatypeProperty rdf:about="http://www.moonshot.ceo/ontology/definition">
         <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasDataValue"/>
-        <rdfs:domain rdf:resource="http://www.moonshot.ceo/ontology/ontology/Area"/>
-        <rdfs:domain rdf:resource="http://www.moonshot.ceo/ontology/ontology/Cell"/>
-        <rdfs:domain rdf:resource="http://www.moonshot.ceo/ontology/ontology/IndustrialFunction"/>
-        <rdfs:domain rdf:resource="http://www.moonshot.ceo/ontology/ontology/Ket"/>
-        <rdfs:domain rdf:resource="http://www.moonshot.ceo/ontology/ontology/Node"/>
+        <rdfs:domain rdf:resource="http://www.moonshot.ceo/ontology/Area"/>
+        <rdfs:domain rdf:resource="http://www.moonshot.ceo/ontology/Cell"/>
+        <rdfs:domain rdf:resource="http://www.moonshot.ceo/ontology/IndustrialFunction"/>
+        <rdfs:domain rdf:resource="http://www.moonshot.ceo/ontology/Ket"/>
+        <rdfs:domain rdf:resource="http://www.moonshot.ceo/ontology/Node"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
         <rdfs:label xml:lang="en">has Definition</rdfs:label>
     </owl:DatatypeProperty>
@@ -222,11 +221,11 @@
 
     <owl:DatatypeProperty rdf:about="http://www.moonshot.ceo/ontology/doc">
         <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasDataValue"/>
-        <rdfs:domain rdf:resource="http://www.moonshot.ceo/ontology/ontology/Area"/>
-        <rdfs:domain rdf:resource="http://www.moonshot.ceo/ontology/ontology/Cell"/>
-        <rdfs:domain rdf:resource="http://www.moonshot.ceo/ontology/ontology/IndustrialFunction"/>
-        <rdfs:domain rdf:resource="http://www.moonshot.ceo/ontology/ontology/Ket"/>
-        <rdfs:domain rdf:resource="http://www.moonshot.ceo/ontology/ontology/Node"/>
+        <rdfs:domain rdf:resource="http://www.moonshot.ceo/ontology/Area"/>
+        <rdfs:domain rdf:resource="http://www.moonshot.ceo/ontology/Cell"/>
+        <rdfs:domain rdf:resource="http://www.moonshot.ceo/ontology/IndustrialFunction"/>
+        <rdfs:domain rdf:resource="http://www.moonshot.ceo/ontology/Ket"/>
+        <rdfs:domain rdf:resource="http://www.moonshot.ceo/ontology/Node"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
         <rdfs:label xml:lang="en">has Doc</rdfs:label>
     </owl:DatatypeProperty>
@@ -237,10 +236,10 @@
 
     <owl:DatatypeProperty rdf:about="http://www.moonshot.ceo/ontology/icon">
         <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasDataValue"/>
-        <rdfs:domain rdf:resource="http://www.moonshot.ceo/ontology/ontology/Area"/>
-        <rdfs:domain rdf:resource="http://www.moonshot.ceo/ontology/ontology/Cell"/>
-        <rdfs:domain rdf:resource="http://www.moonshot.ceo/ontology/ontology/Ket"/>
-        <rdfs:domain rdf:resource="http://www.moonshot.ceo/ontology/ontology/Node"/>
+        <rdfs:domain rdf:resource="http://www.moonshot.ceo/ontology/Area"/>
+        <rdfs:domain rdf:resource="http://www.moonshot.ceo/ontology/Cell"/>
+        <rdfs:domain rdf:resource="http://www.moonshot.ceo/ontology/Ket"/>
+        <rdfs:domain rdf:resource="http://www.moonshot.ceo/ontology/Node"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
         <rdfs:label xml:lang="en">has Icon</rdfs:label>
     </owl:DatatypeProperty>
@@ -251,10 +250,10 @@
 
     <owl:DatatypeProperty rdf:about="http://www.moonshot.ceo/ontology/image">
         <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasDataValue"/>
-        <rdfs:domain rdf:resource="http://www.moonshot.ceo/ontology/ontology/Area"/>
-        <rdfs:domain rdf:resource="http://www.moonshot.ceo/ontology/ontology/Cell"/>
-        <rdfs:domain rdf:resource="http://www.moonshot.ceo/ontology/ontology/Ket"/>
-        <rdfs:domain rdf:resource="http://www.moonshot.ceo/ontology/ontology/Node"/>
+        <rdfs:domain rdf:resource="http://www.moonshot.ceo/ontology/Area"/>
+        <rdfs:domain rdf:resource="http://www.moonshot.ceo/ontology/Cell"/>
+        <rdfs:domain rdf:resource="http://www.moonshot.ceo/ontology/Ket"/>
+        <rdfs:domain rdf:resource="http://www.moonshot.ceo/ontology/Node"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
         <rdfs:label xml:lang="en">has Image</rdfs:label>
     </owl:DatatypeProperty>
@@ -265,11 +264,11 @@
 
     <owl:DatatypeProperty rdf:about="http://www.moonshot.ceo/ontology/keyword">
         <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasDataValue"/>
-        <rdfs:domain rdf:resource="http://www.moonshot.ceo/ontology/ontology/Area"/>
-        <rdfs:domain rdf:resource="http://www.moonshot.ceo/ontology/ontology/Cell"/>
-        <rdfs:domain rdf:resource="http://www.moonshot.ceo/ontology/ontology/IndustrialFunction"/>
-        <rdfs:domain rdf:resource="http://www.moonshot.ceo/ontology/ontology/Ket"/>
-        <rdfs:domain rdf:resource="http://www.moonshot.ceo/ontology/ontology/Node"/>
+        <rdfs:domain rdf:resource="http://www.moonshot.ceo/ontology/Area"/>
+        <rdfs:domain rdf:resource="http://www.moonshot.ceo/ontology/Cell"/>
+        <rdfs:domain rdf:resource="http://www.moonshot.ceo/ontology/IndustrialFunction"/>
+        <rdfs:domain rdf:resource="http://www.moonshot.ceo/ontology/Ket"/>
+        <rdfs:domain rdf:resource="http://www.moonshot.ceo/ontology/Node"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
         <rdfs:label xml:lang="en">has Keyword</rdfs:label>
     </owl:DatatypeProperty>
@@ -280,11 +279,11 @@
 
     <owl:DatatypeProperty rdf:about="http://www.moonshot.ceo/ontology/title">
         <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasDataValue"/>
-        <rdfs:domain rdf:resource="http://www.moonshot.ceo/ontology/ontology/Area"/>
-        <rdfs:domain rdf:resource="http://www.moonshot.ceo/ontology/ontology/Cell"/>
-        <rdfs:domain rdf:resource="http://www.moonshot.ceo/ontology/ontology/IndustrialFunction"/>
-        <rdfs:domain rdf:resource="http://www.moonshot.ceo/ontology/ontology/Ket"/>
-        <rdfs:domain rdf:resource="http://www.moonshot.ceo/ontology/ontology/Node"/>
+        <rdfs:domain rdf:resource="http://www.moonshot.ceo/ontology/Area"/>
+        <rdfs:domain rdf:resource="http://www.moonshot.ceo/ontology/Cell"/>
+        <rdfs:domain rdf:resource="http://www.moonshot.ceo/ontology/IndustrialFunction"/>
+        <rdfs:domain rdf:resource="http://www.moonshot.ceo/ontology/Ket"/>
+        <rdfs:domain rdf:resource="http://www.moonshot.ceo/ontology/Node"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
         <rdfs:label xml:lang="en">has Title</rdfs:label>
     </owl:DatatypeProperty>
@@ -295,11 +294,11 @@
 
     <owl:DatatypeProperty rdf:about="http://www.moonshot.ceo/ontology/url">
         <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasDataValue"/>
-        <rdfs:domain rdf:resource="http://www.moonshot.ceo/ontology/ontology/Area"/>
-        <rdfs:domain rdf:resource="http://www.moonshot.ceo/ontology/ontology/Cell"/>
-        <rdfs:domain rdf:resource="http://www.moonshot.ceo/ontology/ontology/IndustrialFunction"/>
-        <rdfs:domain rdf:resource="http://www.moonshot.ceo/ontology/ontology/Ket"/>
-        <rdfs:domain rdf:resource="http://www.moonshot.ceo/ontology/ontology/Node"/>
+        <rdfs:domain rdf:resource="http://www.moonshot.ceo/ontology/Area"/>
+        <rdfs:domain rdf:resource="http://www.moonshot.ceo/ontology/Cell"/>
+        <rdfs:domain rdf:resource="http://www.moonshot.ceo/ontology/IndustrialFunction"/>
+        <rdfs:domain rdf:resource="http://www.moonshot.ceo/ontology/Ket"/>
+        <rdfs:domain rdf:resource="http://www.moonshot.ceo/ontology/Node"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
         <rdfs:label xml:lang="en">has URL</rdfs:label>
     </owl:DatatypeProperty>
@@ -317,81 +316,81 @@
     
 
 
-    <!-- http://www.moonshot.ceo/ontology/ontology/Area -->
+    <!-- http://www.moonshot.ceo/ontology/Area -->
 
-    <owl:Class rdf:about="http://www.moonshot.ceo/ontology/ontology/Area">
+    <owl:Class rdf:about="http://www.moonshot.ceo/ontology/Area">
         <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isPartOf"/>
-                <owl:someValuesFrom rdf:resource="http://www.moonshot.ceo/ontology/ontology/MarketMap"/>
+                <owl:someValuesFrom rdf:resource="http://www.moonshot.ceo/ontology/MarketMap"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
     
 
 
-    <!-- http://www.moonshot.ceo/ontology/ontology/Cell -->
+    <!-- http://www.moonshot.ceo/ontology/Cell -->
 
-    <owl:Class rdf:about="http://www.moonshot.ceo/ontology/ontology/Cell">
+    <owl:Class rdf:about="http://www.moonshot.ceo/ontology/Cell">
         <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isPartOf"/>
-                <owl:someValuesFrom rdf:resource="http://www.moonshot.ceo/ontology/ontology/Node"/>
+                <owl:someValuesFrom rdf:resource="http://www.moonshot.ceo/ontology/Node"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
     
 
 
-    <!-- http://www.moonshot.ceo/ontology/ontology/IndustrialFunction -->
+    <!-- http://www.moonshot.ceo/ontology/IndustrialFunction -->
 
-    <owl:Class rdf:about="http://www.moonshot.ceo/ontology/ontology/IndustrialFunction">
+    <owl:Class rdf:about="http://www.moonshot.ceo/ontology/IndustrialFunction">
         <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity"/>
     </owl:Class>
     
 
 
-    <!-- http://www.moonshot.ceo/ontology/ontology/Industry -->
+    <!-- http://www.moonshot.ceo/ontology/Industry -->
 
-    <owl:Class rdf:about="http://www.moonshot.ceo/ontology/ontology/Industry">
+    <owl:Class rdf:about="http://www.moonshot.ceo/ontology/Industry">
         <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity"/>
     </owl:Class>
     
 
 
-    <!-- http://www.moonshot.ceo/ontology/ontology/Ket -->
+    <!-- http://www.moonshot.ceo/ontology/Ket -->
 
-    <owl:Class rdf:about="http://www.moonshot.ceo/ontology/ontology/Ket">
+    <owl:Class rdf:about="http://www.moonshot.ceo/ontology/Ket">
         <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isPartOf"/>
-                <owl:someValuesFrom rdf:resource="http://www.moonshot.ceo/ontology/ontology/Cell"/>
+                <owl:someValuesFrom rdf:resource="http://www.moonshot.ceo/ontology/Cell"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
     
 
 
-    <!-- http://www.moonshot.ceo/ontology/ontology/MarketMap -->
+    <!-- http://www.moonshot.ceo/ontology/MarketMap -->
 
-    <owl:Class rdf:about="http://www.moonshot.ceo/ontology/ontology/MarketMap">
+    <owl:Class rdf:about="http://www.moonshot.ceo/ontology/MarketMap">
         <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isPartOf"/>
-                <owl:someValuesFrom rdf:resource="http://www.moonshot.ceo/ontology/ontology/Industry"/>
+                <owl:someValuesFrom rdf:resource="http://www.moonshot.ceo/ontology/Industry"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
     
 
 
-    <!-- http://www.moonshot.ceo/ontology/ontology/Node -->
+    <!-- http://www.moonshot.ceo/ontology/Node -->
 
-    <owl:Class rdf:about="http://www.moonshot.ceo/ontology/ontology/Node">
+    <owl:Class rdf:about="http://www.moonshot.ceo/ontology/Node">
         <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity"/>
     </owl:Class>
 </rdf:RDF>
