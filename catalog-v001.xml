@@ -2,9 +2,9 @@
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
     <uri id="Imports Wizard Entry" name="http://www.moonshot.ceo/" uri="iebrain-core.owl"/>
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1602599707851" name="http://www.moonshot.ceo/" uri="iebrain-core.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1602599707851" name="http://www.moonshot.ceo/actor/" uri="OnToology/iebrain-actor.owl/documentation/doc/ontology.xml"/>
-        <uri id="Automatically generated entry, Timestamp=1602599707851" name="http://www.moonshot.ceo/organisation/" uri="iebrain-actor.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1602599707851" name="shadowed:http://www.moonshot.ceo/" uri="OnToology/iebrain-core.owl/documentation/ontology.xml"/>
+        <uri id="Automatically generated entry, Timestamp=1602605672075" name="http://www.moonshot.ceo/" uri="iebrain-core.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1602605672075" name="http://www.moonshot.ceo/actor/" uri="OnToology/iebrain-actor.owl/documentation/doc/ontology.xml"/>
+        <uri id="Automatically generated entry, Timestamp=1602605672075" name="http://www.moonshot.ceo/organisation/" uri="iebrain-actor.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1602605672075" name="shadowed:http://www.moonshot.ceo/" uri="OnToology/iebrain-core.owl/documentation/ontology.xml"/>
     </group>
 </catalog>
