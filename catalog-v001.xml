@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="Imports Wizard Entry" name="http://www.moonshot.ceo/" uri="iebrain-core.owl"/>
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1602242999628" name="http://www.moonshot.ceo/" uri="iebrain-core.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1602242999628" name="shadowed:http://www.moonshot.ceo/" uri="OnToology/iebrain-core.owl/documentation/ontology.xml"/>
+        <uri id="Automatically generated entry, Timestamp=1602572410661" name="http://www.moonshot.ceo/" uri="iebrain-core.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1602572410661" name="http://www.moonshot.ceo/organisation/" uri="iebrain-organisation.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1602572410661" name="shadowed:http://www.moonshot.ceo/" uri="OnToology/iebrain-core.owl/documentation/ontology.xml"/>
     </group>
 </catalog>
