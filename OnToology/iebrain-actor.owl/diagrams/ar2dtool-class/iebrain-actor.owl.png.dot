@@ -1,0 +1,10 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+node [shape = rectangle, color="orange"]; "http://www.moonshot.ceo/actor/Actor" ; /*classes style*/
+	"http://www.moonshot.ceo/actor/" -> "http://www.moonshot.ceo/" [ label = "owl:imports" ];
+	"http://www.moonshot.ceo/actor/Actor" -> "owl:Thing" [ label = "http://www.moonshot.ceo/ontology/title" ];
+	"http://www.moonshot.ceo/actor/Actor" -> "http://www.moonshot.ceo/actor/Actor" [ label = "http://www.moonshot.ceo/actor/provideInnovationTo" ];
+	"http://www.moonshot.ceo/actor/Actor" -> "http://www.moonshot.ceo/actor/Actor" [ label = "http://www.moonshot.ceo/actor/seeksInnovationFrom" ];
+
+}
