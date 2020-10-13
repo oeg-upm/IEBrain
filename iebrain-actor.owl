@@ -23,12 +23,25 @@
     
 
 
+    <!-- http://www.moonshot.ceo/actor/hasIndustrialFunction -->
+
+    <owl:ObjectProperty rdf:about="http://www.moonshot.ceo/actor/hasIndustrialFunction">
+        <rdfs:domain rdf:resource="http://www.moonshot.ceo/actor/Actor"/>
+        <rdfs:range rdf:resource="http://www.moonshot.ceo/ontology/IndustrialFunction"/>
+        <rdfs:comment>An actor can have an industrial function</rdfs:comment>
+        <rdfs:label>hasIndustrialFunction</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.moonshot.ceo/actor/innovatesIn -->
 
     <owl:ObjectProperty rdf:about="http://www.moonshot.ceo/actor/innovatesIn">
         <rdfs:domain rdf:resource="http://www.moonshot.ceo/actor/Actor"/>
         <rdfs:range rdf:resource="http://www.moonshot.ceo/ontology/Cell"/>
         <rdfs:range rdf:resource="http://www.moonshot.ceo/ontology/Ket"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">An actor can innovates in one or more cells and kets</rdfs:comment>
+        <rdfs:label>innovatesIn</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -39,6 +52,8 @@
         <rdfs:subPropertyOf rdf:resource="http://www.moonshot.ceo/actor/innovatesIn"/>
         <rdfs:domain rdf:resource="http://www.moonshot.ceo/actor/Actor"/>
         <rdfs:range rdf:resource="http://www.moonshot.ceo/ontology/Cell"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">An actor can innovates in a cell</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">innovatesInCell</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -49,6 +64,8 @@
         <rdfs:subPropertyOf rdf:resource="http://www.moonshot.ceo/actor/innovatesIn"/>
         <rdfs:domain rdf:resource="http://www.moonshot.ceo/actor/Actor"/>
         <rdfs:range rdf:resource="http://www.moonshot.ceo/ontology/Ket"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">An actor can innovates in a ket</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">innovatesInKet</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -59,6 +76,8 @@
         <owl:inverseOf rdf:resource="http://www.moonshot.ceo/actor/seeksInnovationFrom"/>
         <rdfs:domain rdf:resource="http://www.moonshot.ceo/actor/Actor"/>
         <rdfs:range rdf:resource="http://www.moonshot.ceo/actor/Actor"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">An actor can provide innovation to another actor</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">provideInnovationTo</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -68,6 +87,8 @@
     <owl:ObjectProperty rdf:about="http://www.moonshot.ceo/actor/seeksInnovationFrom">
         <rdfs:domain rdf:resource="http://www.moonshot.ceo/actor/Actor"/>
         <rdfs:range rdf:resource="http://www.moonshot.ceo/actor/Actor"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">An actor can seek an innovation from another actor</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">seeksInnovationFrom</rdfs:label>
     </owl:ObjectProperty>
     
 

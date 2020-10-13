@@ -15,11 +15,7 @@
     
 
 
-
-
-
-
-    <!--
+    <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Object Properties
@@ -27,6 +23,29 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://www.moonshot.ceo/hasAreaMember -->
+
+    <owl:ObjectProperty rdf:about="http://www.moonshot.ceo/hasAreaMember">
+        <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasMember"/>
+        <owl:inverseOf rdf:resource="http://www.moonshot.ceo/isMemberOfArea"/>
+        <rdfs:domain rdf:resource="http://www.moonshot.ceo/ontology/Area"/>
+        <rdfs:range rdf:resource="http://www.moonshot.ceo/ontology/Cell"/>
+        <rdfs:range rdf:resource="http://www.moonshot.ceo/ontology/Ket"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.moonshot.ceo/isMemberOfArea -->
+
+    <owl:ObjectProperty rdf:about="http://www.moonshot.ceo/isMemberOfArea">
+        <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isMemberOf"/>
+        <rdfs:domain rdf:resource="http://www.moonshot.ceo/ontology/Cell"/>
+        <rdfs:domain rdf:resource="http://www.moonshot.ceo/ontology/Ket"/>
+        <rdfs:range rdf:resource="http://www.moonshot.ceo/ontology/Area"/>
+    </owl:ObjectProperty>
     
 
 
