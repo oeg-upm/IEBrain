@@ -99,7 +99,7 @@
   }, {
     "instances" : 0,
     "union" : [ "21", "22" ],
-    "attributes" : [ "anonymous", "union" ],
+    "attributes" : [ "union", "anonymous" ],
     "id" : "20"
   }, {
     "iri" : "http://www.moonshot.ceo/ontology/Cell",
@@ -218,37 +218,37 @@
   "propertyAttribute" : [ {
     "range" : "1",
     "domain" : "2",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "4"
   }, {
     "range" : "1",
     "domain" : "7",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "6"
   }, {
     "range" : "1",
     "domain" : "3",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "8"
   }, {
     "range" : "1",
     "domain" : "10",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "9"
   }, {
     "range" : "1",
     "domain" : "5",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "12"
   }, {
     "range" : "1",
     "domain" : "11",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "13"
   }, {
     "range" : "1",
     "domain" : "15",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "14"
   }, {
     "iri" : "http://www.moonshot.ceo/actor/provideInnovationTo",
@@ -282,7 +282,7 @@
   }, {
     "range" : "1",
     "domain" : "0",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "23"
   }, {
     "iri" : "http://www.moonshot.ceo/actor/seeksInnovationFrom",

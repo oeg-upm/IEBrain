@@ -215,6 +215,16 @@
   "@id" : "http://www.moonshot.ceo/ontology/Ket",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
+  "@id" : "http://www.moonshot.ceo/ontology/providesServiceTo",
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "An Industrial Function provides a service to one or more industries."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "providesServiceTo"
+  } ]
+}, {
   "@id" : "http://www.moonshot.ceo/ontology/title",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
