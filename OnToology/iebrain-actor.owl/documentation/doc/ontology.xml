@@ -242,6 +242,22 @@
 
 
     <owl:Class rdf:about="http://www.moonshot.ceo/ontology/Ket"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description rdf:about="http://www.moonshot.ceo/ontology/providesServiceTo">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">An Industrial Function provides a service to one or more industries.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">providesServiceTo</rdfs:label>
+    </rdf:Description>
 </rdf:RDF>
 
 
