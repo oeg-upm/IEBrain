@@ -11,5 +11,6 @@ node [shape = rectangle, color="orange"]; "http://www.moonshot.ceo/actor/Actor" 
 	"http://www.moonshot.ceo/actor/Actor" -> "http://www.moonshot.ceo/ontology/Cell" [ label = "http://www.moonshot.ceo/actor/innovatesIn" ];
 	"http://www.moonshot.ceo/actor/Actor" -> "http://www.moonshot.ceo/ontology/Ket" [ label = "http://www.moonshot.ceo/actor/innovatesInKet" ];
 	"http://www.moonshot.ceo/actor/Actor" -> "http://www.moonshot.ceo/ontology/Cell" [ label = "http://www.moonshot.ceo/actor/innovatesInCell" ];
+	"http://www.moonshot.ceo/actor/Actor" -> "http://www.moonshot.ceo/ontology/IndustrialFunction" [ label = "http://www.moonshot.ceo/actor/hasIndustrialFunction" ];
 
 }

@@ -11,6 +11,21 @@
 # #################################################################
 # 
 # 
+# http://www.moonshot.ceo/hasAreaMember
+<http://www.moonshot.ceo/hasAreaMember> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.moonshot.ceo/hasAreaMember> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasMember> .
+<http://www.moonshot.ceo/hasAreaMember> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.moonshot.ceo/isMemberOfArea> .
+<http://www.moonshot.ceo/hasAreaMember> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.moonshot.ceo/ontology/Area> .
+<http://www.moonshot.ceo/hasAreaMember> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.moonshot.ceo/ontology/Cell> .
+<http://www.moonshot.ceo/hasAreaMember> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.moonshot.ceo/ontology/Ket> .
+# 
+# http://www.moonshot.ceo/isMemberOfArea
+<http://www.moonshot.ceo/isMemberOfArea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.moonshot.ceo/isMemberOfArea> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isMemberOf> .
+<http://www.moonshot.ceo/isMemberOfArea> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.moonshot.ceo/ontology/Cell> .
+<http://www.moonshot.ceo/isMemberOfArea> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.moonshot.ceo/ontology/Ket> .
+<http://www.moonshot.ceo/isMemberOfArea> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.moonshot.ceo/ontology/Area> .
+# 
 # http://www.moonshot.ceo/ontology/hasArea
 <http://www.moonshot.ceo/ontology/hasArea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://www.moonshot.ceo/ontology/hasArea> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasPart> .

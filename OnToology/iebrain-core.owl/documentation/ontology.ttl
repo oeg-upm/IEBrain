@@ -15,6 +15,23 @@
 #    Object Properties
 #################################################################
 
+###  http://www.moonshot.ceo/hasAreaMember
+:hasAreaMember rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasMember> ;
+               owl:inverseOf :isMemberOfArea ;
+               rdfs:domain <http://www.moonshot.ceo/ontology/Area> ;
+               rdfs:range <http://www.moonshot.ceo/ontology/Cell> ,
+                          <http://www.moonshot.ceo/ontology/Ket> .
+
+
+###  http://www.moonshot.ceo/isMemberOfArea
+:isMemberOfArea rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isMemberOf> ;
+                rdfs:domain <http://www.moonshot.ceo/ontology/Cell> ,
+                            <http://www.moonshot.ceo/ontology/Ket> ;
+                rdfs:range <http://www.moonshot.ceo/ontology/Area> .
+
+
 ###  http://www.moonshot.ceo/ontology/hasArea
 <http://www.moonshot.ceo/ontology/hasArea> rdf:type owl:ObjectProperty ;
                                            rdfs:subPropertyOf <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasPart> ;
