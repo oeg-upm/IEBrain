@@ -7,7 +7,9 @@
 @base <http://www.moonshot.ceo/actor/> .
 
 <http://www.moonshot.ceo/actor/> rdf:type owl:Ontology ;
-                                  owl:imports <http://www.moonshot.ceo/> .
+                                  owl:imports <http://www.moonshot.ceo/> ;
+                                  rdfs:comment "This Ontology represents the actors in the innovation space. It is part of the IEBrain Ontology."^^rdfs:Literal ;
+                                  rdfs:label "IEBrainActor"^^rdfs:Literal .
 
 #################################################################
 #    Annotation properties
