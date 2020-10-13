@@ -9,6 +9,8 @@
      xmlns:ontology="http://www.moonshot.ceo/ontology/">
     <owl:Ontology rdf:about="http://www.moonshot.ceo/actor/">
         <owl:imports rdf:resource="http://www.moonshot.ceo/"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">This Ontology represents the actors in the innovation space. It is part of the IEBrain Ontology.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">IEBrainActor</rdfs:label>
     </owl:Ontology>
     
 
