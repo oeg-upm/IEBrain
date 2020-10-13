@@ -1,6 +1,14 @@
 [ {
   "@id" : "http://www.moonshot.ceo/actor/",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "This Ontology represents the actors in the innovation space. It is part of the IEBrain Ontology."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "IEBrainActor"
+  } ],
   "http://www.w3.org/2002/07/owl#imports" : [ {
     "@id" : "http://www.moonshot.ceo/"
   } ]

@@ -3,7 +3,13 @@
   "header" : {
     "languages" : [ "undefined" ],
     "baseIris" : [ "http://www.moonshot.ceo/actor", "http://www.moonshot.ceo/ontology", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema" ],
-    "iri" : "http://www.moonshot.ceo/actor/"
+    "iri" : "http://www.moonshot.ceo/actor/",
+    "labels" : {
+      "undefined" : "IEBrainActor"
+    },
+    "comments" : {
+      "undefined" : "This Ontology represents the actors in the innovation space. It is part of the IEBrain Ontology."
+    }
   },
   "namespace" : [ ],
   "class" : [ {
@@ -34,7 +40,7 @@
     "id" : "21",
     "type" : "owl:Class"
   }, {
-    "id" : "17",
+    "id" : "19",
     "type" : "owl:Class"
   }, {
     "id" : "7",
@@ -99,7 +105,7 @@
   }, {
     "instances" : 0,
     "union" : [ "21", "22" ],
-    "attributes" : [ "anonymous", "union" ],
+    "attributes" : [ "union", "anonymous" ],
     "id" : "20"
   }, {
     "iri" : "http://www.moonshot.ceo/ontology/Cell",
@@ -140,7 +146,7 @@
       "IRI-based" : "IndustrialFunction"
     },
     "attributes" : [ "external" ],
-    "id" : "17"
+    "id" : "19"
   }, {
     "iri" : "http://www.moonshot.ceo/actor/Talent",
     "baseIri" : "http://www.moonshot.ceo/actor",
@@ -203,7 +209,7 @@
     "id" : "23",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "19",
+    "id" : "17",
     "type" : "owl:objectProperty"
   }, {
     "id" : "24",
@@ -218,55 +224,41 @@
   "propertyAttribute" : [ {
     "range" : "1",
     "domain" : "2",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "4"
   }, {
     "range" : "1",
     "domain" : "7",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "6"
   }, {
     "range" : "1",
     "domain" : "3",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "8"
   }, {
     "range" : "1",
     "domain" : "10",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "9"
   }, {
     "range" : "1",
     "domain" : "5",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "12"
   }, {
     "range" : "1",
     "domain" : "11",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "13"
   }, {
     "range" : "1",
     "domain" : "15",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "14"
   }, {
-    "iri" : "http://www.moonshot.ceo/actor/hasIndustrialFunction",
-    "baseIri" : "http://www.moonshot.ceo/actor",
-    "range" : "17",
-    "label" : {
-      "IRI-based" : "hasIndustrialFunction",
-      "undefined" : "hasIndustrialFunction"
-    },
-    "domain" : "1",
-    "comment" : {
-      "undefined" : "An actor can have an industrial function"
-    },
-    "attributes" : [ "object" ],
-    "id" : "16"
-  }, {
     "iri" : "http://www.moonshot.ceo/actor/provideInnovationTo",
-    "inverse" : "19",
+    "inverse" : "17",
     "baseIri" : "http://www.moonshot.ceo/actor",
     "range" : "1",
     "label" : {
@@ -278,11 +270,25 @@
       "undefined" : "An actor can provide innovation to another actor"
     },
     "attributes" : [ "object" ],
+    "id" : "16"
+  }, {
+    "iri" : "http://www.moonshot.ceo/actor/hasIndustrialFunction",
+    "baseIri" : "http://www.moonshot.ceo/actor",
+    "range" : "19",
+    "label" : {
+      "IRI-based" : "hasIndustrialFunction",
+      "undefined" : "hasIndustrialFunction"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "An actor can have an industrial function"
+    },
+    "attributes" : [ "object" ],
     "id" : "18"
   }, {
     "range" : "1",
     "domain" : "0",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "23"
   }, {
     "iri" : "http://www.moonshot.ceo/actor/seeksInnovationFrom",
@@ -297,7 +303,7 @@
       "undefined" : "An actor can seek an innovation from another actor"
     },
     "attributes" : [ "object" ],
-    "id" : "19"
+    "id" : "17"
   }, {
     "iri" : "http://www.moonshot.ceo/actor/innovatesInCell",
     "baseIri" : "http://www.moonshot.ceo/actor",
