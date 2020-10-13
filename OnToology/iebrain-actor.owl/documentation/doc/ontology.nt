@@ -22,6 +22,14 @@
 # #################################################################
 # 
 # 
+# http://www.moonshot.ceo/actor/hasIndustrialFunction
+<http://www.moonshot.ceo/actor/hasIndustrialFunction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.moonshot.ceo/actor/hasIndustrialFunction> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.moonshot.ceo/actor/Actor> .
+<http://www.moonshot.ceo/actor/hasIndustrialFunction> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.moonshot.ceo/ontology/IndustrialFunction> .
+<http://www.moonshot.ceo/ontology/IndustrialFunction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.moonshot.ceo/actor/hasIndustrialFunction> <http://www.w3.org/2000/01/rdf-schema#comment> "An actor can have an industrial function" .
+<http://www.moonshot.ceo/actor/hasIndustrialFunction> <http://www.w3.org/2000/01/rdf-schema#label> "hasIndustrialFunction" .
+# 
 # http://www.moonshot.ceo/actor/innovatesIn
 <http://www.moonshot.ceo/actor/innovatesIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://www.moonshot.ceo/actor/innovatesIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.moonshot.ceo/actor/Actor> .
@@ -29,29 +37,39 @@
 <http://www.moonshot.ceo/ontology/Cell> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.moonshot.ceo/actor/innovatesIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.moonshot.ceo/ontology/Ket> .
 <http://www.moonshot.ceo/ontology/Ket> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.moonshot.ceo/actor/innovatesIn> <http://www.w3.org/2000/01/rdf-schema#comment> "An actor can innovates in one or more cells and kets"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://www.moonshot.ceo/actor/innovatesIn> <http://www.w3.org/2000/01/rdf-schema#label> "innovatesIn" .
 # 
 # http://www.moonshot.ceo/actor/innovatesInCell
 <http://www.moonshot.ceo/actor/innovatesInCell> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://www.moonshot.ceo/actor/innovatesInCell> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.moonshot.ceo/actor/innovatesIn> .
 <http://www.moonshot.ceo/actor/innovatesInCell> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.moonshot.ceo/actor/Actor> .
 <http://www.moonshot.ceo/actor/innovatesInCell> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.moonshot.ceo/ontology/Cell> .
+<http://www.moonshot.ceo/actor/innovatesInCell> <http://www.w3.org/2000/01/rdf-schema#comment> "An actor can innovates in a cell"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://www.moonshot.ceo/actor/innovatesInCell> <http://www.w3.org/2000/01/rdf-schema#label> "innovatesInCell"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
 # 
 # http://www.moonshot.ceo/actor/innovatesInKet
 <http://www.moonshot.ceo/actor/innovatesInKet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://www.moonshot.ceo/actor/innovatesInKet> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.moonshot.ceo/actor/innovatesIn> .
 <http://www.moonshot.ceo/actor/innovatesInKet> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.moonshot.ceo/actor/Actor> .
 <http://www.moonshot.ceo/actor/innovatesInKet> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.moonshot.ceo/ontology/Ket> .
+<http://www.moonshot.ceo/actor/innovatesInKet> <http://www.w3.org/2000/01/rdf-schema#comment> "An actor can innovates in a ket"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://www.moonshot.ceo/actor/innovatesInKet> <http://www.w3.org/2000/01/rdf-schema#label> "innovatesInKet"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
 # 
 # http://www.moonshot.ceo/actor/provideInnovationTo
 <http://www.moonshot.ceo/actor/provideInnovationTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://www.moonshot.ceo/actor/provideInnovationTo> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.moonshot.ceo/actor/seeksInnovationFrom> .
 <http://www.moonshot.ceo/actor/provideInnovationTo> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.moonshot.ceo/actor/Actor> .
 <http://www.moonshot.ceo/actor/provideInnovationTo> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.moonshot.ceo/actor/Actor> .
+<http://www.moonshot.ceo/actor/provideInnovationTo> <http://www.w3.org/2000/01/rdf-schema#comment> "An actor can provide innovation to another actor"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://www.moonshot.ceo/actor/provideInnovationTo> <http://www.w3.org/2000/01/rdf-schema#label> "provideInnovationTo"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
 # 
 # http://www.moonshot.ceo/actor/seeksInnovationFrom
 <http://www.moonshot.ceo/actor/seeksInnovationFrom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://www.moonshot.ceo/actor/seeksInnovationFrom> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.moonshot.ceo/actor/Actor> .
 <http://www.moonshot.ceo/actor/seeksInnovationFrom> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.moonshot.ceo/actor/Actor> .
+<http://www.moonshot.ceo/actor/seeksInnovationFrom> <http://www.w3.org/2000/01/rdf-schema#comment> "An actor can seek an innovation from another actor"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://www.moonshot.ceo/actor/seeksInnovationFrom> <http://www.w3.org/2000/01/rdf-schema#label> "seeksInnovationFrom"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
 # 
 # 
 # 
@@ -108,6 +126,8 @@
 <http://www.moonshot.ceo/actor/Talent> <http://www.w3.org/2000/01/rdf-schema#label> "Talent"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
 # 
 # http://www.moonshot.ceo/ontology/Cell
+# 
+# http://www.moonshot.ceo/ontology/IndustrialFunction
 # 
 # http://www.moonshot.ceo/ontology/Ket
 # 

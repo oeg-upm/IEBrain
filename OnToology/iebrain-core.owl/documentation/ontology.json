@@ -49,6 +49,37 @@
     "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl"
   } ]
 }, {
+  "@id" : "http://www.moonshot.ceo/hasAreaMember",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.moonshot.ceo/ontology/Area"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.moonshot.ceo/ontology/Cell"
+  }, {
+    "@id" : "http://www.moonshot.ceo/ontology/Ket"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasMember"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.moonshot.ceo/isMemberOfArea"
+  } ]
+}, {
+  "@id" : "http://www.moonshot.ceo/isMemberOfArea",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.moonshot.ceo/ontology/Cell"
+  }, {
+    "@id" : "http://www.moonshot.ceo/ontology/Ket"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.moonshot.ceo/ontology/Area"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isMemberOf"
+  } ]
+}, {
   "@id" : "http://www.moonshot.ceo/ontology/Area",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {

@@ -5,7 +5,7 @@
    <key for="edge" id="d2" yfiles.type="edgegraphics" />
    <key attr.name="description" attr.type="string" for="edge" id="d3" />
    <key for="graphml" id="d4" yfiles.type="resources" />
-   <graph edgedefault="directed" id="G" parse.edges="20" parse.nodes="7" parse.order="free">
+   <graph edgedefault="directed" id="G" parse.edges="22" parse.nodes="7" parse.order="free">
       <node id="nid_http://www.moonshot.ceo/ontology/IndustrialFunction">
          <data key="d0">
             <y:ShapeNode>
@@ -211,7 +211,18 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_http://www.moonshot.ceo/ontology/isPartOfCell11" source="nid_owl:Thing" target="nid_http://www.moonshot.ceo/ontology/Cell">
+    <edge id="eid_base:isMemberOfArea11" source="nid_http://www.moonshot.ceo/ontology/Cell" target="nid_http://www.moonshot.ceo/ontology/Area">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">base:isMemberOfArea</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
+    <edge id="eid_http://www.moonshot.ceo/ontology/isPartOfCell12" source="nid_owl:Thing" target="nid_http://www.moonshot.ceo/ontology/Cell">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -222,7 +233,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_http://www.moonshot.ceo/ontology/hasKet12" source="nid_http://www.moonshot.ceo/ontology/Cell" target="nid_owl:Thing">
+    <edge id="eid_http://www.moonshot.ceo/ontology/hasKet13" source="nid_http://www.moonshot.ceo/ontology/Cell" target="nid_owl:Thing">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -233,7 +244,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_http://www.moonshot.ceo/ontology/hasArea13" source="nid_http://www.moonshot.ceo/ontology/MarketMap" target="nid_http://www.moonshot.ceo/ontology/Area">
+    <edge id="eid_http://www.moonshot.ceo/ontology/hasArea14" source="nid_http://www.moonshot.ceo/ontology/MarketMap" target="nid_http://www.moonshot.ceo/ontology/Area">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -244,7 +255,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_http://www.moonshot.ceo/ontology/definition14" source="nid_http://www.moonshot.ceo/ontology/Node" target="nid_owl:Thing">
+    <edge id="eid_http://www.moonshot.ceo/ontology/definition15" source="nid_http://www.moonshot.ceo/ontology/Node" target="nid_owl:Thing">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -255,7 +266,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_http://www.moonshot.ceo/ontology/isPartOfIndustry15" source="nid_http://www.moonshot.ceo/ontology/MarketMap" target="nid_http://www.moonshot.ceo/ontology/Industry">
+    <edge id="eid_http://www.moonshot.ceo/ontology/isPartOfIndustry16" source="nid_http://www.moonshot.ceo/ontology/MarketMap" target="nid_http://www.moonshot.ceo/ontology/Industry">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -266,7 +277,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_http://www.moonshot.ceo/ontology/title16" source="nid_http://www.moonshot.ceo/ontology/Node" target="nid_owl:Thing">
+    <edge id="eid_http://www.moonshot.ceo/ontology/title17" source="nid_http://www.moonshot.ceo/ontology/Node" target="nid_owl:Thing">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -277,7 +288,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_http://www.moonshot.ceo/ontology/creator17" source="nid_http://www.moonshot.ceo/ontology/Node" target="nid_owl:Thing">
+    <edge id="eid_http://www.moonshot.ceo/ontology/creator18" source="nid_http://www.moonshot.ceo/ontology/Node" target="nid_owl:Thing">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -288,7 +299,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_http://www.moonshot.ceo/ontology/image18" source="nid_http://www.moonshot.ceo/ontology/Node" target="nid_owl:Thing">
+    <edge id="eid_http://www.moonshot.ceo/ontology/image19" source="nid_http://www.moonshot.ceo/ontology/Node" target="nid_owl:Thing">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -299,12 +310,23 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_http://www.moonshot.ceo/ontology/url19" source="nid_http://www.moonshot.ceo/ontology/Node" target="nid_owl:Thing">
+    <edge id="eid_http://www.moonshot.ceo/ontology/url20" source="nid_http://www.moonshot.ceo/ontology/Node" target="nid_owl:Thing">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
                <y:Arrows source="none" target="normal" />
                <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">http://www.moonshot.ceo/ontology/url</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
+    <edge id="eid_base:hasAreaMember21" source="nid_http://www.moonshot.ceo/ontology/Area" target="nid_http://www.moonshot.ceo/ontology/Cell">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">base:hasAreaMember</y:EdgeLabel>
                <y:BendStyle smoothed="false" />
             </y:PolyLineEdge>
          </data>

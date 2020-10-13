@@ -58,19 +58,23 @@ This section provides details for each class and property defined by [Ontology N
          </dd>
          <dt>is in domain of</dt>
          <dd>
-            <a href="#innovatesIn" title="http://www.moonshot.ceo/actor/innovatesIn">innovates in</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#innovatesInCell" title="http://www.moonshot.ceo/actor/innovatesInCell">innovates in cell</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#innovatesInKet" title="http://www.moonshot.ceo/actor/innovatesInKet">innovates in ket</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#provideInnovationTo" title="http://www.moonshot.ceo/actor/provideInnovationTo">provide innovation to</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#seeksInnovationFrom" title="http://www.moonshot.ceo/actor/seeksInnovationFrom">seeks innovation from</a>
+            <a href="#hasIndustrialFunction"
+               title="http://www.moonshot.ceo/actor/hasIndustrialFunction">hasIndustrialFunction</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#innovatesIn" title="http://www.moonshot.ceo/actor/innovatesIn">innovatesIn</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#innovatesInCell" title="http://www.moonshot.ceo/actor/innovatesInCell">innovatesInCell</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#innovatesInKet" title="http://www.moonshot.ceo/actor/innovatesInKet">innovatesInKet</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#provideInnovationTo" title="http://www.moonshot.ceo/actor/provideInnovationTo">provideInnovationTo</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#seeksInnovationFrom"
+               title="http://www.moonshot.ceo/actor/seeksInnovationFrom">seeksInnovationFrom</a>
             <sup class="type-op" title="object property">op</sup>, <a href="http://www.moonshot.ceo/ontology/title"
                target="_blank"
                title="http://www.moonshot.ceo/ontology/title">title</a>
          </dd>
          <dt>is in range of</dt>
          <dd>
-            <a href="#provideInnovationTo" title="http://www.moonshot.ceo/actor/provideInnovationTo">provide innovation to</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#seeksInnovationFrom" title="http://www.moonshot.ceo/actor/seeksInnovationFrom">seeks innovation from</a>
+            <a href="#provideInnovationTo" title="http://www.moonshot.ceo/actor/provideInnovationTo">provideInnovationTo</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#seeksInnovationFrom"
+               title="http://www.moonshot.ceo/actor/seeksInnovationFrom">seeksInnovationFrom</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
@@ -199,44 +203,69 @@ This section provides details for each class and property defined by [Ontology N
    <h3 id="properties" class="list">Object Properties</h3>
    <ul class="hlist">
       <li>
-         <a href="#innovatesIn" title="http://www.moonshot.ceo/actor/innovatesIn">
-            <span>innovates in</span>
-         </a>
+         <a href="#hasIndustrialFunction"
+            title="http://www.moonshot.ceo/actor/hasIndustrialFunction">hasIndustrialFunction</a>
       </li>
       <li>
-         <a href="#innovatesInCell" title="http://www.moonshot.ceo/actor/innovatesInCell">
-            <span>innovates in cell</span>
-         </a>
+         <a href="#innovatesIn" title="http://www.moonshot.ceo/actor/innovatesIn">innovatesIn</a>
       </li>
       <li>
-         <a href="#innovatesInKet" title="http://www.moonshot.ceo/actor/innovatesInKet">
-            <span>innovates in ket</span>
-         </a>
+         <a href="#innovatesInCell" title="http://www.moonshot.ceo/actor/innovatesInCell">innovatesInCell</a>
       </li>
       <li>
-         <a href="#provideInnovationTo" title="http://www.moonshot.ceo/actor/provideInnovationTo">
-            <span>provide innovation to</span>
-         </a>
+         <a href="#innovatesInKet" title="http://www.moonshot.ceo/actor/innovatesInKet">innovatesInKet</a>
       </li>
       <li>
-         <a href="#seeksInnovationFrom" title="http://www.moonshot.ceo/actor/seeksInnovationFrom">
-            <span>seeks innovation from</span>
-         </a>
+         <a href="#provideInnovationTo" title="http://www.moonshot.ceo/actor/provideInnovationTo">provideInnovationTo</a>
+      </li>
+      <li>
+         <a href="#seeksInnovationFrom"
+            title="http://www.moonshot.ceo/actor/seeksInnovationFrom">seeksInnovationFrom</a>
       </li>
    </ul>
+   <div class="entity" id="hasIndustrialFunction">
+      <h3>hasIndustrialFunction<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.moonshot.ceo/actor/hasIndustrialFunction</p>
+      <div class="comment">
+         <span class="markdown">An actor can have an industrial function</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Actor" title="http://www.moonshot.ceo/actor/Actor">actor</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.moonshot.ceo/ontology/IndustrialFunction"
+                  target="_blank"
+                  title="http://www.moonshot.ceo/ontology/IndustrialFunction">industrial function</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
    <div class="entity" id="innovatesIn">
-      <h3>innovates in<sup class="type-op" title="object property">op</sup>
+      <h3>innovatesIn<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
       <p>
          <strong>IRI:</strong> http://www.moonshot.ceo/actor/innovatesIn</p>
+      <div class="comment">
+         <span class="markdown">An actor can innovates in one or more cells and kets</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has sub-properties</dt>
             <dd>
-               <a href="#innovatesInCell" title="http://www.moonshot.ceo/actor/innovatesInCell">innovates in cell</a>
-               <sup class="type-op" title="object property">op</sup>, <a href="#innovatesInKet" title="http://www.moonshot.ceo/actor/innovatesInKet">innovates in ket</a>
+               <a href="#innovatesInCell" title="http://www.moonshot.ceo/actor/innovatesInCell">innovatesInCell</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#innovatesInKet" title="http://www.moonshot.ceo/actor/innovatesInKet">innovatesInKet</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
             <dt>has domain</dt>
@@ -261,17 +290,20 @@ This section provides details for each class and property defined by [Ontology N
       </div>
    </div>
    <div class="entity" id="innovatesInCell">
-      <h3>innovates in cell<sup class="type-op" title="object property">op</sup>
+      <h3>innovatesInCell<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
       <p>
          <strong>IRI:</strong> http://www.moonshot.ceo/actor/innovatesInCell</p>
+      <div class="comment">
+         <span class="markdown">An actor can innovates in a cell</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <a href="#innovatesIn" title="http://www.moonshot.ceo/actor/innovatesIn">innovates in</a>
+               <a href="#innovatesIn" title="http://www.moonshot.ceo/actor/innovatesIn">innovatesIn</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
             <dt>has domain</dt>
@@ -290,17 +322,20 @@ This section provides details for each class and property defined by [Ontology N
       </div>
    </div>
    <div class="entity" id="innovatesInKet">
-      <h3>innovates in ket<sup class="type-op" title="object property">op</sup>
+      <h3>innovatesInKet<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
       <p>
          <strong>IRI:</strong> http://www.moonshot.ceo/actor/innovatesInKet</p>
+      <div class="comment">
+         <span class="markdown">An actor can innovates in a ket</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <a href="#innovatesIn" title="http://www.moonshot.ceo/actor/innovatesIn">innovates in</a>
+               <a href="#innovatesIn" title="http://www.moonshot.ceo/actor/innovatesIn">innovatesIn</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
             <dt>has domain</dt>
@@ -319,12 +354,15 @@ This section provides details for each class and property defined by [Ontology N
       </div>
    </div>
    <div class="entity" id="provideInnovationTo">
-      <h3>provide innovation to<sup class="type-op" title="object property">op</sup>
+      <h3>provideInnovationTo<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
       <p>
          <strong>IRI:</strong> http://www.moonshot.ceo/actor/provideInnovationTo</p>
+      <div class="comment">
+         <span class="markdown">An actor can provide innovation to another actor</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has domain</dt>
@@ -339,19 +377,23 @@ This section provides details for each class and property defined by [Ontology N
             </dd>
             <dt>is inverse of</dt>
             <dd>
-               <a href="#seeksInnovationFrom" title="http://www.moonshot.ceo/actor/seeksInnovationFrom">seeks innovation from</a>
+               <a href="#seeksInnovationFrom"
+                  title="http://www.moonshot.ceo/actor/seeksInnovationFrom">seeksInnovationFrom</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
       </div>
    </div>
    <div class="entity" id="seeksInnovationFrom">
-      <h3>seeks innovation from<sup class="type-op" title="object property">op</sup>
+      <h3>seeksInnovationFrom<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
       <p>
          <strong>IRI:</strong> http://www.moonshot.ceo/actor/seeksInnovationFrom</p>
+      <div class="comment">
+         <span class="markdown">An actor can seek an innovation from another actor</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has domain</dt>
@@ -366,7 +408,7 @@ This section provides details for each class and property defined by [Ontology N
             </dd>
             <dt>is inverse of</dt>
             <dd>
-               <a href="#provideInnovationTo" title="http://www.moonshot.ceo/actor/provideInnovationTo">provide innovation to</a>
+               <a href="#provideInnovationTo" title="http://www.moonshot.ceo/actor/provideInnovationTo">provideInnovationTo</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
