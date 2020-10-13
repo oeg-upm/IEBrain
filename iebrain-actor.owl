@@ -23,6 +23,36 @@
     
 
 
+    <!-- http://www.moonshot.ceo/actor/innovatesIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.moonshot.ceo/actor/innovatesIn">
+        <rdfs:domain rdf:resource="http://www.moonshot.ceo/actor/Actor"/>
+        <rdfs:range rdf:resource="http://www.moonshot.ceo/ontology/Cell"/>
+        <rdfs:range rdf:resource="http://www.moonshot.ceo/ontology/Ket"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.moonshot.ceo/actor/innovatesInCell -->
+
+    <owl:ObjectProperty rdf:about="http://www.moonshot.ceo/actor/innovatesInCell">
+        <rdfs:subPropertyOf rdf:resource="http://www.moonshot.ceo/actor/innovatesIn"/>
+        <rdfs:domain rdf:resource="http://www.moonshot.ceo/actor/Actor"/>
+        <rdfs:range rdf:resource="http://www.moonshot.ceo/ontology/Cell"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.moonshot.ceo/actor/innovatesInKet -->
+
+    <owl:ObjectProperty rdf:about="http://www.moonshot.ceo/actor/innovatesInKet">
+        <rdfs:subPropertyOf rdf:resource="http://www.moonshot.ceo/actor/innovatesIn"/>
+        <rdfs:domain rdf:resource="http://www.moonshot.ceo/actor/Actor"/>
+        <rdfs:range rdf:resource="http://www.moonshot.ceo/ontology/Ket"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.moonshot.ceo/actor/provideInnovationTo -->
 
     <owl:ObjectProperty rdf:about="http://www.moonshot.ceo/actor/provideInnovationTo">
