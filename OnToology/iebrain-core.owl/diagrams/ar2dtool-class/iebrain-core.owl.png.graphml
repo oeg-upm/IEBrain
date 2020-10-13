@@ -5,37 +5,37 @@
    <key for="edge" id="d2" yfiles.type="edgegraphics" />
    <key attr.name="description" attr.type="string" for="edge" id="d3" />
    <key for="graphml" id="d4" yfiles.type="resources" />
-   <graph edgedefault="directed" id="G" parse.edges="22" parse.nodes="5" parse.order="free">
-      <node id="nid_NULL">
+   <graph edgedefault="directed" id="G" parse.edges="20" parse.nodes="7" parse.order="free">
+      <node id="nid_http://www.moonshot.ceo/ontology/IndustrialFunction">
          <data key="d0">
             <y:ShapeNode>
-               <y:Geometry height="30.0" width="40.0" x="0.0" y="0.0" />
-               <y:Fill color="#FFFFFF" transparent="false" />
+               <y:Geometry height="30.0" width="510.0" x="0.0" y="0.0" />
+               <y:Fill color="#FFA500" transparent="false" />
                <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">NULL</y:NodeLabel>
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">http://www.moonshot.ceo/ontology/IndustrialFunction</y:NodeLabel>
                <y:Shape type="rectangle" />
             </y:ShapeNode>
          </data>
          <data key="d1" />
       </node>
-      <node id="nid_http://www.moonshot.ceo/ontology/Cell">
+      <node id="nid_http://www.moonshot.ceo/ontology/Industry">
          <data key="d0">
             <y:ShapeNode>
-               <y:Geometry height="30.0" width="370.0" x="0.0" y="0.0" />
-               <y:Fill color="#FFFFFF" transparent="false" />
+               <y:Geometry height="30.0" width="410.0" x="0.0" y="0.0" />
+               <y:Fill color="#FFA500" transparent="false" />
                <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">http://www.moonshot.ceo/ontology/Cell</y:NodeLabel>
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">http://www.moonshot.ceo/ontology/Industry</y:NodeLabel>
                <y:Shape type="rectangle" />
             </y:ShapeNode>
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:someValuesFrom0" source="nid_NULL" target="nid_http://www.moonshot.ceo/ontology/Cell">
+    <edge id="eid_http://www.moonshot.ceo/ontology/providesServiceTo0" source="nid_http://www.moonshot.ceo/ontology/IndustrialFunction" target="nid_http://www.moonshot.ceo/ontology/Industry">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
                <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">owl:someValuesFrom</y:EdgeLabel>
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">http://www.moonshot.ceo/ontology/providesServiceTo</y:EdgeLabel>
                <y:BendStyle smoothed="false" />
             </y:PolyLineEdge>
          </data>
@@ -45,7 +45,7 @@
          <data key="d0">
             <y:ShapeNode>
                <y:Geometry height="30.0" width="370.0" x="0.0" y="0.0" />
-               <y:Fill color="#FFFFFF" transparent="false" />
+               <y:Fill color="#FFA500" transparent="false" />
                <y:BorderStyle color="#000000" type="line" width="1.0" />
                <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">http://www.moonshot.ceo/ontology/Node</y:NodeLabel>
                <y:Shape type="rectangle" />
@@ -53,40 +53,6 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:someValuesFrom1" source="nid_NULL" target="nid_http://www.moonshot.ceo/ontology/Node">
-         <data key="d2">
-            <y:PolyLineEdge>
-               <y:LineStyle color="black" type="line" width="1.0" />
-               <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">owl:someValuesFrom</y:EdgeLabel>
-               <y:BendStyle smoothed="false" />
-            </y:PolyLineEdge>
-         </data>
-         <data key="d3" />
-      </edge>
-      <node id="nid_http://www.moonshot.ceo/ontology/MarketMap">
-         <data key="d0">
-            <y:ShapeNode>
-               <y:Geometry height="30.0" width="420.0" x="0.0" y="0.0" />
-               <y:Fill color="#FFFFFF" transparent="false" />
-               <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">http://www.moonshot.ceo/ontology/MarketMap</y:NodeLabel>
-               <y:Shape type="rectangle" />
-            </y:ShapeNode>
-         </data>
-         <data key="d1" />
-      </node>
-    <edge id="eid_owl:someValuesFrom2" source="nid_NULL" target="nid_http://www.moonshot.ceo/ontology/MarketMap">
-         <data key="d2">
-            <y:PolyLineEdge>
-               <y:LineStyle color="black" type="line" width="1.0" />
-               <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">owl:someValuesFrom</y:EdgeLabel>
-               <y:BendStyle smoothed="false" />
-            </y:PolyLineEdge>
-         </data>
-         <data key="d3" />
-      </edge>
       <node id="nid_owl:Thing">
          <data key="d0">
             <y:ShapeNode>
@@ -99,7 +65,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_http://www.moonshot.ceo/ontology/abstract3" source="nid_http://www.moonshot.ceo/ontology/Node" target="nid_owl:Thing">
+    <edge id="eid_http://www.moonshot.ceo/ontology/abstract1" source="nid_http://www.moonshot.ceo/ontology/Node" target="nid_owl:Thing">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -110,7 +76,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_http://www.moonshot.ceo/ontology/keyword4" source="nid_http://www.moonshot.ceo/ontology/Node" target="nid_owl:Thing">
+    <edge id="eid_http://www.moonshot.ceo/ontology/keyword2" source="nid_http://www.moonshot.ceo/ontology/Node" target="nid_owl:Thing">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -121,7 +87,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_http://www.moonshot.ceo/ontology/correlativeName5" source="nid_http://www.moonshot.ceo/ontology/Node" target="nid_owl:Thing">
+    <edge id="eid_http://www.moonshot.ceo/ontology/correlativeName3" source="nid_http://www.moonshot.ceo/ontology/Node" target="nid_owl:Thing">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -132,7 +98,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_http://www.moonshot.ceo/ontology/doc6" source="nid_http://www.moonshot.ceo/ontology/Node" target="nid_owl:Thing">
+    <edge id="eid_http://www.moonshot.ceo/ontology/doc4" source="nid_http://www.moonshot.ceo/ontology/Node" target="nid_owl:Thing">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -143,7 +109,19 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_http://www.moonshot.ceo/ontology/isPartOfNode7" source="nid_http://www.moonshot.ceo/ontology/Cell" target="nid_http://www.moonshot.ceo/ontology/Node">
+      <node id="nid_http://www.moonshot.ceo/ontology/Cell">
+         <data key="d0">
+            <y:ShapeNode>
+               <y:Geometry height="30.0" width="370.0" x="0.0" y="0.0" />
+               <y:Fill color="#FFA500" transparent="false" />
+               <y:BorderStyle color="#000000" type="line" width="1.0" />
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">http://www.moonshot.ceo/ontology/Cell</y:NodeLabel>
+               <y:Shape type="rectangle" />
+            </y:ShapeNode>
+         </data>
+         <data key="d1" />
+      </node>
+    <edge id="eid_http://www.moonshot.ceo/ontology/isPartOfNode5" source="nid_http://www.moonshot.ceo/ontology/Cell" target="nid_http://www.moonshot.ceo/ontology/Node">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -154,7 +132,19 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_http://www.moonshot.ceo/ontology/hasMarketMap8" source="nid_owl:Thing" target="nid_http://www.moonshot.ceo/ontology/MarketMap">
+      <node id="nid_http://www.moonshot.ceo/ontology/MarketMap">
+         <data key="d0">
+            <y:ShapeNode>
+               <y:Geometry height="30.0" width="420.0" x="0.0" y="0.0" />
+               <y:Fill color="#FFA500" transparent="false" />
+               <y:BorderStyle color="#000000" type="line" width="1.0" />
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">http://www.moonshot.ceo/ontology/MarketMap</y:NodeLabel>
+               <y:Shape type="rectangle" />
+            </y:ShapeNode>
+         </data>
+         <data key="d1" />
+      </node>
+    <edge id="eid_http://www.moonshot.ceo/ontology/hasMarketMap6" source="nid_http://www.moonshot.ceo/ontology/Industry" target="nid_http://www.moonshot.ceo/ontology/MarketMap">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -165,7 +155,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_http://www.moonshot.ceo/ontology/creationDate9" source="nid_http://www.moonshot.ceo/ontology/Node" target="nid_owl:Thing">
+    <edge id="eid_http://www.moonshot.ceo/ontology/creationDate7" source="nid_http://www.moonshot.ceo/ontology/Node" target="nid_owl:Thing">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -176,7 +166,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_http://www.moonshot.ceo/ontology/icon10" source="nid_http://www.moonshot.ceo/ontology/Node" target="nid_owl:Thing">
+    <edge id="eid_http://www.moonshot.ceo/ontology/icon8" source="nid_http://www.moonshot.ceo/ontology/Node" target="nid_owl:Thing">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -187,7 +177,19 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_http://www.moonshot.ceo/ontology/isPartOfMarketMap11" source="nid_owl:Thing" target="nid_http://www.moonshot.ceo/ontology/MarketMap">
+      <node id="nid_http://www.moonshot.ceo/ontology/Area">
+         <data key="d0">
+            <y:ShapeNode>
+               <y:Geometry height="30.0" width="370.0" x="0.0" y="0.0" />
+               <y:Fill color="#FFA500" transparent="false" />
+               <y:BorderStyle color="#000000" type="line" width="1.0" />
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">http://www.moonshot.ceo/ontology/Area</y:NodeLabel>
+               <y:Shape type="rectangle" />
+            </y:ShapeNode>
+         </data>
+         <data key="d1" />
+      </node>
+    <edge id="eid_http://www.moonshot.ceo/ontology/isPartOfMarketMap9" source="nid_http://www.moonshot.ceo/ontology/Area" target="nid_http://www.moonshot.ceo/ontology/MarketMap">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -198,7 +200,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_http://www.moonshot.ceo/ontology/hasCell12" source="nid_http://www.moonshot.ceo/ontology/Node" target="nid_http://www.moonshot.ceo/ontology/Cell">
+    <edge id="eid_http://www.moonshot.ceo/ontology/hasCell10" source="nid_http://www.moonshot.ceo/ontology/Node" target="nid_http://www.moonshot.ceo/ontology/Cell">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -209,7 +211,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_http://www.moonshot.ceo/ontology/isPartOfCell13" source="nid_owl:Thing" target="nid_http://www.moonshot.ceo/ontology/Cell">
+    <edge id="eid_http://www.moonshot.ceo/ontology/isPartOfCell11" source="nid_owl:Thing" target="nid_http://www.moonshot.ceo/ontology/Cell">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -220,7 +222,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_http://www.moonshot.ceo/ontology/hasKet14" source="nid_http://www.moonshot.ceo/ontology/Cell" target="nid_owl:Thing">
+    <edge id="eid_http://www.moonshot.ceo/ontology/hasKet12" source="nid_http://www.moonshot.ceo/ontology/Cell" target="nid_owl:Thing">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -231,7 +233,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_http://www.moonshot.ceo/ontology/hasArea15" source="nid_http://www.moonshot.ceo/ontology/MarketMap" target="nid_owl:Thing">
+    <edge id="eid_http://www.moonshot.ceo/ontology/hasArea13" source="nid_http://www.moonshot.ceo/ontology/MarketMap" target="nid_http://www.moonshot.ceo/ontology/Area">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -242,7 +244,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_http://www.moonshot.ceo/ontology/definition16" source="nid_http://www.moonshot.ceo/ontology/Node" target="nid_owl:Thing">
+    <edge id="eid_http://www.moonshot.ceo/ontology/definition14" source="nid_http://www.moonshot.ceo/ontology/Node" target="nid_owl:Thing">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -253,7 +255,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_http://www.moonshot.ceo/ontology/isPartOfIndustry17" source="nid_http://www.moonshot.ceo/ontology/MarketMap" target="nid_owl:Thing">
+    <edge id="eid_http://www.moonshot.ceo/ontology/isPartOfIndustry15" source="nid_http://www.moonshot.ceo/ontology/MarketMap" target="nid_http://www.moonshot.ceo/ontology/Industry">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -264,7 +266,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_http://www.moonshot.ceo/ontology/title18" source="nid_http://www.moonshot.ceo/ontology/Node" target="nid_owl:Thing">
+    <edge id="eid_http://www.moonshot.ceo/ontology/title16" source="nid_http://www.moonshot.ceo/ontology/Node" target="nid_owl:Thing">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -275,7 +277,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_http://www.moonshot.ceo/ontology/creator19" source="nid_http://www.moonshot.ceo/ontology/Node" target="nid_owl:Thing">
+    <edge id="eid_http://www.moonshot.ceo/ontology/creator17" source="nid_http://www.moonshot.ceo/ontology/Node" target="nid_owl:Thing">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -286,7 +288,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_http://www.moonshot.ceo/ontology/image20" source="nid_http://www.moonshot.ceo/ontology/Node" target="nid_owl:Thing">
+    <edge id="eid_http://www.moonshot.ceo/ontology/image18" source="nid_http://www.moonshot.ceo/ontology/Node" target="nid_owl:Thing">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -297,7 +299,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_http://www.moonshot.ceo/ontology/url21" source="nid_http://www.moonshot.ceo/ontology/Node" target="nid_owl:Thing">
+    <edge id="eid_http://www.moonshot.ceo/ontology/url19" source="nid_http://www.moonshot.ceo/ontology/Node" target="nid_owl:Thing">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
