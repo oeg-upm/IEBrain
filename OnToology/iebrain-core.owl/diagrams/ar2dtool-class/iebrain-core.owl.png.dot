@@ -1,7 +1,7 @@
 digraph ar2dtool_diagram { 
 rankdir=LR;
 size="1501"
-node [shape = rectangle, color="orange"]; "http://www.moonshot.ceo/ontology/Node" "http://www.moonshot.ceo/ontology/MarketMap" "http://www.moonshot.ceo/ontology/Industry" "http://www.moonshot.ceo/ontology/IndustrialFunction" "http://www.moonshot.ceo/ontology/Cell" "http://www.moonshot.ceo/ontology/Area" "owl:Thing" ; /*classes style*/
+node [shape = rectangle, color="orange"]; "http://www.moonshot.ceo/ontology/MarketMap" "http://www.moonshot.ceo/ontology/Node" "http://www.moonshot.ceo/ontology/Area" "http://www.moonshot.ceo/ontology/Cell" "http://www.moonshot.ceo/ontology/Industry" "http://www.moonshot.ceo/ontology/IndustrialFunction" "owl:Thing" ; /*classes style*/
 	"http://www.moonshot.ceo/ontology/IndustrialFunction" -> "http://www.moonshot.ceo/ontology/Industry" [ label = "http://www.moonshot.ceo/ontology/providesServiceTo" ];
 	"http://www.moonshot.ceo/ontology/Node" -> "owl:Thing" [ label = "http://www.moonshot.ceo/ontology/abstract" ];
 	"http://www.moonshot.ceo/ontology/Node" -> "owl:Thing" [ label = "http://www.moonshot.ceo/ontology/keyword" ];
@@ -13,7 +13,7 @@ node [shape = rectangle, color="orange"]; "http://www.moonshot.ceo/ontology/Node
 	"http://www.moonshot.ceo/ontology/Node" -> "owl:Thing" [ label = "http://www.moonshot.ceo/ontology/icon" ];
 	"http://www.moonshot.ceo/ontology/Area" -> "http://www.moonshot.ceo/ontology/MarketMap" [ label = "http://www.moonshot.ceo/ontology/isPartOfMarketMap" ];
 	"http://www.moonshot.ceo/ontology/Node" -> "http://www.moonshot.ceo/ontology/Cell" [ label = "http://www.moonshot.ceo/ontology/hasCell" ];
-	"http://www.moonshot.ceo/ontology/Cell" -> "http://www.moonshot.ceo/ontology/Area" [ label = "base:isMemberOfArea" ];
+	"http://www.moonshot.ceo/ontology/Cell" -> "http://www.moonshot.ceo/ontology/Area" [ label = "ms:isMemberOfArea" ];
 	"owl:Thing" -> "http://www.moonshot.ceo/ontology/Cell" [ label = "http://www.moonshot.ceo/ontology/isPartOfCell" ];
 	"http://www.moonshot.ceo/ontology/Cell" -> "owl:Thing" [ label = "http://www.moonshot.ceo/ontology/hasKet" ];
 	"http://www.moonshot.ceo/ontology/MarketMap" -> "http://www.moonshot.ceo/ontology/Area" [ label = "http://www.moonshot.ceo/ontology/hasArea" ];
@@ -23,6 +23,6 @@ node [shape = rectangle, color="orange"]; "http://www.moonshot.ceo/ontology/Node
 	"http://www.moonshot.ceo/ontology/Node" -> "owl:Thing" [ label = "http://www.moonshot.ceo/ontology/creator" ];
 	"http://www.moonshot.ceo/ontology/Node" -> "owl:Thing" [ label = "http://www.moonshot.ceo/ontology/image" ];
 	"http://www.moonshot.ceo/ontology/Node" -> "owl:Thing" [ label = "http://www.moonshot.ceo/ontology/url" ];
-	"http://www.moonshot.ceo/ontology/Area" -> "http://www.moonshot.ceo/ontology/Cell" [ label = "base:hasAreaMember" ];
+	"http://www.moonshot.ceo/ontology/Area" -> "http://www.moonshot.ceo/ontology/Cell" [ label = "ms:hasAreaMember" ];
 
 }

@@ -211,12 +211,12 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_base:isMemberOfArea11" source="nid_http://www.moonshot.ceo/ontology/Cell" target="nid_http://www.moonshot.ceo/ontology/Area">
+    <edge id="eid_ms:isMemberOfArea11" source="nid_http://www.moonshot.ceo/ontology/Cell" target="nid_http://www.moonshot.ceo/ontology/Area">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
                <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">base:isMemberOfArea</y:EdgeLabel>
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">ms:isMemberOfArea</y:EdgeLabel>
                <y:BendStyle smoothed="false" />
             </y:PolyLineEdge>
          </data>
@@ -321,12 +321,12 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_base:hasAreaMember21" source="nid_http://www.moonshot.ceo/ontology/Area" target="nid_http://www.moonshot.ceo/ontology/Cell">
+    <edge id="eid_ms:hasAreaMember21" source="nid_http://www.moonshot.ceo/ontology/Area" target="nid_http://www.moonshot.ceo/ontology/Cell">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
                <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">base:hasAreaMember</y:EdgeLabel>
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">ms:hasAreaMember</y:EdgeLabel>
                <y:BendStyle smoothed="false" />
             </y:PolyLineEdge>
          </data>
