@@ -1,0 +1,167 @@
+@prefix : <http://www.moonshot.ceo/actor/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.moonshot.ceo/actor/> .
+
+<http://www.moonshot.ceo/actor/> rdf:type owl:Ontology ;
+                                  owl:imports <http://www.moonshot.ceo/> ;
+                                  <http://purl.org/dc/terms/description> "This Ontology represents the actors in the innovation space. It is part of the IEBrain Ontology."^^rdfs:Literal ;
+                                  <http://purl.org/dc/terms/title> "IEBrainActor"^^rdfs:Literal ;
+                                  rdfs:comment "This Ontology represents the actors in the innovation space. It is part of the IEBrain Ontology."^^rdfs:Literal ;
+                                  rdfs:label "IEBrainActor"^^rdfs:Literal .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.moonshot.ceo/ontology/title
+<http://www.moonshot.ceo/ontology/title> rdf:type owl:AnnotationProperty ;
+                                         rdfs:domain :Actor .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.moonshot.ceo/actor/hasIndustrialFunction
+:hasIndustrialFunction rdf:type owl:ObjectProperty ;
+                       rdfs:domain :Actor ;
+                       rdfs:range <http://www.moonshot.ceo/ontology/IndustrialFunction> ;
+                       rdfs:comment "An actor can have an industrial function" ;
+                       rdfs:label "hasIndustrialFunction" .
+
+
+###  http://www.moonshot.ceo/actor/innovatesIn
+:innovatesIn rdf:type owl:ObjectProperty ;
+             rdfs:domain :Actor ;
+             rdfs:range <http://www.moonshot.ceo/ontology/Cell> ,
+                        <http://www.moonshot.ceo/ontology/Ket> ;
+             rdfs:comment "An actor can innovates in one or more cells and kets"^^rdfs:Literal ;
+             rdfs:label "innovatesIn" .
+
+
+###  http://www.moonshot.ceo/actor/innovatesInCell
+:innovatesInCell rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf :innovatesIn ;
+                 rdfs:domain :Actor ;
+                 rdfs:range <http://www.moonshot.ceo/ontology/Cell> ;
+                 rdfs:comment "An actor can innovates in a cell"^^rdfs:Literal ;
+                 rdfs:label "innovatesInCell"^^rdfs:Literal .
+
+
+###  http://www.moonshot.ceo/actor/innovatesInKet
+:innovatesInKet rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf :innovatesIn ;
+                rdfs:domain :Actor ;
+                rdfs:range <http://www.moonshot.ceo/ontology/Ket> ;
+                rdfs:comment "An actor can innovates in a ket"^^rdfs:Literal ;
+                rdfs:label "innovatesInKet"^^rdfs:Literal .
+
+
+###  http://www.moonshot.ceo/actor/provideInnovationTo
+:provideInnovationTo rdf:type owl:ObjectProperty ;
+                     owl:inverseOf :seeksInnovationFrom ;
+                     rdfs:domain :Actor ;
+                     rdfs:range :Actor ;
+                     rdfs:comment "An actor can provide innovation to another actor"^^rdfs:Literal ;
+                     rdfs:label "provideInnovationTo"^^rdfs:Literal .
+
+
+###  http://www.moonshot.ceo/actor/seeksInnovationFrom
+:seeksInnovationFrom rdf:type owl:ObjectProperty ;
+                     rdfs:domain :Actor ;
+                     rdfs:range :Actor ;
+                     rdfs:comment "An actor can seek an innovation from another actor"^^rdfs:Literal ;
+                     rdfs:label "seeksInnovationFrom"^^rdfs:Literal .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.moonshot.ceo/actor/Actor
+:Actor rdf:type owl:Class ;
+       rdfs:comment "An actor acts towards another actor (e.g., seeks innovation from, or produces innovation for)."^^rdfs:Literal ;
+       rdfs:label "actor"^^rdfs:Literal .
+
+
+###  http://www.moonshot.ceo/actor/Company
+:Company rdf:type owl:Class ;
+         rdfs:subClassOf :Actor ;
+         rdfs:label "Company"^^rdfs:Literal .
+
+
+###  http://www.moonshot.ceo/actor/Expert
+:Expert rdf:type owl:Class ;
+        rdfs:subClassOf :Actor ;
+        rdfs:label "Expert"^^rdfs:Literal .
+
+
+###  http://www.moonshot.ceo/actor/Investor
+:Investor rdf:type owl:Class ;
+          rdfs:subClassOf :Actor ;
+          rdfs:label "Investor"^^rdfs:Literal .
+
+
+###  http://www.moonshot.ceo/actor/Mentor
+:Mentor rdf:type owl:Class ;
+        rdfs:subClassOf :Actor ;
+        rdfs:label "Mentor"^^rdfs:Literal .
+
+
+###  http://www.moonshot.ceo/actor/PublicEntity
+:PublicEntity rdf:type owl:Class ;
+              rdfs:subClassOf :Actor ;
+              rdfs:label "PublicEntity"^^rdfs:Literal .
+
+
+###  http://www.moonshot.ceo/actor/ResearchAndDevelopmentLab
+:ResearchAndDevelopmentLab rdf:type owl:Class ;
+                           rdfs:subClassOf :Actor ;
+                           rdfs:label "ResearchAndDevelopmentLab"^^rdfs:Literal .
+
+
+###  http://www.moonshot.ceo/actor/Startup
+:Startup rdf:type owl:Class ;
+         rdfs:subClassOf :Actor ;
+         rdfs:label "Startup"^^rdfs:Literal .
+
+
+###  http://www.moonshot.ceo/actor/Talent
+:Talent rdf:type owl:Class ;
+        rdfs:subClassOf :Actor ;
+        rdfs:label "Talent"^^rdfs:Literal .
+
+
+###  http://www.moonshot.ceo/ontology/Cell
+<http://www.moonshot.ceo/ontology/Cell> rdf:type owl:Class .
+
+
+###  http://www.moonshot.ceo/ontology/IndustrialFunction
+<http://www.moonshot.ceo/ontology/IndustrialFunction> rdf:type owl:Class .
+
+
+###  http://www.moonshot.ceo/ontology/Ket
+<http://www.moonshot.ceo/ontology/Ket> rdf:type owl:Class .
+
+
+#################################################################
+#    Annotations
+#################################################################
+
+<http://www.moonshot.ceo/ontology/providesServiceTo> rdfs:comment "An Industrial Function provides a service to one or more industries."^^rdfs:Literal ;
+                                                     rdfs:label "providesServiceTo"^^rdfs:Literal .
+
+
+###  Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/

@@ -1,0 +1,255 @@
+[ {
+  "@id" : "http://purl.org/dc/terms/description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.moonshot.ceo/actor/",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "This Ontology represents the actors in the innovation space. It is part of the IEBrain Ontology."
+  } ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "IEBrainActor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "This Ontology represents the actors in the innovation space. It is part of the IEBrain Ontology."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "IEBrainActor"
+  } ],
+  "http://www.w3.org/2002/07/owl#imports" : [ {
+    "@id" : "http://www.moonshot.ceo/"
+  } ]
+}, {
+  "@id" : "http://www.moonshot.ceo/actor/Actor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "An actor acts towards another actor (e.g., seeks innovation from, or produces innovation for)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "actor"
+  } ]
+}, {
+  "@id" : "http://www.moonshot.ceo/actor/Company",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "Company"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.moonshot.ceo/actor/Actor"
+  } ]
+}, {
+  "@id" : "http://www.moonshot.ceo/actor/Expert",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "Expert"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.moonshot.ceo/actor/Actor"
+  } ]
+}, {
+  "@id" : "http://www.moonshot.ceo/actor/Investor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "Investor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.moonshot.ceo/actor/Actor"
+  } ]
+}, {
+  "@id" : "http://www.moonshot.ceo/actor/Mentor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "Mentor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.moonshot.ceo/actor/Actor"
+  } ]
+}, {
+  "@id" : "http://www.moonshot.ceo/actor/PublicEntity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "PublicEntity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.moonshot.ceo/actor/Actor"
+  } ]
+}, {
+  "@id" : "http://www.moonshot.ceo/actor/ResearchAndDevelopmentLab",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "ResearchAndDevelopmentLab"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.moonshot.ceo/actor/Actor"
+  } ]
+}, {
+  "@id" : "http://www.moonshot.ceo/actor/Startup",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "Startup"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.moonshot.ceo/actor/Actor"
+  } ]
+}, {
+  "@id" : "http://www.moonshot.ceo/actor/Talent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "Talent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.moonshot.ceo/actor/Actor"
+  } ]
+}, {
+  "@id" : "http://www.moonshot.ceo/actor/hasIndustrialFunction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An actor can have an industrial function"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.moonshot.ceo/actor/Actor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasIndustrialFunction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.moonshot.ceo/ontology/IndustrialFunction"
+  } ]
+}, {
+  "@id" : "http://www.moonshot.ceo/actor/innovatesIn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "An actor can innovates in one or more cells and kets"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.moonshot.ceo/actor/Actor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "innovatesIn"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.moonshot.ceo/ontology/Cell"
+  }, {
+    "@id" : "http://www.moonshot.ceo/ontology/Ket"
+  } ]
+}, {
+  "@id" : "http://www.moonshot.ceo/actor/innovatesInCell",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "An actor can innovates in a cell"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.moonshot.ceo/actor/Actor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "innovatesInCell"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.moonshot.ceo/ontology/Cell"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.moonshot.ceo/actor/innovatesIn"
+  } ]
+}, {
+  "@id" : "http://www.moonshot.ceo/actor/innovatesInKet",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "An actor can innovates in a ket"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.moonshot.ceo/actor/Actor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "innovatesInKet"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.moonshot.ceo/ontology/Ket"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.moonshot.ceo/actor/innovatesIn"
+  } ]
+}, {
+  "@id" : "http://www.moonshot.ceo/actor/provideInnovationTo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "An actor can provide innovation to another actor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.moonshot.ceo/actor/Actor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "provideInnovationTo"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.moonshot.ceo/actor/Actor"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.moonshot.ceo/actor/seeksInnovationFrom"
+  } ]
+}, {
+  "@id" : "http://www.moonshot.ceo/actor/seeksInnovationFrom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "An actor can seek an innovation from another actor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.moonshot.ceo/actor/Actor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "seeksInnovationFrom"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.moonshot.ceo/actor/Actor"
+  } ]
+}, {
+  "@id" : "http://www.moonshot.ceo/ontology/Cell",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.moonshot.ceo/ontology/IndustrialFunction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.moonshot.ceo/ontology/Ket",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.moonshot.ceo/ontology/providesServiceTo",
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "An Industrial Function provides a service to one or more industries."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "providesServiceTo"
+  } ]
+}, {
+  "@id" : "http://www.moonshot.ceo/ontology/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.moonshot.ceo/actor/Actor"
+  } ]
+} ]
