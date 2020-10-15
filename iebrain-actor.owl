@@ -24,7 +24,7 @@
         <terms:created>2020-10-16</terms:created>
         <terms:date>2020-10-16</terms:date>
         <terms:description rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">This Ontology represents the actors in the innovation space. It is part of the IEBrain Ontology.</terms:description>
-        <terms:publisher>Universidad Politécnica de Madrid</terms:publisher>
+        <terms:publisher rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Universidad Politécnica de Madrid</terms:publisher>
         <terms:title rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">IEBrainActor</terms:title>
         <vann:preferredNamespacePrefix>http://www.moonshot.ceo/actor/</vann:preferredNamespacePrefix>
         <vann:preferredNamespacePrefix>msactor</vann:preferredNamespacePrefix>
