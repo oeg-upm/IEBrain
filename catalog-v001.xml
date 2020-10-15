@@ -2,7 +2,9 @@
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
     <uri id="Imports Wizard Entry" name="http://purl.org/vocab/vann/" uri="file:/Users/aalobaid/workspaces/Oworkspace/vann/vann.ttl"/>
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1602750981396" name="http://www.moonshot.ceo/" uri="iebrain-core.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1602750981396" name="http://www.moonshot.ceo/organisation/" uri="iebrain-actor.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1602758359559" name="http://www.moonshot.ceo/" uri="iebrain-core.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1602758359559" name="http://www.moonshot.ceo/actor/" uri="OnToology/iebrain-actor.owl/documentation/doc/ontology.xml"/>
+        <uri id="Automatically generated entry, Timestamp=1602758359559" name="http://www.moonshot.ceo/organisation/" uri="iebrain-actor.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1602758359559" name="shadowed:http://www.moonshot.ceo/" uri="OnToology/iebrain-core.owl/documentation/doc/ontology.xml"/>
     </group>
 </catalog>
