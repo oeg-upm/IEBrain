@@ -8,8 +8,18 @@
 
 <http://www.moonshot.ceo/actor/> rdf:type owl:Ontology ;
                                   owl:imports <http://www.moonshot.ceo/> ;
+                                  <http://purl.org/dc/elements/1.1/creator> "Ahmad Alobaid" ,
+                                                                            "Victor Rodriguez Doncel" ;
+                                  <http://purl.org/dc/elements/1.1/title> "IEBrainActor" ;
+                                  <http://purl.org/dc/terms/contributor> "Ahmad Alobaid" ,
+                                                                         "Victor Rodriguez Doncel" ;
+                                  <http://purl.org/dc/terms/created> "2020-10-16" ;
+                                  <http://purl.org/dc/terms/date> "2020-10-16" ;
                                   <http://purl.org/dc/terms/description> "This Ontology represents the actors in the innovation space. It is part of the IEBrain Ontology."^^rdfs:Literal ;
+                                  <http://purl.org/dc/terms/publisher> "Universidad Politécnica de Madrid" ;
                                   <http://purl.org/dc/terms/title> "IEBrainActor"^^rdfs:Literal ;
+                                  <http://purl.org/vocab/vann/preferredNamespacePrefix> "http://www.moonshot.ceo/actor/" ,
+                                                                                        "msactor" ;
                                   rdfs:comment "This Ontology represents the actors in the innovation space. It is part of the IEBrain Ontology."^^rdfs:Literal ;
                                   rdfs:label "IEBrainActor"^^rdfs:Literal .
 
@@ -17,12 +27,40 @@
 #    Annotation properties
 #################################################################
 
+###  http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/contributor
+<http://purl.org/dc/terms/contributor> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/date
+<http://purl.org/dc/terms/date> rdf:type owl:AnnotationProperty .
+
+
 ###  http://purl.org/dc/terms/description
 <http://purl.org/dc/terms/description> rdf:type owl:AnnotationProperty .
 
 
+###  http://purl.org/dc/terms/publisher
+<http://purl.org/dc/terms/publisher> rdf:type owl:AnnotationProperty .
+
+
 ###  http://purl.org/dc/terms/title
 <http://purl.org/dc/terms/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
 
 
 ###  http://www.moonshot.ceo/ontology/title

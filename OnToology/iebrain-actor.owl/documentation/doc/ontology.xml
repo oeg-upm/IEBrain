@@ -1,17 +1,29 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://www.moonshot.ceo/actor/"
      xml:base="http://www.moonshot.ceo/actor/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:ontology="http://www.moonshot.ceo/ontology/">
     <owl:Ontology rdf:about="http://www.moonshot.ceo/actor/">
         <owl:imports rdf:resource="http://www.moonshot.ceo/"/>
+        <dc:creator>Ahmad Alobaid</dc:creator>
+        <dc:creator>Victor Rodriguez Doncel</dc:creator>
+        <dc:title>IEBrainActor</dc:title>
+        <terms:contributor>Ahmad Alobaid</terms:contributor>
+        <terms:contributor>Victor Rodriguez Doncel</terms:contributor>
+        <terms:created>2020-10-16</terms:created>
+        <terms:date>2020-10-16</terms:date>
         <terms:description rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">This Ontology represents the actors in the innovation space. It is part of the IEBrain Ontology.</terms:description>
+        <terms:publisher>Universidad Politécnica de Madrid</terms:publisher>
         <terms:title rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">IEBrainActor</terms:title>
+        <vann:preferredNamespacePrefix>http://www.moonshot.ceo/actor/</vann:preferredNamespacePrefix>
+        <vann:preferredNamespacePrefix>msactor</vann:preferredNamespacePrefix>
         <rdfs:comment rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">This Ontology represents the actors in the innovation space. It is part of the IEBrain Ontology.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">IEBrainActor</rdfs:label>
     </owl:Ontology>
@@ -30,6 +42,41 @@
     
 
 
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/contributor -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/created -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/date -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/date"/>
+    
+
+
     <!-- http://purl.org/dc/terms/description -->
 
 
@@ -37,10 +84,24 @@
     
 
 
+    <!-- http://purl.org/dc/terms/publisher -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/publisher"/>
+    
+
+
     <!-- http://purl.org/dc/terms/title -->
 
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
     
 
 
