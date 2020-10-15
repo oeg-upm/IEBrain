@@ -1,14 +1,14 @@
 digraph ar2dtool_diagram { 
 rankdir=LR;
 size="1000"
-node [shape = rectangle, color="black"]; "http://www.moonshot.ceo/actor/Talent" "http://www.moonshot.ceo/actor/Startup" "http://www.moonshot.ceo/actor/ResearchAndDevelopmentLab" "http://www.moonshot.ceo/actor/PublicEntity" "http://www.moonshot.ceo/actor/Mentor" "http://www.moonshot.ceo/actor/Investor" "http://www.moonshot.ceo/actor/Expert" "http://www.moonshot.ceo/actor/Company" "http://www.moonshot.ceo/actor/Actor" ; /*classes style*/
-	"http://www.moonshot.ceo/actor/PublicEntity" -> "http://www.moonshot.ceo/actor/Actor" [ label = "rdfs:subClassOf" ];
-	"http://www.moonshot.ceo/actor/ResearchAndDevelopmentLab" -> "http://www.moonshot.ceo/actor/Actor" [ label = "rdfs:subClassOf" ];
-	"http://www.moonshot.ceo/actor/Mentor" -> "http://www.moonshot.ceo/actor/Actor" [ label = "rdfs:subClassOf" ];
-	"http://www.moonshot.ceo/actor/Talent" -> "http://www.moonshot.ceo/actor/Actor" [ label = "rdfs:subClassOf" ];
-	"http://www.moonshot.ceo/actor/Expert" -> "http://www.moonshot.ceo/actor/Actor" [ label = "rdfs:subClassOf" ];
-	"http://www.moonshot.ceo/actor/Company" -> "http://www.moonshot.ceo/actor/Actor" [ label = "rdfs:subClassOf" ];
-	"http://www.moonshot.ceo/actor/Startup" -> "http://www.moonshot.ceo/actor/Actor" [ label = "rdfs:subClassOf" ];
-	"http://www.moonshot.ceo/actor/Investor" -> "http://www.moonshot.ceo/actor/Actor" [ label = "rdfs:subClassOf" ];
+node [shape = rectangle, color="black"]; "http://www.moonshot.ceo/actor/:Talent" "http://www.moonshot.ceo/actor/:Startup" "http://www.moonshot.ceo/actor/:ResearchAndDevelopmentLab" "http://www.moonshot.ceo/actor/:PublicEntity" "http://www.moonshot.ceo/actor/:Mentor" "http://www.moonshot.ceo/actor/:Investor" "http://www.moonshot.ceo/actor/:Expert" "http://www.moonshot.ceo/actor/:Company" "http://www.moonshot.ceo/actor/:Actor" ; /*classes style*/
+	"http://www.moonshot.ceo/actor/:PublicEntity" -> "http://www.moonshot.ceo/actor/:Actor" [ label = "rdfs:subClassOf" ];
+	"http://www.moonshot.ceo/actor/:ResearchAndDevelopmentLab" -> "http://www.moonshot.ceo/actor/:Actor" [ label = "rdfs:subClassOf" ];
+	"http://www.moonshot.ceo/actor/:Mentor" -> "http://www.moonshot.ceo/actor/:Actor" [ label = "rdfs:subClassOf" ];
+	"http://www.moonshot.ceo/actor/:Talent" -> "http://www.moonshot.ceo/actor/:Actor" [ label = "rdfs:subClassOf" ];
+	"http://www.moonshot.ceo/actor/:Expert" -> "http://www.moonshot.ceo/actor/:Actor" [ label = "rdfs:subClassOf" ];
+	"http://www.moonshot.ceo/actor/:Company" -> "http://www.moonshot.ceo/actor/:Actor" [ label = "rdfs:subClassOf" ];
+	"http://www.moonshot.ceo/actor/:Startup" -> "http://www.moonshot.ceo/actor/:Actor" [ label = "rdfs:subClassOf" ];
+	"http://www.moonshot.ceo/actor/:Investor" -> "http://www.moonshot.ceo/actor/:Actor" [ label = "rdfs:subClassOf" ];
 
 }

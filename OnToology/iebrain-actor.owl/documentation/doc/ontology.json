@@ -1,19 +1,67 @@
 [ {
+  "@id" : "http://purl.org/dc/elements/1.1/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/contributor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/created",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/date",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
   "@id" : "http://purl.org/dc/terms/description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/publisher",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://purl.org/dc/terms/title",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
   "@id" : "http://www.moonshot.ceo/actor/",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@value" : "Ahmad Alobaid"
+  }, {
+    "@value" : "Victor Rodriguez Doncel"
+  } ],
+  "http://purl.org/dc/elements/1.1/title" : [ {
+    "@value" : "IEBrainActor"
+  } ],
+  "http://purl.org/dc/terms/contributor" : [ {
+    "@value" : "Ahmad Alobaid"
+  }, {
+    "@value" : "Victor Rodriguez Doncel"
+  } ],
+  "http://purl.org/dc/terms/created" : [ {
+    "@value" : "2020-10-16"
+  } ],
+  "http://purl.org/dc/terms/date" : [ {
+    "@value" : "2020-10-16"
+  } ],
   "http://purl.org/dc/terms/description" : [ {
     "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
     "@value" : "This Ontology represents the actors in the innovation space. It is part of the IEBrain Ontology."
   } ],
+  "http://purl.org/dc/terms/publisher" : [ {
+    "@value" : "Universidad Politécnica de Madrid"
+  } ],
   "http://purl.org/dc/terms/title" : [ {
     "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
     "@value" : "IEBrainActor"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespacePrefix" : [ {
+    "@value" : "http://www.moonshot.ceo/actor/"
+  }, {
+    "@value" : "msactor"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",

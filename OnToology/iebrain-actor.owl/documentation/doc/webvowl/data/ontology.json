@@ -7,6 +7,7 @@
       "undefined" : "IEBrainActor"
     },
     "iri" : "http://www.moonshot.ceo/actor/",
+    "author" : [ "Victor Rodriguez Doncel", "Ahmad Alobaid" ],
     "description" : {
       "undefined" : "This Ontology represents the actors in the innovation space. It is part of the IEBrain Ontology."
     },
@@ -17,7 +18,63 @@
       "undefined" : "This Ontology represents the actors in the innovation space. It is part of the IEBrain Ontology."
     },
     "other" : {
+      "date" : [ {
+        "identifier" : "date",
+        "language" : "undefined",
+        "value" : "2020-10-16",
+        "type" : "label"
+      } ],
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Victor Rodriguez Doncel",
+        "type" : "label"
+      }, {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Ahmad Alobaid",
+        "type" : "label"
+      } ],
+      "contributor" : [ {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "Ahmad Alobaid",
+        "type" : "label"
+      }, {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "Victor Rodriguez Doncel",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2020-10-16",
+        "type" : "label"
+      } ],
+      "preferredNamespacePrefix" : [ {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "undefined",
+        "value" : "msactor",
+        "type" : "label"
+      }, {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "undefined",
+        "value" : "http://www.moonshot.ceo/actor/",
+        "type" : "label"
+      } ],
+      "publisher" : [ {
+        "identifier" : "publisher",
+        "language" : "undefined",
+        "value" : "Universidad Politécnica de Madrid",
+        "type" : "label"
+      } ],
       "title" : [ {
+        "identifier" : "title",
+        "language" : "undefined",
+        "value" : "IEBrainActor",
+        "type" : "label"
+      }, {
         "identifier" : "title",
         "language" : "undefined",
         "value" : "IEBrainActor",
