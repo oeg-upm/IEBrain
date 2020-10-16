@@ -154,6 +154,16 @@
     
 
 
+    <!-- http://www.moonshot.ceo/actor/BusinessModellingStartup -->
+
+    <owl:Class rdf:about="http://www.moonshot.ceo/actor/BusinessModellingStartup">
+        <rdfs:subClassOf rdf:resource="http://www.moonshot.ceo/actor/Startup"/>
+        <terms:description xml:lang="en">Entrepreneurs disrupting business model or market rules, around ecommerce, fintech, femtech, transport, human resources,etc.These entrepreneurship  allow you to be more competitive in downstream strategies.</terms:description>
+        <rdfs:label xml:lang="en">Business Modelling Startup</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://www.moonshot.ceo/actor/Company -->
 
     <owl:Class rdf:about="http://www.moonshot.ceo/actor/Company">
@@ -167,6 +177,7 @@
 
     <owl:Class rdf:about="http://www.moonshot.ceo/actor/Expert">
         <rdfs:subClassOf rdf:resource="http://www.moonshot.ceo/actor/Actor"/>
+        <terms:description xml:lang="en">Experts can be innovation solvers or be hired for analysis. They are nor services companies but experienced people.</terms:description>
         <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Expert</rdfs:label>
     </owl:Class>
     
@@ -176,6 +187,7 @@
 
     <owl:Class rdf:about="http://www.moonshot.ceo/actor/Investor">
         <rdfs:subClassOf rdf:resource="http://www.moonshot.ceo/actor/Actor"/>
+        <terms:description xml:lang="en">Investment Syndication is part of Moonshot’s strategies to reduce risk and allow more business opportunities. Investors can be VC, CVC, business angels, family offices or private equities as well. You can send startups their investment proposals to their workplace.</terms:description>
         <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Investor</rdfs:label>
     </owl:Class>
     
@@ -185,6 +197,7 @@
 
     <owl:Class rdf:about="http://www.moonshot.ceo/actor/Mentor">
         <rdfs:subClassOf rdf:resource="http://www.moonshot.ceo/actor/Actor"/>
+        <terms:description xml:lang="en">Mentoring is crucial for startups and new projects. The are professionals that can coach startups founders to be more successful.</terms:description>
         <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Mentor</rdfs:label>
     </owl:Class>
     
@@ -194,7 +207,8 @@
 
     <owl:Class rdf:about="http://www.moonshot.ceo/actor/PublicEntity">
         <rdfs:subClassOf rdf:resource="http://www.moonshot.ceo/actor/Actor"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">PublicEntity</rdfs:label>
+        <terms:description xml:lang="en">Governmental departments and institutions to participate in projects and challenges, and to co-finance Startups and Companies in the disruptive innovation development.</terms:description>
+        <rdfs:label xml:lang="en">Public Entity</rdfs:label>
     </owl:Class>
     
 
@@ -203,7 +217,8 @@
 
     <owl:Class rdf:about="http://www.moonshot.ceo/actor/ResearchAndDevelopmentLab">
         <rdfs:subClassOf rdf:resource="http://www.moonshot.ceo/actor/Actor"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">ResearchAndDevelopmentLab</rdfs:label>
+        <terms:description xml:lang="en">R&amp;D Groups are crucial for knowledge transfers to Ecosystems. They can be Research Departments from Universities, from Private or Public Research Centers, other Research Groups from Corporations, or University Transfer Offices.</terms:description>
+        <rdfs:label xml:lang="en">Research and Development Lab</rdfs:label>
     </owl:Class>
     
 
@@ -221,7 +236,18 @@
 
     <owl:Class rdf:about="http://www.moonshot.ceo/actor/Talent">
         <rdfs:subClassOf rdf:resource="http://www.moonshot.ceo/actor/Actor"/>
+        <terms:description xml:lang="en">University and PhD talented students are those whose skills are distinctly above average in one or more technical or business areas.</terms:description>
         <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Talent</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.moonshot.ceo/actor/TechnologicalStartup -->
+
+    <owl:Class rdf:about="http://www.moonshot.ceo/actor/TechnologicalStartup">
+        <rdfs:subClassOf rdf:resource="http://www.moonshot.ceo/actor/Startup"/>
+        <terms:description xml:lang="en">Startups are entrepreneurs with intelligent and high technology assets in the fields of AI and Digital Life, Life Sciences, Nanotechnology and Robotics, Energy and Cleantech. They are disrupting several industries and are technology-base oriented (also called Techstarts). Technology startups provide   competitive advantages in products and  upstream strategies for potential diversifications.</terms:description>
+        <rdfs:label>Technological Startup</rdfs:label>
     </owl:Class>
     
 
