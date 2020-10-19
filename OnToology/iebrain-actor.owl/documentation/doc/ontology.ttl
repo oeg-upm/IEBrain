@@ -1,0 +1,240 @@
+@prefix : <http://www.moonshot.ceo/ontologies/def/actor/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.moonshot.ceo/ontologies/def/actor/> .
+
+<http://www.moonshot.ceo/ontologies/def/actor/> rdf:type owl:Ontology ;
+                                                 owl:imports <http://inneo.linkeddata.es> ,
+                                                             <http://www.moonshot.ceo/> ;
+                                                 <http://purl.org/dc/elements/1.1/creator> "Ahmad Alobaid" ,
+                                                                                           "Victor Rodriguez Doncel" ;
+                                                 <http://purl.org/dc/terms/contributor> "David Fernandez" ,
+                                                                                        "David Suriol" ,
+                                                                                        "Mario Quesada" ,
+                                                                                        "Victor Ceballos" ;
+                                                 <http://purl.org/dc/terms/created> "2020-10-16" ;
+                                                 <http://purl.org/dc/terms/date> "2020-10-16" ;
+                                                 <http://purl.org/dc/terms/description> "This Ontology represents the actors in the innovation space. It is part of the IEBrain Ontology."^^rdfs:Literal ;
+                                                 <http://purl.org/dc/terms/publisher> "Universidad Politécnica de Madrid"^^rdfs:Literal ;
+                                                 <http://purl.org/dc/terms/title> "Innovation Map Actor Ontology"^^rdfs:Literal ;
+                                                 <http://purl.org/vocab/vann/preferredNamespacePrefix> "http://www.moonshot.ceo/ontologies/def/actor/" ,
+                                                                                                       "msactor" ;
+                                                 <http://web.resource.org/cc/license> "Creative Commons Attribution 4.0" ;
+                                                 rdfs:comment "This Ontology represents the actors in the innovation space. It is part of the IEBrain Ontology."^^rdfs:Literal ;
+                                                 rdfs:label "Innovation Map Actor Ontology"^^rdfs:Literal .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/contributor
+<http://purl.org/dc/terms/contributor> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/date
+<http://purl.org/dc/terms/date> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/publisher
+<http://purl.org/dc/terms/publisher> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
+
+
+###  http://web.resource.org/cc/license
+<http://web.resource.org/cc/license> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.moonshot.ceo/ontology/title
+<http://www.moonshot.ceo/ontology/title> rdf:type owl:AnnotationProperty ;
+                                         rdfs:domain :Actor .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.moonshot.ceo/ontologies/def/actor/hasIndustrialFunction
+:hasIndustrialFunction rdf:type owl:ObjectProperty ;
+                       rdfs:domain :Actor ;
+                       rdfs:range <http://www.moonshot.ceo/ontology/IndustrialFunction> ;
+                       rdfs:comment "An actor can have an industrial function" ;
+                       rdfs:label "hasIndustrialFunction" .
+
+
+###  http://www.moonshot.ceo/ontologies/def/actor/innovatesIn
+:innovatesIn rdf:type owl:ObjectProperty ;
+             rdfs:domain :Actor ;
+             rdfs:range <http://www.moonshot.ceo/ontology/Cell> ,
+                        <http://www.moonshot.ceo/ontology/Ket> ;
+             rdfs:comment "An actor can innovates in one or more cells and kets"^^rdfs:Literal ;
+             rdfs:label "innovatesIn" .
+
+
+###  http://www.moonshot.ceo/ontologies/def/actor/innovatesInCell
+:innovatesInCell rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf :innovatesIn ;
+                 rdfs:domain :Actor ;
+                 rdfs:range <http://www.moonshot.ceo/ontology/Cell> ;
+                 rdfs:comment "An actor can innovates in a cell"^^rdfs:Literal ;
+                 rdfs:label "innovatesInCell"^^rdfs:Literal .
+
+
+###  http://www.moonshot.ceo/ontologies/def/actor/innovatesInKet
+:innovatesInKet rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf :innovatesIn ;
+                rdfs:domain :Actor ;
+                rdfs:range <http://www.moonshot.ceo/ontology/Ket> ;
+                rdfs:comment "An actor can innovates in a ket"^^rdfs:Literal ;
+                rdfs:label "innovatesInKet"^^rdfs:Literal .
+
+
+###  http://www.moonshot.ceo/ontologies/def/actor/provideInnovationTo
+:provideInnovationTo rdf:type owl:ObjectProperty ;
+                     owl:inverseOf :seeksInnovationFrom ;
+                     rdfs:domain :Actor ;
+                     rdfs:range :Actor ;
+                     rdfs:comment "An actor can provide innovation to another actor"^^rdfs:Literal ;
+                     rdfs:label "provideInnovationTo"^^rdfs:Literal .
+
+
+###  http://www.moonshot.ceo/ontologies/def/actor/seeksInnovationFrom
+:seeksInnovationFrom rdf:type owl:ObjectProperty ;
+                     rdfs:domain :Actor ;
+                     rdfs:range :Actor ;
+                     rdfs:comment "An actor can seek an innovation from another actor"^^rdfs:Literal ;
+                     rdfs:label "seeksInnovationFrom"^^rdfs:Literal .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.moonshot.ceo/ontologies/def/actor/Actor
+:Actor rdf:type owl:Class ;
+       rdfs:comment "An actor acts towards another actor (e.g., seeks innovation from, or produces innovation for)."^^rdfs:Literal ;
+       rdfs:label "actor"^^rdfs:Literal ;
+       rdfs:seeAlso "http://inneo.linkeddata.es#Organization" .
+
+
+###  http://www.moonshot.ceo/ontologies/def/actor/BusinessModellingStartup
+:BusinessModellingStartup rdf:type owl:Class ;
+                          rdfs:subClassOf :Startup ;
+                          <http://purl.org/dc/terms/description> "Entrepreneurs disrupting business model or market rules, around ecommerce, fintech, femtech, transport, human resources,etc.These entrepreneurship  allow you to be more competitive in downstream strategies."@en ;
+                          rdfs:label "Business Modelling Startup"@en .
+
+
+###  http://www.moonshot.ceo/ontologies/def/actor/Company
+:Company rdf:type owl:Class ;
+         rdfs:subClassOf :Actor ;
+         rdfs:label "Company"^^rdfs:Literal ;
+         rdfs:seeAlso "http://inneo.linkeddata.es#Organization" .
+
+
+###  http://www.moonshot.ceo/ontologies/def/actor/Expert
+:Expert rdf:type owl:Class ;
+        rdfs:subClassOf :Actor ;
+        <http://purl.org/dc/terms/description> "Experts can be innovation solvers or be hired for analysis. They are nor services companies but experienced people."@en ;
+        rdfs:label "Expert"^^rdfs:Literal .
+
+
+###  http://www.moonshot.ceo/ontologies/def/actor/Investor
+:Investor rdf:type owl:Class ;
+          rdfs:subClassOf :Actor ;
+          <http://purl.org/dc/terms/description> "Investment Syndication is part of Moonshot’s strategies to reduce risk and allow more business opportunities. Investors can be VC, CVC, business angels, family offices or private equities as well. You can send startups their investment proposals to their workplace."@en ;
+          rdfs:label "Investor"^^rdfs:Literal .
+
+
+###  http://www.moonshot.ceo/ontologies/def/actor/Mentor
+:Mentor rdf:type owl:Class ;
+        rdfs:subClassOf :Actor ;
+        <http://purl.org/dc/terms/description> "Mentoring is crucial for startups and new projects. The are professionals that can coach startups founders to be more successful."@en ;
+        rdfs:label "Mentor"^^rdfs:Literal .
+
+
+###  http://www.moonshot.ceo/ontologies/def/actor/PublicEntity
+:PublicEntity rdf:type owl:Class ;
+              rdfs:subClassOf :Actor ;
+              <http://purl.org/dc/terms/description> "Governmental departments and institutions to participate in projects and challenges, and to co-finance Startups and Companies in the disruptive innovation development."@en ;
+              rdfs:label "Public Entity"@en .
+
+
+###  http://www.moonshot.ceo/ontologies/def/actor/ResearchAndDevelopmentLab
+:ResearchAndDevelopmentLab rdf:type owl:Class ;
+                           rdfs:subClassOf :Actor ;
+                           <http://purl.org/dc/terms/description> "R&D Groups are crucial for knowledge transfers to Ecosystems. They can be Research Departments from Universities, from Private or Public Research Centers, other Research Groups from Corporations, or University Transfer Offices."@en ;
+                           rdfs:label "Research and Development Lab"@en .
+
+
+###  http://www.moonshot.ceo/ontologies/def/actor/Startup
+:Startup rdf:type owl:Class ;
+         rdfs:subClassOf :Actor ;
+         rdfs:label "Startup"^^rdfs:Literal .
+
+
+###  http://www.moonshot.ceo/ontologies/def/actor/Talent
+:Talent rdf:type owl:Class ;
+        rdfs:subClassOf :Actor ;
+        <http://purl.org/dc/terms/description> "University and PhD talented students are those whose skills are distinctly above average in one or more technical or business areas."@en ;
+        rdfs:label "Talent"^^rdfs:Literal ;
+        rdfs:seeAlso "http://inneo.linkeddata.es#Talent" .
+
+
+###  http://www.moonshot.ceo/ontologies/def/actor/TechnologicalStartup
+:TechnologicalStartup rdf:type owl:Class ;
+                      rdfs:subClassOf :Startup ;
+                      <http://purl.org/dc/terms/description> "Startups are entrepreneurs with intelligent and high technology assets in the fields of AI and Digital Life, Life Sciences, Nanotechnology and Robotics, Energy and Cleantech. They are disrupting several industries and are technology-base oriented (also called Techstarts). Technology startups provide   competitive advantages in products and  upstream strategies for potential diversifications."@en ;
+                      rdfs:label "Technological Startup" .
+
+
+###  http://www.moonshot.ceo/ontology/Cell
+<http://www.moonshot.ceo/ontology/Cell> rdf:type owl:Class .
+
+
+###  http://www.moonshot.ceo/ontology/IndustrialFunction
+<http://www.moonshot.ceo/ontology/IndustrialFunction> rdf:type owl:Class .
+
+
+###  http://www.moonshot.ceo/ontology/Ket
+<http://www.moonshot.ceo/ontology/Ket> rdf:type owl:Class ;
+                                       rdfs:label "Ket" .
+
+
+#################################################################
+#    Annotations
+#################################################################
+
+<http://www.moonshot.ceo/ontology/providesServiceTo> rdfs:comment "An Industrial Function provides a service to one or more industries."^^rdfs:Literal ;
+                                                     rdfs:label "providesServiceTo"^^rdfs:Literal .
+
+
+###  Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/

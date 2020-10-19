@@ -1,0 +1,527 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.moonshot.ceo/ontology", "http://www.w3.org/2000/01/rdf-schema", "http://www.moonshot.ceo/ontologies/def/actor", "http://www.w3.org/2001/XMLSchema" ],
+    "title" : {
+      "undefined" : "Innovation Map Actor Ontology"
+    },
+    "iri" : "http://www.moonshot.ceo/ontologies/def/actor/",
+    "author" : [ "Victor Rodriguez Doncel", "Ahmad Alobaid" ],
+    "description" : {
+      "undefined" : "This Ontology represents the actors in the innovation space. It is part of the IEBrain Ontology."
+    },
+    "labels" : {
+      "undefined" : "Innovation Map Actor Ontology"
+    },
+    "comments" : {
+      "undefined" : "This Ontology represents the actors in the innovation space. It is part of the IEBrain Ontology."
+    },
+    "other" : {
+      "date" : [ {
+        "identifier" : "date",
+        "language" : "undefined",
+        "value" : "2020-10-16",
+        "type" : "label"
+      } ],
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "Creative Commons Attribution 4.0",
+        "type" : "label"
+      } ],
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Victor Rodriguez Doncel",
+        "type" : "label"
+      }, {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Ahmad Alobaid",
+        "type" : "label"
+      } ],
+      "contributor" : [ {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "David Fernandez",
+        "type" : "label"
+      }, {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "Mario Quesada",
+        "type" : "label"
+      }, {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "Victor Ceballos",
+        "type" : "label"
+      }, {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "David Suriol",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2020-10-16",
+        "type" : "label"
+      } ],
+      "preferredNamespacePrefix" : [ {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "undefined",
+        "value" : "http://www.moonshot.ceo/ontologies/def/actor/",
+        "type" : "label"
+      }, {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "undefined",
+        "value" : "msactor",
+        "type" : "label"
+      } ],
+      "publisher" : [ {
+        "identifier" : "publisher",
+        "language" : "undefined",
+        "value" : "Universidad Politécnica de Madrid",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "undefined",
+        "value" : "Innovation Map Actor Ontology",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "14",
+    "type" : "owl:Class"
+  }, {
+    "id" : "25",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "18",
+    "type" : "owl:Class"
+  }, {
+    "id" : "27",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "22",
+    "type" : "owl:Class"
+  }, {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "20",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "13",
+    "type" : "owl:Class"
+  }, {
+    "id" : "24",
+    "type" : "owl:Class"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "16",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://www.moonshot.ceo/ontologies/def/actor/BusinessModellingStartup",
+    "baseIri" : "http://www.moonshot.ceo/ontologies/def/actor",
+    "instances" : 0,
+    "description" : {
+      "en" : "Entrepreneurs disrupting business model or market rules, around ecommerce, fintech, femtech, transport, human resources,etc.These entrepreneurship  allow you to be more competitive in downstream strategies."
+    },
+    "label" : {
+      "IRI-based" : "BusinessModellingStartup",
+      "en" : "Business Modelling Startup"
+    },
+    "id" : "14",
+    "superClasses" : [ "5" ]
+  }, {
+    "instances" : 0,
+    "union" : [ "22", "2" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "25"
+  }, {
+    "iri" : "http://www.moonshot.ceo/ontology/Cell",
+    "baseIri" : "http://www.moonshot.ceo/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Cell"
+    },
+    "attributes" : [ "external" ],
+    "id" : "2"
+  }, {
+    "iri" : "http://www.moonshot.ceo/ontologies/def/actor/Actor",
+    "baseIri" : "http://www.moonshot.ceo/ontologies/def/actor",
+    "instances" : 0,
+    "annotations" : {
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://inneo.linkeddata.es#Organization",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Actor",
+      "undefined" : "actor"
+    },
+    "subClasses" : [ "27", "5", "7", "9", "11", "13", "16", "18" ],
+    "comment" : {
+      "undefined" : "An actor acts towards another actor (e.g., seeks innovation from, or produces innovation for)."
+    },
+    "id" : "1"
+  }, {
+    "iri" : "http://www.moonshot.ceo/ontologies/def/actor/Expert",
+    "baseIri" : "http://www.moonshot.ceo/ontologies/def/actor",
+    "instances" : 0,
+    "description" : {
+      "en" : "Experts can be innovation solvers or be hired for analysis. They are nor services companies but experienced people."
+    },
+    "label" : {
+      "IRI-based" : "Expert",
+      "undefined" : "Expert"
+    },
+    "id" : "18",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://www.moonshot.ceo/ontologies/def/actor/Mentor",
+    "baseIri" : "http://www.moonshot.ceo/ontologies/def/actor",
+    "instances" : 0,
+    "description" : {
+      "en" : "Mentoring is crucial for startups and new projects. The are professionals that can coach startups founders to be more successful."
+    },
+    "label" : {
+      "IRI-based" : "Mentor",
+      "undefined" : "Mentor"
+    },
+    "id" : "27",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://www.moonshot.ceo/ontologies/def/actor/Startup",
+    "baseIri" : "http://www.moonshot.ceo/ontologies/def/actor",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Startup",
+      "undefined" : "Startup"
+    },
+    "subClasses" : [ "20", "14" ],
+    "id" : "5",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://www.moonshot.ceo/ontology/Ket",
+    "baseIri" : "http://www.moonshot.ceo/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Ket",
+      "undefined" : "Ket"
+    },
+    "attributes" : [ "external" ],
+    "id" : "22"
+  }, {
+    "iri" : "http://www.moonshot.ceo/ontologies/def/actor/ResearchAndDevelopmentLab",
+    "baseIri" : "http://www.moonshot.ceo/ontologies/def/actor",
+    "instances" : 0,
+    "description" : {
+      "en" : "R&D Groups are crucial for knowledge transfers to Ecosystems. They can be Research Departments from Universities, from Private or Public Research Centers, other Research Groups from Corporations, or University Transfer Offices."
+    },
+    "label" : {
+      "IRI-based" : "ResearchAndDevelopmentLab",
+      "en" : "Research and Development Lab"
+    },
+    "id" : "9",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://www.moonshot.ceo/ontologies/def/actor/TechnologicalStartup",
+    "baseIri" : "http://www.moonshot.ceo/ontologies/def/actor",
+    "instances" : 0,
+    "description" : {
+      "en" : "Startups are entrepreneurs with intelligent and high technology assets in the fields of AI and Digital Life, Life Sciences, Nanotechnology and Robotics, Energy and Cleantech. They are disrupting several industries and are technology-base oriented (also called Techstarts). Technology startups provide   competitive advantages in products and  upstream strategies for potential diversifications."
+    },
+    "label" : {
+      "IRI-based" : "TechnologicalStartup",
+      "undefined" : "Technological Startup"
+    },
+    "id" : "20",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "http://www.moonshot.ceo/ontologies/def/actor/Investor",
+    "baseIri" : "http://www.moonshot.ceo/ontologies/def/actor",
+    "instances" : 0,
+    "description" : {
+      "en" : "Investment Syndication is part of Moonshot’s strategies to reduce risk and allow more business opportunities. Investors can be VC, CVC, business angels, family offices or private equities as well. You can send startups their investment proposals to their workplace."
+    },
+    "label" : {
+      "IRI-based" : "Investor",
+      "undefined" : "Investor"
+    },
+    "id" : "7",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://www.moonshot.ceo/ontologies/def/actor/Company",
+    "baseIri" : "http://www.moonshot.ceo/ontologies/def/actor",
+    "instances" : 0,
+    "annotations" : {
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://inneo.linkeddata.es#Organization",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Company",
+      "undefined" : "Company"
+    },
+    "id" : "13",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://www.moonshot.ceo/ontology/IndustrialFunction",
+    "baseIri" : "http://www.moonshot.ceo/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "IndustrialFunction"
+    },
+    "attributes" : [ "external" ],
+    "id" : "24"
+  }, {
+    "iri" : "http://www.moonshot.ceo/ontologies/def/actor/Talent",
+    "baseIri" : "http://www.moonshot.ceo/ontologies/def/actor",
+    "instances" : 0,
+    "description" : {
+      "en" : "University and PhD talented students are those whose skills are distinctly above average in one or more technical or business areas."
+    },
+    "annotations" : {
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://inneo.linkeddata.es#Talent",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Talent",
+      "undefined" : "Talent"
+    },
+    "id" : "11",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://www.moonshot.ceo/ontologies/def/actor/PublicEntity",
+    "baseIri" : "http://www.moonshot.ceo/ontologies/def/actor",
+    "instances" : 0,
+    "description" : {
+      "en" : "Governmental departments and institutions to participate in projects and challenges, and to co-finance Startups and Companies in the disruptive innovation development."
+    },
+    "label" : {
+      "IRI-based" : "PublicEntity",
+      "en" : "Public Entity"
+    },
+    "id" : "16",
+    "superClasses" : [ "1" ]
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "4",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "6",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "8",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "10",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "12",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "15",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "17",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "19",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "21",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "23",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "26",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "28",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "29",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "3",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "30",
+    "type" : "rdfs:SubClassOf"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "http://www.moonshot.ceo/ontologies/def/actor/innovatesInCell",
+    "baseIri" : "http://www.moonshot.ceo/ontologies/def/actor",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "innovatesInCell",
+      "undefined" : "innovatesInCell"
+    },
+    "superproperty" : [ "3" ],
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "An actor can innovates in a cell"
+    },
+    "attributes" : [ "object" ],
+    "id" : "0"
+  }, {
+    "range" : "1",
+    "domain" : "5",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "4"
+  }, {
+    "range" : "1",
+    "domain" : "7",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "6"
+  }, {
+    "range" : "1",
+    "domain" : "9",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "8"
+  }, {
+    "range" : "1",
+    "domain" : "11",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "10"
+  }, {
+    "range" : "1",
+    "domain" : "13",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "12"
+  }, {
+    "range" : "1",
+    "domain" : "16",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "15"
+  }, {
+    "range" : "1",
+    "domain" : "18",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "17"
+  }, {
+    "range" : "5",
+    "domain" : "20",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "19"
+  }, {
+    "iri" : "http://www.moonshot.ceo/ontologies/def/actor/innovatesInKet",
+    "baseIri" : "http://www.moonshot.ceo/ontologies/def/actor",
+    "range" : "22",
+    "label" : {
+      "IRI-based" : "innovatesInKet",
+      "undefined" : "innovatesInKet"
+    },
+    "superproperty" : [ "3" ],
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "An actor can innovates in a ket"
+    },
+    "attributes" : [ "object" ],
+    "id" : "21"
+  }, {
+    "iri" : "http://www.moonshot.ceo/ontologies/def/actor/hasIndustrialFunction",
+    "baseIri" : "http://www.moonshot.ceo/ontologies/def/actor",
+    "range" : "24",
+    "label" : {
+      "IRI-based" : "hasIndustrialFunction",
+      "undefined" : "hasIndustrialFunction"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "An actor can have an industrial function"
+    },
+    "attributes" : [ "object" ],
+    "id" : "23"
+  }, {
+    "range" : "1",
+    "domain" : "27",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "26"
+  }, {
+    "iri" : "http://www.moonshot.ceo/ontologies/def/actor/seeksInnovationFrom",
+    "baseIri" : "http://www.moonshot.ceo/ontologies/def/actor",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "seeksInnovationFrom",
+      "undefined" : "seeksInnovationFrom"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "An actor can seek an innovation from another actor"
+    },
+    "attributes" : [ "object" ],
+    "id" : "28"
+  }, {
+    "iri" : "http://www.moonshot.ceo/ontologies/def/actor/provideInnovationTo",
+    "inverse" : "28",
+    "baseIri" : "http://www.moonshot.ceo/ontologies/def/actor",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "provideInnovationTo",
+      "undefined" : "provideInnovationTo"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "An actor can provide innovation to another actor"
+    },
+    "attributes" : [ "object" ],
+    "id" : "29"
+  }, {
+    "iri" : "http://www.moonshot.ceo/ontologies/def/actor/innovatesIn",
+    "baseIri" : "http://www.moonshot.ceo/ontologies/def/actor",
+    "range" : "25",
+    "label" : {
+      "IRI-based" : "innovatesIn",
+      "undefined" : "innovatesIn"
+    },
+    "domain" : "1",
+    "subproperty" : [ "21", "0" ],
+    "comment" : {
+      "undefined" : "An actor can innovates in one or more cells and kets"
+    },
+    "attributes" : [ "object" ],
+    "id" : "3"
+  }, {
+    "range" : "5",
+    "domain" : "14",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "30"
+  } ]
+}
